@@ -1,0 +1,72 @@
+@import '~antd/dist/antd.css';
+
+
+$color-1: #FFFFFF;
+$color-2: #E4EE95;
+$content-radius: 2px;
+$button-color: green;
+
+
+#App {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #FFFFFF;
+}
+
+p, ul, li, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+#header {
+  margin: auto;
+  width: 70%;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  width: 80%;
+}
+  
+#header .nav-wrap {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  width: auto;
+  display: block;
+  // min-height: 70px;
+  // height: 60px;
+  // background-size: cover;
+  // height: 450px;
+  // background-color: #E4EE95;
+  // background: url('../../images/Frame\ 2.png');  
+}
+
+#layout {
+  width: 100%;
+}
+
+@mixin content-block {
+  position: relative;
+  padding: 5px;
+  border: 1px solid darkorchid;
+}
+
+#content {
+  margin: auto;
+  width: 80%; 
+  border: 1px solid fuchsia;
+}
+
+section.wrapper {
+  background-color: inherit;
+  width: 100%;
+}
+
+.nav-wrapper {
+  height: 296px;
+  border: 1px solid green;
+}
+
+#content {
+
+}

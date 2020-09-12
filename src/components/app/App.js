@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import Home from '../home/Home'
 import About from '../about/About'
-import Products from '../products/Products'
+import Treatments from '../treatments/Treatments'
 import Contact from '../contact/Contact'
 import TabBar from '../tabs/TabBar'
-import './App.css';
+import TabPanel from '../tabs/TabPanel'
+import './App.scss';
 import {
   BrowserRouter as Router,
-  // Switch,
-  // Route,
-  // Link
+  Route,
 } from "react-router-dom";
 
 import {
@@ -22,8 +21,9 @@ const { Header, Content, Footer } = Layout
 class App extends Component {
   render() {
     const tabs = [
+      {name: 'home', label: 'Home', component: Home },
       {name: 'about', label: 'About', component: About },
-      {name: 'products', label: 'Products', component: Products },
+      {name: 'treatments', label: 'Treatments', component: Treatments },
       {name: 'contact', label: 'Contact', component: Contact },
     ]
 
@@ -32,14 +32,34 @@ class App extends Component {
     }
 
     return (
-      <Router>
-        <Layout>
-          <Header>
-            <Home />
-            <TabBar tabs={tabs} />
-          </Header>
-        </Layout>
-      </Router>
+      <div id="App">
+        <Router>
+          <Layout id="layout">
+            <Header id="header" >
+              <div className="nav-wrap"> 
+                <TabBar tabs={tabs} />
+              </div>
+            </Header>
+            <section className="wrapper">
+              <div className="nav-wrapper">
+
+              </div>
+            </section>
+            <Content id="content">
+              <section id="home">
+                <Route exact path="/" render={() => (
+                  <Home />
+                )}
+                />
+              </section>
+              <section id="content-wrapper">
+                <TabPanel tabs={tabs} />
+              </section>
+            </Content>
+          </Layout>
+        </Router>
+
+      </div>
     );
   }
 }
