@@ -10,7 +10,7 @@ class Home extends Component {
 
     return (
       <div id="wrap" className="home">
-            <h1>Raychan Home</h1>
+        <h1>Raychan Home</h1>
       </div>
     );
   }
