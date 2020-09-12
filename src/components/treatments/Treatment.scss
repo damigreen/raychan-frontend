@@ -1,0 +1,31 @@
+
+@import '../app/App.scss';
+
+#treatment {
+  border: 1px solid blue;
+  padding: 70px, 20px;
+  line-height: 20px;
+  padding-top: 55px;
+  padding-bottom: 66px;
+}
+
+#treatment .title-block {
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid salmon;
+}
+
+#column-content {
+  @include content-block;
+  // width: auto;
+  // margin: 0;
+}
+
+.image-block {
+  border: 1px solid salmon;
+}
+
+.column-paragraph {
+  border: 1px solid green;
+}
+
