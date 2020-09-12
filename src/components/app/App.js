@@ -15,6 +15,7 @@ import {
   Menu,
   Layout,
 } from 'antd'
+import Ailments from '../treatments/Ailments';
 
 const { Header, Content, Footer } = Layout
 
@@ -40,11 +41,6 @@ class App extends Component {
                 <TabBar tabs={tabs} />
               </div>
             </Header>
-            <section className="wrapper">
-              <div className="nav-wrapper">
-
-              </div>
-            </section>
             <Content id="content">
               <section id="home">
                 <Route exact path="/" render={() => (
@@ -55,6 +51,10 @@ class App extends Component {
               <section id="content-wrapper">
                 <TabPanel tabs={tabs} />
               </section>
+              <Route path="/Ailments" render={() => (
+                <Ailments />
+              )}
+              />
             </Content>
           </Layout>
         </Router>
