@@ -1,51 +1,41 @@
 import React from 'react'
 import { Menu } from 'antd'
 import { Link, Route } from 'react-router-dom'
-
+import './Tabs.scss'
+// import logo from '../../images/Mask Group.png'
+import {
+  Row,
+  Col,
+} from 'antd'
 
 const TabBar = (props) => {
   const { tabs, onClick, ...otherProps } = props
 
-  const tabItems = tabs.map(tabInfo => {
-    const { name, label } = tabInfo
-
-
-    return (
-      <div>
-          <Menu.Item
-            key={name}
-            label={label}
-          >
-            <Link to={`/${name}`}>{label}</Link>
-          </Menu.Item>
-        
-      </div>
-    )
-  })
-
-  const tabPanels = tabs.map(tabInfo => {
-    const { name, label, component: TabComponent } = tabInfo;
-
-    return (
-      <Route path={`/${name}`}>
-        <TabComponent />
-      </Route>
-      )
-  })
-
   return(
-    <div>
-      <Menu>
-        <Menu.Item key="home">
-          <Link to="/">Home</Link>
-        </Menu.Item>
-        {tabItems}
-      </Menu>
+    <Row  id="menu" className="flex-row">
+        <Col className="nav-background">
+            {/* <Link to="/"><img className="background-image" src={logo} alt="Header logo"></img></Link> */}
+            <Link to="/">Raychan Herbal Healthcare</Link>
+        </Col>
 
-      {tabPanels}
-    </div>
+        <Col className="nav-col">
+          <Menu className="nav-item" mode="horizontal">
+              <Menu.Item className="nav-bar" key="about">
+                <Link to="/About">ABOUT</Link>
+              </Menu.Item>
+              <Menu.Item className="nav-bar" key="treatments">
+                <Link to="/Treatments">TREATMENTS</Link>
+              </Menu.Item>
+              <Menu.Item className="nav-bar" key="contact">
+                <Link to="/Contact">CONTACT</Link>
+              </Menu.Item>
+          </Menu>    
+        </Col>
+
+      </Row>
+
+
   )
-
 }
 
 export default TabBar

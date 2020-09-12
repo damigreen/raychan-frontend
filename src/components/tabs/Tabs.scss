@@ -1,0 +1,39 @@
+.background-image {
+  // width: 150px;
+  // height: 100px
+}
+
+.nav-background {
+}
+
+#menu{
+}
+
+#menu.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: inherit;
+  border: 1px solid red;
+  // width: inherit;
+  // background-color: #E4EE95;
+  // background-color: #E6DF8F;
+  // background: url('../../images/Frame\ 2.png');
+  // background: url('../../images/header.jpg');
+  // align-content: flex-start;
+}
+
+.nav-col .nav-item {
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  
+}
+
+#menu .nav-bar {
+  background-color: none;
+}
