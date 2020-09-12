@@ -1,0 +1,51 @@
+@import  "../app/App.scss";
+
+#about {
+  border: 1px solid blue;
+  padding: 70px, 20px;
+  line-height: 20px;
+  padding-top: 55px;
+  padding-bottom: 66px;
+}
+
+.image-block {
+  border: 1px solid purple;
+}
+
+#content-column {
+  @include content-block;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-content: center;
+}
+
+#content-column article {
+  border: 1px solid red;
+  width: auto;
+  margin: 0;
+}
+
+.about-header {
+  text-align: center;
+  font-size: 2.125em;
+  margin-bottom: 35px;
+  padding-top: 10px;
+}
+
+#content-column p {
+  text-align: justify;
+  border: 1px solid magenta;
+}
+
+p {
+  border: 1px solid red;
+}
+
+#content-column .button {
+  background-color: $button-color;
+  color: $color-1;
+  border: 1px solid $button-color;
+  align-self: center;
+  flex-grow: .1;
+}
