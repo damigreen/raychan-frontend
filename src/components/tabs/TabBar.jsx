@@ -8,6 +8,8 @@ import {
   Col,
 } from 'antd'
 
+const { SubMenu } = Menu
+
 const TabBar = (props) => {
   const { tabs, onClick, ...otherProps } = props
 
@@ -23,9 +25,22 @@ const TabBar = (props) => {
               <Menu.Item className="nav-bar" key="about">
                 <Link to="/About">ABOUT</Link>
               </Menu.Item>
+
+              {/* <Menu.Item className="nav-bar" key="treatments"> */}
+              <SubMenu icon title="DISEASE AND CONDITIONS">
+                  <Menu.Item key="sickle-cell">Sickle Cell Anemia</Menu.Item>
+                  <Menu.Item key="asthma">Asthma</Menu.Item>
+                  <Menu.Item key="low-sperm-count">Low Sperm Count</Menu.Item>
+                  <Menu.Item key="Atrial">Atrial Septal Defect</Menu.Item>
+              </SubMenu>
+                {/* <Link to="/Treatments">DISEASE AND CONDITIONS</Link> */}
+              {/* </Menu.Item> */}
+
+
               <Menu.Item className="nav-bar" key="treatments">
                 <Link to="/Treatments">TREATMENTS</Link>
               </Menu.Item>
+              
               <Menu.Item className="nav-bar" key="contact">
                 <Link to="/Contact">CONTACT</Link>
               </Menu.Item>
