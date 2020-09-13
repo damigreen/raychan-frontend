@@ -51,6 +51,13 @@ p, ul, li, h1, h2, h3, h4 {
   border: 1px solid darkorchid;
 }
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #content {
   margin: auto;
   width: 80%; 
