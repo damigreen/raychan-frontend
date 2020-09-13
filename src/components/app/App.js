@@ -5,17 +5,18 @@ import Treatments from '../treatments/Treatments'
 import Contact from '../contact/Contact'
 import TabBar from '../tabs/TabBar'
 import TabPanel from '../tabs/TabPanel'
+import DiseasesAndConditions from '../diseases and conditions/DiseasesAndConditions'
+
+
 import './App.scss';
 import {
   BrowserRouter as Router,
-  Route,
 } from "react-router-dom";
 
 import {
   Menu,
   Layout,
 } from 'antd'
-import Ailments from '../treatments/Ailments';
 
 const { Header, Content, Footer } = Layout
 
@@ -40,21 +41,24 @@ class App extends Component {
               <div className="nav-wrap"> 
                 <TabBar tabs={tabs} />
               </div>
+              <div>
+                <h1>Header</h1>
+              </div>
             </Header>
+
             <Content id="content">
-              <section id="home">
-                <Route exact path="/" render={() => (
-                  <Home />
-                )}
-                />
-              </section>
-              <section id="content-wrapper">
+
+              {/* <section id="content-wrapper">
                 <TabPanel tabs={tabs} />
+              </section> */}
+
+              <section>
+                <About />
+                <Treatments />
+                <Footer />
               </section>
-              <Route path="/Ailments" render={() => (
-                <Ailments />
-              )}
-              />
+
+              <DiseasesAndConditions />
             </Content>
           </Layout>
         </Router>
