@@ -43,6 +43,7 @@ p, ul, li, h1, h2, h3, h4 {
 
 #layout {
   width: 100%;
+  // border: 1px solid gold;
 }
 
 @mixin content-block {
@@ -54,6 +55,13 @@ p, ul, li, h1, h2, h3, h4 {
 @mixin flex-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -74,6 +82,19 @@ section.wrapper {
   border: 1px solid green;
 }
 
-#content {
+#footer {
+  margin: 0 auto;
+  // padding: 0;
+  padding: 24px 50px;
+  width: 80%;
+  border: 1px solid yellowgreen;
+}
 
+#footer .flex-column {
+  width: auto;
+  border: 1px solid yellowgreen;
+  margin: 0;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: flex-start;
 }

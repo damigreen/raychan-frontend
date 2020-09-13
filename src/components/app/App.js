@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Home from '../home/Home'
-import About from '../about/About'
-import Treatments from '../treatments/Treatments'
-import Contact from '../contact/Contact'
+import About from '../about/'
+import Treatments from '../treatments/'
+import Contact from '../footer/contact/'
+import ContactInfo from '../footer/contactInfo/'
 import TabBar from '../tabs/TabBar'
 import TabPanel from '../tabs/TabPanel'
-import DiseasesAndConditions from '../diseases and conditions/DiseasesAndConditions'
+import DiseasesAndConditions from '../diseases and conditions/'
 
 
 import './App.scss';
@@ -16,6 +17,8 @@ import {
 import {
   Menu,
   Layout,
+  Row,
+  Col,
 } from 'antd'
 
 const { Header, Content, Footer } = Layout
@@ -29,10 +32,16 @@ class App extends Component {
       {name: 'contact', label: 'Contact', component: Contact },
     ]
 
-    this.state = {
-      current: 'home'
-    }
+    // this.state = {
+    //   current: 'home'
+    // }
 
+    /* 
+    TODO:
+    * Create a contact component
+    * create a router for each disaeses and conditions
+    * 
+    */
     return (
       <div id="App">
         <Router>
@@ -60,9 +69,20 @@ class App extends Component {
 
               <DiseasesAndConditions />
             </Content>
+
+            <Footer id="footer">
+              <Row className="flex-column">
+                <Col>
+                  <Contact />
+                </Col>
+                <Col>
+                  <ContactInfo />
+                </Col>
+              </Row>
+            </Footer>
+
           </Layout>
         </Router>
-
       </div>
     );
   }
