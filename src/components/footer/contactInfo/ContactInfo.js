@@ -11,7 +11,7 @@ function ContactInfo() {
   */
   return(
     <div>
-      <h2>Contact Info</h2>
+      <h2>CONTACT INFO</h2>
     </div>
   )
 }
