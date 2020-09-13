@@ -14,10 +14,8 @@
 
 #content-column {
   @include content-block;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-content: center;
+  @include flex-column;
+  justify-content: flex-start;
 }
 
 #content-column article {
