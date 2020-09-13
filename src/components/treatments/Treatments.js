@@ -4,41 +4,70 @@ import {
   Col,
   Typography,
   Button,
+  Card,
 } from 'antd'
-import { Link, Route } from 'react-router-dom'
+import { Link, Route, useLocation} from 'react-router-dom'
 // import sickleCell from '../../images/sicklecell.png'
 import image from '../../images/Image.png'
 import './Treatment.scss'
 
 const { Title, Paragraph } = Typography
 
-class Treatments extends Component {
-  render() {
+function Treatments() {
+  
+  const { pathname, hash } = useLocation()
+  console.log(pathname, hash)
 
-    
-    return (
-      <div id="treatment">
-        <Title className="title-block">Ailments and Treatments</Title>
-        <Row id="treatment-row">
-            
-            <Col span={12} id="column-content">
-              <Title level={3}>Sickle Cell Anemia</Title>
-              <Paragraph className="column-paragraph">
-                Sickle Cell Anemia over the years has been perceived as one of the most threatening disorder to man-kind, some homes has been broken and couples separated, early death and delayed marriage due to this disorder.kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-              </Paragraph>
+  
+  return (
+    <div id="treatment">
+      <Title className="title-block">Diseases and Ailments We Treat</Title>
+        <Row className="flex-column" gutter={30}>
+          <Col span={8}>
+            <Card className="card-style" title="Sickle Cell Anemia" bordered={false}>
+              Sickle Cell Anemia over the years has been perceived as one of the most threatening disorder to man-kind, some homes has been broken and couples separated, early death and delayed marriage due to this disorder.
               <Button>
-                <Link to="/Ailments">AILMENTS AND REMEDIES</Link>
+                <Link to="/Ailments">LEARN MORE</Link>
               </Button>
-            </Col>
-
-            <Col span={12} className="image-block">
-              <img className="image-product" src={image} alt="Sickle cell image" />
-            </Col>
-          </Row>
-      </div>
-
-    );
-  }
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card className="card-style" title="Asthma" bordered={false}>
+              Card content
+              <Button>
+                <Link to="/Ailments">LEARN MORE</Link>
+              </Button>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="flex-column" gutter={30}>
+          <Col span={8}>
+            <Card className="card-style" title="Atrial Septal Defect" bordered={false}>
+              Perkinsons disease over the years has been perc
+              <Button>
+                <Link to="/Ailments">LEARN MORE</Link>
+              </Button>
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card className="card-style" title="Parkinson's Disease" bordered={false}>
+              Card content
+              <Button>
+                <Link to="/Ailments">LEARN MORE</Link>
+              </Button>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="flex-column">
+          <Col>
+            <Button className="btn">
+              <Link to="/Ailments">AILMENTS AND REMEDIES</Link>
+            </Button>
+          </Col>
+        </Row>
+    </div>
+  );
 }
+// }
 
 export default Treatments;
