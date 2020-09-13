@@ -85,7 +85,7 @@ section.wrapper {
 #footer {
   margin: 0 auto;
   // padding: 0;
-  padding: 24px 50px;
+  // padding: 24px 50px;
   width: 80%;
   border: 1px solid yellowgreen;
 }
@@ -97,4 +97,8 @@ section.wrapper {
   @include flex-row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+#contact {
+  border: 1px solid firebrick;
 }

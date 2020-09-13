@@ -3,7 +3,9 @@ import Home from '../home/Home'
 import About from '../about/'
 import Treatments from '../treatments/'
 import Contact from '../footer/contact/'
+import SiteLinks from '../footer/siteLinks'
 import ContactInfo from '../footer/contactInfo/'
+import Copyright from '../footer/copyright/'
 import TabBar from '../tabs/TabBar'
 import TabPanel from '../tabs/TabPanel'
 import DiseasesAndConditions from '../diseases and conditions/'
@@ -72,11 +74,20 @@ class App extends Component {
 
             <Footer id="footer">
               <Row className="flex-column">
-                <Col>
+                <Col id="contact">
                   <Contact />
                 </Col>
-                <Col>
+                <Col id="site-links">
+                  <SiteLinks />
+                </Col>
+                <Col id="contact-info">
                   <ContactInfo />
+                </Col>
+              </Row>
+              
+              <Row>
+                <Col>
+                  <Copyright />
                 </Col>
               </Row>
             </Footer>
