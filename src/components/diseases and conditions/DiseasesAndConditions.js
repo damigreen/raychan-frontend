@@ -1,43 +1,42 @@
 import React from 'react'
-import SickleCell from './sickle-cell/SickleCell'
-import Asthma from './asthma/Asthma';
-import AtrialSeptalDefect from './atrial septal defect/AtrilaSeptal';
-import LowSpermCount from './low sperm count/LowSpermCount';
-import Parkinsons from './parkinsons/Parkinsons';
+import SickleCell from './sickle-cell/'
+import Asthma from './asthma/';
+import AtrialSeptalDefect from './atrial septal defect/';
+import LowSpermCount from './low sperm count/';
+import Parkinsons from './parkinsons/';
 
 import {
   Route,
   Switch,
+  Redirect
 } from 'react-router-dom'
 
 function DiseasesAndConditions() {
 
+  const diseases = [
+    { name: 'sickle cell', label: 'sickle-cell', component: SickleCell },
+    { name: 'asthma', label: 'asthma', component: Asthma },
+    { name: 'atrial septal defect', label: 'atrial-septal-defect', component: AtrialSeptalDefect },
+    { name: 'low sperm count', label: 'low-sperm-count', component: LowSpermCount },
+    { name: 'parkinsons disease', label: 'parkinsons-disease', component: Parkinsons },
+  ]
+
+  const diseasesMenu = diseases.map(diseasesInfo => {
+    const { label, component: DiseasesComponent } = diseasesInfo
+
+    return(
+      <div>
+          <Route path={`/${label}`} render={() => (
+            <DiseasesComponent />
+          )}
+          />
+      </div>
+    )
+  })
+
   return(
     <div>
-      <Switch>
-        <Route exact path="/sickle-cell" render={() => (
-          <SickleCell />
-        )}
-        />
-        <Route exact path="/asthma" render={() => (
-          <Asthma />
-        )}
-        />
-        <Route exact path="/asthma" component={Asthma} />
-        <Route exact path="/atrial-septal-defect" render={() => (
-          <AtrialSeptalDefect />
-        )}
-        />
-        <Route exact path="/low-sperm-count" render={() => (
-          <LowSpermCount />
-        )}
-        />
-        <Route exact path="/parkinsons-disease" render={() => (
-          <Parkinsons />
-        )}
-        />
-
-      </Switch>
+      {diseasesMenu}
     </div>
   )
 }
