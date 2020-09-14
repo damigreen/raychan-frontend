@@ -3,7 +3,7 @@ import { Form, Input, Button } from 'antd';
 
 const layout = {
   labelCol: {
-    span: 8,
+    span: 6,
   },
   wrapperCol: {
     span: 16,
@@ -27,8 +27,12 @@ function Contact() {
     console.log(values);
   };
   
+  /* 
+  TODO
+  * Reduce form margins
+  */
   return(
-    <div>
+    <div id="contact-form">
       <h2>CONTACT US</h2>
       <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
         <Form.Item
