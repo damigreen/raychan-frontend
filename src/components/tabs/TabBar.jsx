@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu } from 'antd'
-// import { Link, Route } from 'react-router-dom'
+import { Link as Li } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 import './Tabs.scss'
 // import logo from '../../images/Mask Group.png'
@@ -28,10 +28,21 @@ const TabBar = (props) => {
               </Menu.Item>
 
               <SubMenu icon title="DISEASE AND CONDITIONS">
-                  <Menu.Item key="sickle-cell">Sickle Cell Anemia</Menu.Item>
-                  <Menu.Item key="asthma">Asthma</Menu.Item>
-                  <Menu.Item key="low-sperm-count">Low Sperm Count</Menu.Item>
-                  <Menu.Item key="Atrial">Atrial Septal Defect</Menu.Item>
+                  <Menu.Item key="sickle-cell">
+                    <Li to='/sickle-cell'>Sickle Cell Anemia</Li>
+                  </Menu.Item>
+                  <Menu.Item key="asthma">
+                    <Li to='/asthma'>Asthma</Li>
+                  </Menu.Item>
+                  <Menu.Item key="low-sperm-count">
+                    <Li to='/low-sperm-count'>Low Sperm Count</Li>
+                  </Menu.Item>
+                  <Menu.Item key="Atrial">
+                    <Li to='/atrial-septal-defect'>Atrial Septal Defect</Li>
+                  </Menu.Item>
+                  <Menu.Item key="Parkinsons">
+                    <Li to='/parkinsons-disease'>Parkinsons Disease</Li>
+                  </Menu.Item>
               </SubMenu>
 
               <Menu.Item className="nav-bar" key="treatments">

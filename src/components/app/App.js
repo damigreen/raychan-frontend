@@ -14,6 +14,11 @@ import DiseasesAndConditions from '../diseases and conditions/'
 import './App.scss';
 import {
   BrowserRouter as Router,
+  Link,
+  Switch,
+  Route,
+  Redirect,
+
 } from "react-router-dom";
 
 import {
@@ -40,9 +45,8 @@ class App extends Component {
 
     /* 
     TODO:
-    * Create a contact component
     * create a router for each disaeses and conditions
-    * 
+    * Include header from the header component
     */
     return (
       <div id="App">
@@ -52,39 +56,29 @@ class App extends Component {
               <div className="nav-wrap"> 
                 <TabBar tabs={tabs} />
               </div>
-              <div>
-                <h1>Header</h1>
-              </div>
+              <Home />
             </Header>
 
             <Content id="content">
-
-              {/* <section id="content-wrapper">
-                <TabPanel tabs={tabs} />
-              </section> */}
-
-              <section>
-                <About />
-                <Treatments />
-                <Footer />
-              </section>
-
+              <Route exact path='/' component={About} />
+              <Route exact path='/' component={Treatments}/>
               <DiseasesAndConditions />
+
             </Content>
 
             <Footer id="footer">
               <Row className="flex-column">
-                <Col id="contact">
+                <Col span={10} id="contact">
                   <Contact />
                 </Col>
-                <Col id="site-links">
+                <Col span={6} id="site-links">
                   <SiteLinks />
                 </Col>
-                <Col id="contact-info">
+                <Col span={8} id="contact-info">
                   <ContactInfo />
                 </Col>
               </Row>
-              
+
               <Row>
                 <Col>
                   <Copyright />
