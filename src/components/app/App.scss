@@ -25,6 +25,14 @@ p, ul, li, h1, h2, h3, h4 {
   background-color: #FFFFFF;
   border: 1px solid black;
   width: 80%;
+  height: auto;
+}
+
+#hero {
+  margin: auto;
+  border: 1px solid green;
+  width: auto;
+  height: 375px;
 }
   
 #header .nav-wrap {
