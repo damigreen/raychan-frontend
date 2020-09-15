@@ -49,6 +49,10 @@ const TabBar = (props) => {
                 <Link to="/#treatments">TREATMENTS</Link>
               </Menu.Item>
               
+              <Menu.Item className="nav-bar" key="testimonials">
+                <Link to="/testimonials">TESTIMONIALS</Link>
+              </Menu.Item>
+              
               <Menu.Item className="nav-bar" key="contact">
                 <Link to="/Contact">CONTACT</Link>
               </Menu.Item>
