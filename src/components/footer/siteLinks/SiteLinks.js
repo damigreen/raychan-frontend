@@ -6,12 +6,10 @@ function SiteLinks() {
     <div>
       <p>
         <ul>
-          <li>
-            Home
-          </li>
-          <li>
-            About
-          </li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Treatments</li>
+          <li>Testimonials</li>
         </ul>
       </p>
     </div>
