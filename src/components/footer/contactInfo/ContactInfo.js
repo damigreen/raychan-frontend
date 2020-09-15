@@ -11,7 +11,6 @@ function ContactInfo() {
   */
   return(
     <div>
-      <h2>CONTACT INFO</h2>
     </div>
   )
 }

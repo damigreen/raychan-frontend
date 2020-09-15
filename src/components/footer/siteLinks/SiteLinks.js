@@ -4,7 +4,16 @@ function SiteLinks() {
 
   return(
     <div>
-      <h2>SITE LINKS</h2>
+      <p>
+        <ul>
+          <li>
+            Home
+          </li>
+          <li>
+            About
+          </li>
+        </ul>
+      </p>
     </div>
   )
 }

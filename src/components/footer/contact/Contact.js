@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form, Input, Button } from 'antd';
+import moduleName from '../footer.scss'
 
 const layout = {
   labelCol: {
@@ -33,7 +34,6 @@ function Contact() {
   */
   return(
     <div id="contact-form">
-      <h2>CONTACT US</h2>
       <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
         <Form.Item
           name='name'

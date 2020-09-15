@@ -26,9 +26,11 @@ import {
   Layout,
   Row,
   Col,
+  Typography
 } from 'antd'
 
 const { Header, Content, Footer } = Layout
+const { Title  } = Typography
 
 class App extends Component {
   render() {
@@ -47,6 +49,14 @@ class App extends Component {
     TODO:
     * create a router for each disaeses and conditions
     * Include header from the header component
+    * * Group sickness into
+      * Overview / Introduction
+      * Causes
+      * Symptoms
+      * 
+    * Restyle the Contact form
+      *  Align the header to the middle
+
     */
     return (
       <div id="App">
@@ -56,7 +66,9 @@ class App extends Component {
               <div className="nav-wrap"> 
                 <TabBar tabs={tabs} />
               </div>
-              <Home />
+              <div id="hero">
+                <Route exact path='/' component={Home} />
+              </div>
             </Header>
 
             <Content id="content">
@@ -69,12 +81,15 @@ class App extends Component {
             <Footer id="footer">
               <Row className="flex-column">
                 <Col span={10} id="contact">
+                  <Title level={4}>CONTACT US</Title>
                   <Contact />
                 </Col>
                 <Col span={6} id="site-links">
+                  <Title level={4}>HELP</Title>
                   <SiteLinks />
                 </Col>
                 <Col span={8} id="contact-info">
+                  <Title level={4}>CONTACT INFO</Title>
                   <ContactInfo />
                 </Col>
               </Row>
