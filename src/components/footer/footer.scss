@@ -1,2 +1,19 @@
+@import  "../app/App.scss";
+
 #contact-form {
+}
+
+#contact-info .twitter-icon {
+  // border: $border1;
+}
+
+#contact-info div.flex-column {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  // border: $border4;
+}
+
+#contact-info img {
+
 }
