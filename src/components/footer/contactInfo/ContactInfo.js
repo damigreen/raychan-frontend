@@ -22,28 +22,28 @@ function ContactInfo() {
   */
   return(
     <div id="contact-info">
-      <Row>
-        <Col>
+      <Row className="contact-row">
+        <Col span={2} className="icon-col">
           <EnvironmentOutlined />
         </Col>
-        <Col>
+        <Col span={22}>
           <p>123, Loren Ipsum street, Lagos Nigeria</p>
         </Col>
       </Row>
-      <Row>
-        <Col>
+      <Row className="contact-row">
+        <Col span={2} className="icon-col">
           <PhoneOutlined />
         </Col>
-        <Col>
+        <Col span={22} className="icon-col">
           <p>+2347033902012</p>
         </Col>
       </Row>
 
-      <Row>
-        <Col>
+      <Row className="contact-row">
+        <Col span={2} className="icon-col">
           <MailOutlined />
         </Col>
-        <Col>
+        <Col span={22}>
           <p>Rayckanherbalhealthcare@gmail.com</p>
         </Col>
       </Row>
