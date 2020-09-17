@@ -12,9 +12,16 @@ import '../Diseases.scss'
 const { Title, Paragraph } = Typography
 
 class Asthma extends Component {
+  /* 
+  TODO
+  * Move the margin of the contact column down
+  * Use a pattern for the background of the (Raychan Herbal cure)
+  */
+
+
   render() {
 
-    
+
     return (
       <div id="asthma">
         <Title level={2} className="title-block">Asthma</Title>
@@ -63,15 +70,24 @@ class Asthma extends Component {
                     <li>Symptoms may occur several times in a day or week</li>
                   </ul>
                 </Col>
+
+                <Col>
+                  <Title>Raychan Herbal Cure</Title>
+                    <h3>Nature Cures .Never underestimate the power of Herbs</h3>
+                    <p>
+                      Goodd news for all asthmatic patients, Rayckan Herbal Medicine has
+                       prepared a combination of the power of herbs and organic materials for  the treatment of the  diseases of the
+                        bronchial tubes, <em>without side effect..</em>
+                    </p>
+                </Col>
               </Row>
           </Col>
 
-          <Col span={10} id="contact-form" className>
+          <Col span={10} id="contact-form" className="position-contact">
+            <Title level={2}>REQUEST FOR YOUR CURE</Title>
             <Contact />
           </Col>
         </Row>
-        
-
       </div>
 
     );
