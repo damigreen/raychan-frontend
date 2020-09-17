@@ -84,7 +84,8 @@ p, ul, li, h1, h2, h3, h4 {
 
 #content {
   margin: auto;
-  width: 80%; 
+  width: 80%;
+  height: max-content;
   border: 1px solid fuchsia;
 }
 
@@ -124,3 +125,24 @@ section.wrapper {
 #contact-info {
   border: 1px solid firebrick;
 }
+
+#footer .footer-col {
+  border: $border2;
+  padding: 5px;
+}
+
+#footer .footer-title {
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 33px;
+}
+
+#footer .footer-title.link {
+  margin-left: 7px;
+  // list-style: none;
+}
+
+#footer .footer-title.contact-info {
+  margin-left: 2px;
+}
+

@@ -15,5 +15,63 @@
 }
 
 #contact-info img {
+}
 
+#contact-form .form-input {
+  margin-bottom: 5px;
+}
+
+/* 
+Site Links
+*/
+
+#site-link ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#site-link p {
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* 
+Contact Information
+*/
+
+#contact-info .contact-row {
+  padding: 2px;
+  margin: 0px;
+  // margin-bottom: px;
+}
+
+#contact-info .contact-row .icon-col {
+  margin: 0px;
+  height: auto;
+}
+
+#contact-info .flex-column img {
+  margin: 0px;
+}
+
+/* 
+Copyrights
+*/
+
+#copyrights {
+  margin: 5px;
+  margin-top: 20px;
+  border: $border4;
+}
+
+#copyrights h2 {
+  text-align: center;
+  border: $border1;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#copyrights span.company {
+  color: green;
 }
