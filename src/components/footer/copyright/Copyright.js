@@ -1,10 +1,11 @@
 import React from 'react'
+// import '../footer.scss'
 
 function Copyright() {
 
   return(
-    <div>
-      <h2>Copyrights</h2>
+    <div id="copyrights">
+      <h2 classname="text">Copyrights &#169; 2020 <span className="company">Raychan Herbal Healthcare</span></h2>
     </div>
   )
 }
