@@ -9,6 +9,7 @@ import Copyright from '../footer/copyright/'
 import TabBar from '../tabs/TabBar'
 import TabPanel from '../tabs/TabPanel'
 import DiseasesAndConditions from '../diseases and conditions/'
+import Testimonials from '../testimonials/'
 
 
 import './App.scss';
@@ -56,7 +57,7 @@ class App extends Component {
       * 
     * Restyle the Contact form
       *  Align the header to the middle
-
+    * Change Address from ContactInfo
     */
     return (
       <div id="App">
@@ -75,27 +76,27 @@ class App extends Component {
               <Route exact path='/' component={About} />
               <Route exact path='/' component={Treatments}/>
               <DiseasesAndConditions />
-
+              <Route exact path='/' component={Testimonials} />
             </Content>
 
             <Footer id="footer">
               <Row className="flex-column">
-                <Col span={10} id="contact">
-                  <Title level={4}>CONTACT US</Title>
+                <Col className="footer-col" span={10} id="contact">
+                  <Title className="footer-title contact" level={4}>CONTACT US</Title>
                   <Contact />
                 </Col>
-                <Col span={6} id="site-links">
-                  <Title level={4}>HELP</Title>
+                <Col className="footer-col" span={6} id="site-links">
+                  <Title className="footer-title link" level={4}>LINKS</Title>
                   <SiteLinks />
                 </Col>
-                <Col span={8} id="contact-info">
-                  <Title level={4}>CONTACT INFO</Title>
+                <Col className="footer-col" span={8} id="contact-info">
+                  <Title className="footer-title contact-info" level={4}>CONTACT INFO</Title>
                   <ContactInfo />
                 </Col>
               </Row>
 
               <Row>
-                <Col>
+                <Col span={24}>
                   <Copyright />
                 </Col>
               </Row>

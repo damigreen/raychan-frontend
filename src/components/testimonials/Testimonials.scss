@@ -1,0 +1,41 @@
+@import  "../app/App.scss";
+
+
+#testimonials .header-small, .header-big {
+  text-align: center;
+  // margin:0;
+  // padding: 0;
+}
+
+#testimonials .quote-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 50%;
+}
+
+#testimonials .carousel-block {
+  // border: $border2;
+}
+
+// #testimonials .carousel-block {
+//   text-align: center;
+//   margin: auto;
+//   width: 600px;
+// }
+
+#testimonials .carousel-row {
+  text-align: center;
+  margin: auto;
+  // border: $border2;
+
+}
+
+.left-arrow, {
+  margin-top: 57px;
+  margin-left: 0;
+}
+
+.right-arrow, {
+  margin-top: 28px;
+}

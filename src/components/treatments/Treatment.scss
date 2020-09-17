@@ -1,7 +1,7 @@
 
 @import '../app/App.scss';
 
-#treatment {
+#treatments {
   border: 1px solid blue;
   padding: 70px, 20px;
   line-height: 20px;
@@ -9,7 +9,7 @@
   padding-bottom: 66px;
 }
 
-#treatment .title-block {
+#treatments .title-block {
   margin-bottom: 30px;
   text-align: center;
   border: 1px solid salmon;
@@ -41,7 +41,7 @@
   // text-align: center;
   text-align: justify;
   min-height: 40vh;
-  max-height: 60vh;
-  height: 50vh;
+  height: 60vh;
+  max-height: 120vh;
   margin-bottom: 30px;
 }
