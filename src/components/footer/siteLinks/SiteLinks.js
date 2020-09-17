@@ -1,17 +1,15 @@
 import React from 'react'
+import '../footer.scss'
+
 
 function SiteLinks() {
 
   return(
-    <div>
-      <p>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Treatments</li>
-          <li>Testimonials</li>
-        </ul>
-      </p>
+    <div id="site-link">
+      <p>Home</p>
+      <p>About</p>
+      <p>Treatments</p>
+      <p>Testimonials</p>
     </div>
   )
 }
