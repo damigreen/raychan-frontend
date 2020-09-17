@@ -1,13 +1,14 @@
 import React from 'react'
 import { Form, Input, Button } from 'antd';
-import moduleName from '../footer.scss'
+import '../footer.scss'
 
 const layout = {
   labelCol: {
     span: 6,
   },
   wrapperCol: {
-    span: 16,
+    span: 19,
+    offset: 2,
   },
 };
 const validateMessages = {
@@ -36,34 +37,36 @@ function Contact() {
     <div id="contact-form">
       <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
         <Form.Item
+          className="form-input"
           name='name'
-          label="Name"
+          // label="Name"
           rules={[
             {
               required: true,
             },
           ]}
         >
-          <Input />
+          <Input placeholder="Name" />
         </Form.Item>
 
         <Form.Item
+          className="form-input"
           name='email'
-          label="Email"
+          // label="Email"
           rules={[
             {
               type: 'email',
             },
           ]}
         >
-          <Input />
+          <Input placeholder="Email" />
         </Form.Item>
 
-        <Form.Item name='subject' label="Subject">
-          <Input />
+        <Form.Item className="form-input" name='subject'>
+          <Input placeholder="Subject" />
         </Form.Item>
-        <Form.Item name='message' label="Message">
-          <Input.TextArea />
+        <Form.Item className="form-input" name='message'>
+          <Input.TextArea placeholder="Message" />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
           <Button type="primary" htmlType="submit">
