@@ -1,25 +1,92 @@
 @import  "../app/App.scss";
 
 #about {
-  border: 1px solid blue;
+  // border: $border-a;
   padding: 70px, 20px;
   line-height: 20px;
   padding-top: 55px;
   padding-bottom: 66px;
+  margin-top: 20px;
+  // display: block;
+  // background-color: $color-def;
+  // background-color: $bg-about;
+  // background-color: red;
 }
 
-.image-block {
-  border: 1px solid purple;
+#about .about-row {
+  // border: $border-b;
+  margin: auto;
+  width: 80%;
+  @include flex-row;
+  align-items: flex-start;
+  background-color: #fff;
+  height: auto;
+  clear: both;
+}
+
+#about .about-row .img-col {
+  // border: $border1;
+  @include flex-row;
+  // background-color: $bg-white;
+  // background-color: inherit;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+// #about .img-col img {
+//   width: auto;
+//   height: auto;
+//   display: block;
+//   // margin-left: auto;
+//   // display: inline-block;
+//   // width: 50%;
+//   // margin: auto;
+// }
+
+// #about .img-col .image-block {
+//   border: 1px solid purple;
+// }
+
+#about .about-img {
+  // border: $border-c;
+  background-image: url('../../images/about/Rectangle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 520px; //400
+  width: 350px; //240
 }
 
 #content-column {
+  // border: $border-a;
   @include content-block;
   @include flex-column;
-  justify-content: flex-start;
+  width: 100%;
+  background-color: #FBFBFB;
+  color: #648879;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+  align-self: baseline;
+  padding: none;
+}
+
+#content-column h1 {
+  color: #648879;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+#content-column p {
+  // border: $border-c;
+  margin-right: 70px;
 }
 
 #content-column article {
-  border: 1px solid red;
   width: auto;
   margin: 0;
 }
@@ -33,7 +100,8 @@
 
 #content-column p {
   text-align: justify;
-  border: 1px solid magenta;
+  padding: 20px;
+  // border: 1px solid magenta;
 }
 
 p {
