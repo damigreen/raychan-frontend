@@ -17,7 +17,6 @@ class About extends Component {
     // console.log(document.getElementById('about').getBoundingClientRect())
     return (
         <Row id="about">
-          {/* <div id="about"> */}
             <div className="about-row">
               <Col span={12} className="img-col">
                 {/* <img className="image-block" src={aboutImage} alt="Company profile image"></img> */}
@@ -27,7 +26,8 @@ class About extends Component {
               <Col span={12} id="content-column">
                 <article>
                   <header >
-                    <h1 className="about-header">Welcome</h1>
+                    <h1 className="about-header">About Us</h1>
+                    {/* <h1 className="about-header">Welcome</h1> */}
                   </header>
                   <p classname>The uses of medicinal herbs is to prevent and treat diseases, ailment and to promote health and healing
                   If you are looking for Herbal Medicine or supplement that are actually effective for sickle cell and that would safe you the stress from taken pills everyday, going through series of crisis and complications *Rayckan Herbal Health Care medicine is the solution...
@@ -38,8 +38,6 @@ class About extends Component {
 
             </div>
 
-
-          {/* </div> */}
         </Row>
     );
   }

@@ -7,6 +7,7 @@
   padding-top: 55px;
   padding-bottom: 66px;
   margin-top: 20px;
+  background-color: #FBFBFB;
   // display: block;
   // background-color: $color-def;
   // background-color: $bg-about;
@@ -91,12 +92,26 @@
   margin: 0;
 }
 
-.about-header {
-  text-align: center;
+#content-column .about-header {
+  color: #643D6B;
   font-size: 2.125em;
-  margin-bottom: 35px;
   padding-top: 10px;
+  // margin-bottom: 35px;
+  // background-color: red;
 }
+
+#content-column h1::before {
+  background: #648879;
+  border-radius: 0 5px 5px 0;
+  bottom: -1.5px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+
 
 #content-column p {
   text-align: justify;
