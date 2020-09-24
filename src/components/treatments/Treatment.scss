@@ -2,17 +2,21 @@
 @import '../app/App.scss';
 
 #treatments {
-  border: 1px solid blue;
   padding: 70px, 20px;
   line-height: 20px;
   padding-top: 55px;
   padding-bottom: 66px;
+  background-color: #F0FFDE;
+  font-size: 19px;
+  // background-color: #F0FFDE;
+  // background-color: #A4B88D;
 }
 
 #treatments .title-block {
   margin-bottom: 30px;
   text-align: center;
-  border: 1px solid salmon;
+  color: #643D6B
+  // border: 1px solid salmon;
 }
 
 #column-content {
@@ -31,6 +35,8 @@
 
 .flex-column {
   @include flex-column;
+  margin: auto;
+  width: 80%;
 }
 
 .flex-column .btn {
@@ -38,10 +44,20 @@
 }
 
 #treatments .card-style {
-  // text-align: center;
-  text-align: justify;
-  min-height: 40vh;
-  height: 60vh;
+  font-size: 18px;
+  text-align: left;
   max-height: 120vh;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  min-height: 40vh;
+  height: 70vh;
+  border-top: 3px solid green;
+  border-radius: 5px;
+  // color: #648879;
+  // background-color: 
+  // border-right: 1px solid grey;
+  // text-align: center;
+}
+
+#treatments h2 {
 }
