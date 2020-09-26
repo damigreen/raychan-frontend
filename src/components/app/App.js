@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Home from '../home/Home'
+import Hero from '../header/Hero'
 import About from '../about/'
 import Treatments from '../treatments/'
 import Contact from '../footer/contact/'
@@ -7,7 +7,6 @@ import SiteLinks from '../footer/siteLinks'
 import ContactInfo from '../footer/contactInfo/'
 import Copyright from '../footer/copyright/'
 import TabBar from '../tabs/TabBar'
-// import TabPanel from '../tabs/TabPanel'
 import DiseasesAndConditions from '../diseases and conditions/'
 import Testimonials from '../testimonials/'
 import './App.scss';
@@ -32,32 +31,34 @@ const { Header, Content, Footer } = Layout
 const { Title  } = Typography
 
 class App extends Component {
+  /* 
+  TODO:
+  * create a router for each disaeses and conditions
+  * 
+  * Restyle the Contact form
+  * Change Address from ContactInfo
+  * Change the app fonts
+  */
+
+
   render() {
     const tabs = [
-      {name: 'home', label: 'Home', component: Home },
+      {name: 'hero', label: 'Hero', component: Hero },
       {name: 'about', label: 'About', component: About },
       {name: 'treatments', label: 'Treatments', component: Treatments },
       {name: 'contact', label: 'Contact', component: Contact },
     ]
 
-    /* 
-    TODO:
-    * create a router for each disaeses and conditions
-    * 
-    * Restyle the Contact form
-    * Change Address from ContactInfo
-    * Change the app fonts
-    */
     return (
       <div id="App">
         <Router>
           <Layout id="layout">
-              <div> 
+              <div>
                 <TabBar tabs={tabs} />
               </div>
 
             <Header id="header" >
-                <Route exact path='/' component={Home} />
+                <Route exact path='/' component={Hero} />
             </Header>
 
             <Content id="content">
