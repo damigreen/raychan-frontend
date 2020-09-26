@@ -7,7 +7,6 @@ import {
 } from 'antd'
 import image from '../../../images/Image.png'
 import '../Diseases.scss'
-// import './Treatment.scss'
 
 const { Title, Paragraph } = Typography
 
@@ -30,11 +29,6 @@ class Asthma extends Component {
         <Row>
           <Col span={14}>
             <Row className="disease-row">
-                {/* <Col span={8} className="image-block">
-                  <img className="image-product" src={image} alt="Sickle cell image" />
-                </Col>
-                */}
-
                 <Col id="column-content">
                   <Title level={3}>Introduction</Title>
                   <Paragraph className="column-paragraph">
@@ -72,7 +66,7 @@ class Asthma extends Component {
                 </Col>
 
                 <Col>
-                  <Title>Raychan Herbal Cure</Title>
+                  <Title>Rayckan Herbal Cure</Title>
                     <h3>Nature Cures .Never underestimate the power of Herbs</h3>
                     <p>
                       Goodd news for all asthmatic patients, Rayckan Herbal Medicine has
