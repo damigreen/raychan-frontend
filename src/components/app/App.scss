@@ -34,11 +34,12 @@ $border1: 2px solid green;
 * Themes
 */
 $color-def: #FFF;
+$col-lay: #FFFFFF;
 // $color-def: #CCEB9D;
 // $color-def: #749D34;
 
 $nav-color-bg: #32382B;
-$nav-color-bor: #3A9E48;
+$nav-color-bor: #98CB8F;
 $bg-col1: #A4B88D;
 $bg-about: #F1F9F1;
 $bg-white: #FFF;
@@ -68,9 +69,7 @@ $bg-white: #FFF;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;;
   font-size: 100%;
-  background-color: #4CA54C;
-  // background-color: #C8F2C2;
-  // background-color: #F4FFD4;
+  // background-color: #98CB8F;
 }
 
 p, ul, li, h1, h2, h3, h4 {
@@ -103,10 +102,9 @@ p, ul, li, h1, h2, h3, h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   width: 100%;
-  background-color: $color-def;
-  // background-color: #fff;
+  background-color: $col-lay;
   // background-color: $color-def;
-  // background-color: #C8F2C2;
+
 }
 
 
@@ -122,10 +120,10 @@ p, ul, li, h1, h2, h3, h4 {
   background-color: #FFFFFF;
   margin: auto;
   border: 2px solid darkblue;
-  width: 100%;
-  height: 400px;
-  margin-top: 25px;
+  // margin-top: 25px;
   padding: 0;
+  width:100%;
+  height: 620px;
 }
 
 
