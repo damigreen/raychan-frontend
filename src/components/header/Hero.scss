@@ -1,0 +1,10 @@
+@import  "../app/App.scss";
+
+#hero {
+  background-image: url('../../images/hero/Hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: inherit;
+  // height: auto;
+}
