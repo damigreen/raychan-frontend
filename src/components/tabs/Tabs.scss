@@ -35,15 +35,18 @@
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 21vh;
-  width: 98%;
+  // width: 98%;
   @include flex-row;
   justify-content: center;
   align-items: center;
   font-size: 14px;
   font-weight: 600;
   background: url('../../images/navigation/xv-pattern.png');
-  background-color: #99b080;
+  background-color: #162C11;
+  color: #FFFFFF;
+  height: 105px;
+  // height: 21vh;
+  // background-color: #99b080;
   // background-color: #99B080;
   // background-color: #1ED86C;
   // opacity

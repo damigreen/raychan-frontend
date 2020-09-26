@@ -29,7 +29,7 @@ const TabBar = (props) => {
       <div>
         <Col span={6} className="nav-icon">
             <Link to="/"><img  src={navLogo} /></Link>
-            <h2>Raychan Herbal Healthcare</h2>
+            <h2>Rayckan Herbal Healthcare</h2>
         </Col>
 
         <Col span={12} className="nav-col">
