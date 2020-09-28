@@ -35,10 +35,11 @@
   border: 1px solid green;
 }
 
-.flex-column {
-  @include flex-column;
+#treatments .flex-column {
+  @include flex-row;
   margin: auto;
-  width: 80%;
+  width: 1090px;
+  border: border1;
 }
 
 .flex-column .btn {
@@ -51,15 +52,21 @@
   max-height: 120vh;
   margin-top: 10px;
   margin-bottom: 50px;
+  height: 552px;
   min-height: 40vh;
-  height: 70vh;
-  border-top: 3px solid green;
   border-radius: 5px;
+  // border-top: 3px solid green;
+  // margin-left: 25px;
   // color: #648879;
   // background-color: 
   // border-right: 1px solid grey;
   // text-align: center;
 }
+
+#treatments .card-style.sc {
+  color: red;
+}
+
 
 #treatments h2 {
 }
