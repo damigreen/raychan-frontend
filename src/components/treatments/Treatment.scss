@@ -6,8 +6,14 @@
   line-height: 20px;
   padding-top: 55px;
   padding-bottom: 66px;
-  background-color: #F0FFDE;
   font-size: 19px;
+  background-color: #E2EBCE;
+  // background-color: #EEF2E6;
+  // background-color: #A3AB82;
+
+  // background-color: #CCFFFF;
+  // background-color: #F4FFE6;
+  // background-color: #F0FFDE;
   // background-color: #F0FFDE;
   // background-color: #A4B88D;
 }
@@ -15,7 +21,7 @@
 #treatments .title-block {
   margin-bottom: 30px;
   text-align: center;
-  color: #643D6B;
+  color: #391A45;
   
   // border: 1px solid salmon;
   
@@ -28,18 +34,18 @@
 }
 
 .image-block {
-  border: 1px solid salmon;
+  // border: 1px solid salmon;
 }
 
 .column-paragraph {
-  border: 1px solid green;
+  // border: 1px solid green;
 }
 
 #treatments .flex-column {
   @include flex-row;
   margin: auto;
   width: 1090px;
-  border: border1;
+  // border: border1;
 }
 
 .flex-column .btn {
@@ -55,6 +61,9 @@
   height: 552px;
   min-height: 40vh;
   border-radius: 5px;
+  background-color: #D0DEAD;
+  color: #333
+  // background-color: #EBD5F7;
   // border-top: 3px solid green;
   // margin-left: 25px;
   // color: #648879;
@@ -64,9 +73,11 @@
 }
 
 #treatments .card-style.sc {
-  color: red;
+  // color: red;
 }
 
 
 #treatments h2 {
+  // color: #391A45
+  font-weight: 600;
 }
