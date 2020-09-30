@@ -1,41 +1,77 @@
 @import  "../app/App.scss";
 
 
-#testimonials .header-small, .header-big {
-  text-align: center;
-  // margin:0;
-  // padding: 0;
-}
-
-#testimonials .quote-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  // width: 50%;
-}
-
-#testimonials .carousel-block {
-  // border: $border2;
-}
-
-// #testimonials .carousel-block {
+// #testimonials .header-small, .header-big {
 //   text-align: center;
-//   margin: auto;
-//   width: 600px;
 // }
 
-#testimonials .carousel-row {
+// #testimonials .quote-img {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+
+
+// #testimonials .carousel-row {
+//   text-align: center;
+//   margin: auto;
+// }
+
+// .left-arrow, {
+//   margin-top: 57px;
+//   margin-left: 0;
+// }
+
+// .right-arrow, {
+//   margin-top: 28px;
+// }
+
+#testimonials {
+  width: 100%;
   text-align: center;
+  background: #F0F7D4;
+}
+
+#testimonials .content-title {
+  color: #391A45;
+
+  // color: #A5BE4B;
+}
+
+#testimonials .content-title.small {
+  padding-top: 2em;
+}
+
+
+#testimonials .testimonials-text {
+  @include flex-row;
+  justify-content: space-around;
   margin: auto;
-  // border: $border2;
-
+  width: 1041px;
+  height: 438px;
+  // background: red;
 }
 
-.left-arrow, {
-  margin-top: 57px;
-  margin-left: 0;
-}
-
-.right-arrow, {
-  margin-top: 28px;
+#testimonials .content-style {
+  font-size: 19px;
+  line-height: 30px;
+  display: inline-block;
+  width: 350px;
+  height: 330px;
+  background: #fff url('../../images/icons/quote-left-50.png');
+  background-repeat: no-repeat;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  margin: 0 10px 5px 0;
+  border-left: 10px solid #BCD97E;
+  // border-left: 10px solid #A5BE4B;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin: 0;
+  margin-right: 5px;
+  padding: 20px;
+  padding-top: 70px;
 }
