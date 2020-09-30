@@ -41,8 +41,10 @@
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  background: url('../../images/navigation/xv-pattern.png');
-  background-color: #162C11;
+  // background: url('../../images/navigation/xv-pattern.png');
+  background-color: #BCD97E;
+  // background-color: #101504;
+  // background-color: #162C11;
   color: #FFFFFF;
   height: 105px;
   // height: 21vh;
@@ -118,6 +120,7 @@
 
 #menu .menu-link {
   margin: 0;
+  color: #fff
 }
 
 #menu .menu-link:hover {
@@ -129,6 +132,7 @@
   padding: 5px 10px 5px 10px;
   margin: 0;
   margin-bottom: 1px;
+  color: #fff
   // color: $nav-color;
   // border: $border-b;
 }
