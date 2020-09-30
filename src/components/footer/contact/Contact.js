@@ -68,10 +68,12 @@ function Contact() {
         <Form.Item className="form-input" name='message'>
           <Input.TextArea placeholder="Message" />
         </Form.Item>
-        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
+        <Form.Item wrapperCol={{ ...layout.wrapperCol  }}>
+          <div id="btn">
+            <Button className="btn btn-submit" type="primary" htmlType="submit">
+              Submit
+            </Button>
+          </div>
         </Form.Item>
       </Form>
     </div>

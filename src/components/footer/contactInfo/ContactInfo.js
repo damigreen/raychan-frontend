@@ -47,7 +47,7 @@ function ContactInfo() {
           <p>Rayckanherbalhealthcare@gmail.com</p>
         </Col>
       </Row>
-      <div className="flex-column">
+      <div className="flex-column social-icons">
         <img src={facebookIcon} />
         <img src={twitterIcon} />
         <img src={instagramIcon} />

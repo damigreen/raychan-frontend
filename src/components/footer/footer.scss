@@ -1,24 +1,24 @@
 @import  "../app/App.scss";
 
+/* Contact Form*/
+
 #contact-form {
+  padding: 0 .5em;
+  padding-top: 1.1em;
 }
 
-#contact-info .twitter-icon {
-  // border: $border1;
-}
-
-#contact-info div.flex-column {
-  @include flex-row;
-  justify-content: center;
-  align-items: center;
-  // border: $border4;
-}
-
-#contact-info img {
-}
 
 #contact-form .form-input {
   margin-bottom: 5px;
+}
+
+#contact-form .btn-submit {
+  background-color: $button-color-secondary;
+  border: #777871;
+  float: left;
+  margin-right: 40px;
+
+  // color: red;
 }
 
 /* 
@@ -51,6 +51,14 @@ Contact Information
   height: auto;
 }
 
+#contact-info div.flex-column {
+  @include flex-row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 4px;
+  // border: $border4;
+}
+
 #contact-info .flex-column img {
   margin: 0px;
 }
@@ -60,18 +68,21 @@ Copyrights
 */
 
 #copyrights {
-  margin: 5px;
-  margin-top: 20px;
-  border: $border1;
+  margin: 0;
+  padding: 1 1.5em;
 }
 
 #copyrights h2 {
   text-align: center;
-  border: $border1;
   font-size: 15px;
   font-weight: bold;
+  // border: $border1;
+}
+
+.copyrights-text {
+  color: #fff;
 }
 
 #copyrights span.company {
-  color: green;
+  color: #BCD97E;
 }
