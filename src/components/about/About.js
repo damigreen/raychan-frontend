@@ -12,33 +12,30 @@ import aboutImage from '../../images/about/AboutImage.png'
 
 class About extends Component {
   render() {
+    /* 
+    TODO
+    * Create a collage of healthy people to go with the about 
+    
+
+    */
     // console.log(document.getElementById('about').offsetWidth)
     // console.log(document.getElementById('about').offsetHeight)
     // console.log(document.getElementById('about').getBoundingClientRect())
     return (
-        <Row id="about">
-            <div className="about-row">
-              <Col span={12} className="img-col">
-                {/* <img className="image-block" src={aboutImage} alt="Company profile image"></img> */}
-                <div className="about-img"> </div>
-              </Col>
+      <Row id="about">
+        <Col span={24} className="content-column">
+          <article className="content-article">
+            <header >
+              <h1>We Provide You With Natural Herbal Cure for a Healthy Living</h1>
+            </header>
 
-              <Col span={12} id="content-column">
-                <article>
-                  <header >
-                    <h1 className="about-header">About Us</h1>
-                    {/* <h1 className="about-header">Welcome</h1> */}
-                  </header>
-                  <p classname>The uses of medicinal herbs is to prevent and treat diseases, ailment and to promote health and healing
-                  If you are looking for Herbal Medicine or supplement that are actually effective for sickle cell and that would safe you the stress from taken pills everyday, going through series of crisis and complications *Rayckan Herbal Health Care medicine is the solution...
-                  </p>
-                </article>
-                <Button className="button">LEARN MORE</Button>
-              </Col>
+            <p>The uses of medicinal herbs is to prevent and treat diseases, ailment and to promote health and healing
+            If you are looking for Herbal Medicine or supplement that are actually effective for sickle cell and that would safe you the stress from taken pills everyday, going through series of crisis and complications <span style={{color: '#BCD97E'}}>*Rayckan Herbal Health Care medicine is the solution...</span>
+            </p>
+          </article>
+        </Col>
 
-            </div>
-
-        </Row>
+      </Row>
     );
   }
 }

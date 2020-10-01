@@ -1,4 +1,5 @@
 @import '~antd/dist/antd.css';
+@import url('../../fonts/fonts.css');
 
 
 $content-radius: 2px;
@@ -18,8 +19,6 @@ $border1: 3px solid green;
 */
 $color-def: #FFF;
 $col-lay: #FFFFFF;
-// $color-def: #CCEB9D;
-// $color-def: #749D34;
 
 $nav-color-bg: #32382B;
 $nav-color-bor: #98CB8F;
@@ -50,9 +49,8 @@ $bg-white: #FFF;
 #App {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;;
-  font-size: 100%;
   color: #000000;
+  font-size: 100%;
 }
 
 p, ul, li, h1, h2, h3, h4 {
@@ -85,22 +83,14 @@ p, ul, li, h1, h2, h3, h4 {
 #layout {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
+  font-family: 'opensans-normal', sans-serif  ;
   width: 100%;
   background-color: #FBFBFB;
-  // margin-top: 30px;
-  // background-color: $col-lay;
+  font-size: 19px;
+  font-size: 1.2rem;
   // background-color: $color-def;
 }
 
-
-// #hero {
-  //   margin: auto;
-  //   border: 1px solid green;
-  //   width: auto;
-//   height: 375px;
-// }
 
 #header {
   display: inline-block;

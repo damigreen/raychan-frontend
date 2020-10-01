@@ -41,6 +41,7 @@ class App extends Component {
   * set background color for elements
   * Make link closer to contact info
     * Add route to link on footer
+  * Include a pattern on the about section
   */
 
 
@@ -73,15 +74,15 @@ class App extends Component {
 
             <Footer id="footer">
               <Row className="flex-column">
-                <Col className="footer-col" span={10} xs={20} sm={18} md={14} id="contact">
+                <Col className="footer-col" span={10} id="contact">
                   <Title className="footer-title contact" level={4}>CONTACT US</Title>
                   <Contact />
                 </Col>
-                <Col className="footer-col" span={6} xs={20} sm={18} md={14} id="site-links">
+                <Col className="footer-col" span={6} id="site-links">
                   <Title className="footer-title link" level={4}>LINKS</Title>
                   <SiteLinks />
                 </Col>
-                <Col className="footer-col" span={8} xs={20} sm={18} md={14} id="contact-info">
+                <Col className="footer-col" span={8} id="contact-info">
                   <Title className="footer-title contact-info" level={4}>CONTACT INFO</Title>
                   <ContactInfo />
                 </Col>

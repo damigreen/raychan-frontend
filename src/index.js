@@ -4,6 +4,7 @@ import './index.css';
 import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
+import 'typeface-open-sans';
 
 ReactDOM.render(
   <React.StrictMode>
