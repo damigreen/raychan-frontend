@@ -28,7 +28,8 @@
 // }
 
 #testimonials {
-  width: 100%;
+  // width: 100%;
+  width: auto;
   text-align: center;
   background: #F0F7D4;
 }
@@ -47,8 +48,9 @@
 #testimonials .testimonials-text {
   @include flex-row;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: auto;
-  width: 1041px;
+  width: 1200px;
   height: 438px;
   // background: red;
 }
