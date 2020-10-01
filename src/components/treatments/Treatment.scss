@@ -8,6 +8,7 @@
   padding-bottom: 66px;
   font-size: 19px;
   background-color: #E2EBCE;
+  width: auto;
   // background-color: #EEF2E6;
   // background-color: #A3AB82;
 
@@ -22,6 +23,8 @@
   margin-bottom: 30px;
   text-align: center;
   color: #391A45;
+  font-size: 36px;
+  font-weight: 600px;
   
   // border: 1px solid salmon;
   
@@ -44,7 +47,8 @@
 #treatments .flex-column {
   @include flex-row;
   margin: auto;
-  width: 1090px;
+  width: 1200px;
+  // width: 1090px;
   // border: border1;
 }
 
@@ -56,9 +60,10 @@
   font-size: 18px;
   text-align: left;
   max-height: 120vh;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 50px;
   height: 552px;
+  // min-width: 400px;
   min-height: 40vh;
   border-radius: 5px;
   background-color: #D0DEAD;
@@ -78,6 +83,6 @@
 
 
 #treatments h2 {
-  // color: #391A45
+  padding: .1em .2em;
   font-weight: 600;
 }

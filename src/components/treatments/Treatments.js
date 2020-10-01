@@ -33,7 +33,7 @@ function Treatments() {
     <div id="treatments">
         <Title className="title-block">Our Treatments</Title>
         <Row justify="center" className="flex-column">
-          <Col span={8}>
+          <Col justify="center" span={8} xs={16} sm={18} md={14} lg={11} xl={8}>
             <Card
               className="card-style sc"
               hoverable
@@ -44,7 +44,7 @@ function Treatments() {
               Sickle Cell Anemia has been perceived as one of the most threatening disorder to man-kind...              
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} xs={20} sm={18} md={14} lg={11} xl={8} >
             <Card
               className="card-style"
               hoverable
@@ -55,7 +55,8 @@ function Treatments() {
               Asthma is a disease affecting the airways that carry air to and from your lungs...
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} xs={20} sm={18} md={14} lg={11} xl={8}>
+
             <Card
               className="card-style"
               hoverable
@@ -69,7 +70,8 @@ function Treatments() {
         </Row>
 
         <Row className="flex-column">
-          <Col span={8}>
+          <Col span={8} xs={20} sm={18} md={14} lg={11} xl={8}>
+
             <Card
               className="card-style"
               hoverable
@@ -80,7 +82,8 @@ function Treatments() {
               Parkinson’s disease is a progressive disorder of the nervous system that affects your movement. It develops gradually...
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} xs={20} sm={18} md={14} lg={11} xl={8} >
+
             <Card
               className="card-style"
               hoverable
@@ -91,7 +94,8 @@ function Treatments() {
               Low sperm count means that the fluid (semen) you ejaculate during an orgasm contains fewer sperm than normal...
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} xs={20} sm={18} md={14} lg={11} xl={8} >
+
             <Card
               className="card-style"
               hoverable
