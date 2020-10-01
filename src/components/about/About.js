@@ -30,7 +30,7 @@ class About extends Component {
             </header>
 
             <p>The uses of medicinal herbs is to prevent and treat diseases, ailment and to promote health and healing
-            If you are looking for Herbal Medicine or supplement that are actually effective for sickle cell and that would safe you the stress from taken pills everyday, going through series of crisis and complications <span style={{color: '#BCD97E'}}>*Rayckan Herbal Health Care medicine is the solution...</span>
+            If you are looking for Herbal Medicine or supplement that are actually effective for sickle cell and that would safe you the stress from taken pills everyday, going through series of crisis and complications <span style={{color: '#228B22'}}>Rayckan Herbal Health Care medicine is the solution</span>
             </p>
           </article>
         </Col>

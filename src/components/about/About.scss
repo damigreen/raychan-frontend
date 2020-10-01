@@ -2,8 +2,9 @@
 
 #about {
   margin: auto;
+  font-size: 1.2rem;
   padding: 70px, 20px;
-  line-height: 28px;
+  line-height: 26px;
   width: auto;
   background-color: #D7DFC4;
   text-align: justify;
@@ -12,7 +13,6 @@
 #about .content-column {
   margin: auto;
   font-weight: 400;
-  // font-size: 22px;
   line-height: 30px;
   align-self: baseline;
   padding: 1.6em 2em;
@@ -37,12 +37,11 @@
   color: #391A45;
   font-size: 36px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 50px;
   text-align: center;
   padding: 1em;
   max-width: 650px;
   margin-left: 5px;
-  // border: $border-a;
 }
 
 #content-column h1::before {
@@ -57,10 +56,12 @@
 }
 
 .content-article p {
-  padding: 2em;
+  padding: 1.5em;
+  // max-width: 1150px;
   max-width: 1200px;
   text-align: justify;
-  // padding: 5px;
+  margin-top: 0;
+  margin-right: 37px;
 }
 
 
