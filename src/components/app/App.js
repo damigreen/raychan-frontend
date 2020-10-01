@@ -42,6 +42,7 @@ class App extends Component {
   * Make link closer to contact info
     * Add route to link on footer
   * Include a pattern on the about section
+  * add checkout section in diseases sidebar
   */
 
 
@@ -61,9 +62,7 @@ class App extends Component {
               <TabBar tabs={tabs} />
             </div>
 
-            <Header id="header" >
-              <Route exact path='/' component={Hero} />
-            </Header>
+            <Route exact path='/' component={Hero} />
 
             <Content id="content">
               <Route exact path='/' component={About} />

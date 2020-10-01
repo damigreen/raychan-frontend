@@ -5,6 +5,8 @@
 $content-radius: 2px;
 $button-color-primary: #57633A;
 $button-color-secondary: #777871;
+
+$border-diseases: 1px solid #cccccc; 
 $border-a: 1px solid red;
 $border-b: 1px solid blue;
 $border-c: 1px solid yellow;
@@ -85,41 +87,25 @@ p, ul, li, h1, h2, h3, h4 {
   padding: 0;
   font-family: 'opensans-normal', sans-serif  ;
   width: 100%;
-  background-color: #FBFBFB;
+  // background-color: #FBFBFB;
+  // background-color: #D7DFC4;
+  background: #E2EBCE;
   font-size: 19px;
-  font-size: 1.2rem;
-  // background-color: $color-def;
+  font-size: 1.09rem;
+  line-height: 26px;
 }
-
-
-#header {
-  display: inline-block;
-  background-color: #FFFFFF;
-  margin: auto;
-  padding: 0;
-  width:100%;
-  height: 450px;
-  // margin-top: 25px;
-}
-
 
 #content {
   margin: auto;
-  margin-top: 40px;
   width: 100%;
   height: auto;
 }
-
-
-
-
 
 #footer {
   margin: 0 auto;
   width: 100%;
   background: #3C4529;
   color: #fff;
-  // margin: 0 0 5px;
   height: auto;
   // background: #114025;
 }
