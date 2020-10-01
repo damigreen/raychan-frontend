@@ -1,26 +1,9 @@
 @import '~antd/dist/antd.css';
 
-$color-w: #FFFFFF;
-$color-u: #E4EE95;
-$color-1: #F4FFD4;
-$color-2: #C8F2C2;
-$nav-color: #2E705A;
-
-$nav-color1: #388A6F;
-$nav-color4: #1E4A3B;
-$nav-color2: #28B800;
-$nav-color3: #67FF3D;
-
-$bg-col2: #DDFA02;
-$bg-col3: #F2A94D;
-$bg-col4: #FFF;
-$bg-about1: #F7F0F5;
-$bg-about2: #CCE8CC;
-$bg-about3: #E3F2E3;
-
 
 $content-radius: 2px;
-$button-color: green;
+$button-color-primary: #57633A;
+$button-color-secondary: #777871;
 $border-a: 1px solid red;
 $border-b: 1px solid blue;
 $border-c: 1px solid yellow;
@@ -69,14 +52,17 @@ $bg-white: #FFF;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;;
   font-size: 100%;
-  // background-color: #98CB8F;
+  color: #000000;
 }
 
 p, ul, li, h1, h2, h3, h4 {
     margin: 0;
 }
 
-
+.btn {
+  display: inline-block;
+  background-color: #928B94;
+}
 
 // #header div.nav-wrap {
 //   text-align: center;
@@ -106,7 +92,6 @@ p, ul, li, h1, h2, h3, h4 {
   // margin-top: 30px;
   // background-color: $col-lay;
   // background-color: $color-def;
-
 }
 
 
@@ -123,7 +108,7 @@ p, ul, li, h1, h2, h3, h4 {
   margin: auto;
   padding: 0;
   width:100%;
-  height: 620px;
+  height: 450px;
   // margin-top: 25px;
 }
 
@@ -136,42 +121,40 @@ p, ul, li, h1, h2, h3, h4 {
 }
 
 
+
+
+
 #footer {
   margin: 0 auto;
   width: 100%;
-  border: 1px solid yellowgreen;
-  // padding: 0;
-  // padding: 24px 50px;
-  // width: 80%;
+  background: #3C4529;
+  color: #fff;
+  // margin: 0 0 5px;
+  height: auto;
+  // background: #114025;
 }
 
 #footer .flex-column {
   width: auto;
-  border: 1px solid yellowgreen;
   margin: 0;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-#contact {
-  border: 1px solid firebrick;
-}
-#site-links {
-  border: 1px solid firebrick;
-}
-#contact-info {
-  border: 1px solid firebrick;
-}
-
 #footer .footer-col {
-  border: $border1;
+  // border: $border1;
   padding: 5px;
 }
 
 #footer .footer-title {
+  color: #A0AB87;
   margin-bottom: 10px;
   text-align: left;
   margin-left: 33px;
+}
+
+#footer .footer-title.contact {
+  margin-left: 2.3em;
 }
 
 #footer .footer-title.link {
@@ -183,3 +166,23 @@ p, ul, li, h1, h2, h3, h4 {
   margin-left: 2px;
 }
 
+#contact {
+  // border: 1px solid firebrick;
+}
+#site-links {
+  // border: 1px solid firebrick;
+}
+#contact-info {
+  // border: 1px solid firebrick;
+}
+
+#copyright-wrap {
+  margin: 0; 
+  width: auto;
+  height: 6em;
+  background-color: #2C331E;
+}
+
+#copyright-wrap .copyright-column {
+  @include flex-column;
+}
