@@ -4,6 +4,7 @@ import Asthma from './asthma/';
 import AtrialSeptalDefect from './atrial septal defect/';
 import LowSpermCount from './low sperm count/';
 import Parkinsons from './parkinsons/';
+import './Diseases.scss';
 
 import {
   Route,

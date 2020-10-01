@@ -1,0 +1,53 @@
+@import  "../app/App.scss";
+
+#diseases {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background: #E2EBCE;
+  padding: 1em;
+  line-height: 26px;
+}
+
+#disease {
+  margin: 0;
+  display: block;
+  position: relative;
+  z-index: 100;
+  // margin-top: 2em;
+  // height: 1200px;
+}
+
+.disease-row {
+  padding: 0.5em;
+}
+
+#disease .disease-title {
+  color: #391A45;
+  padding: .2em;
+}
+
+.disease-title.main {
+  padding: .5em;
+  background: linear-gradient(to right, #bcd97e 0%, #68a3bc 100%);}
+
+.disease-text {
+  padding: .2em;
+}
+
+#contact-form.sidebar {
+  margin-top: 0;
+  border-left: $border-diseases;
+}
+
+.form-title {
+  text-align: left;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-bottom: $border-diseases;
+}
+
+.form-wrap {
+  border: $border-diseases;
+}
+
