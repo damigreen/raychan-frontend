@@ -5,18 +5,9 @@
   padding: 70px, 20px;
   line-height: 20px;
   padding-top: 55px;
-  padding-bottom: 66px;
   font-size: 19px;
   background-color: #E2EBCE;
   width: auto;
-  // background-color: #EEF2E6;
-  // background-color: #A3AB82;
-
-  // background-color: #CCFFFF;
-  // background-color: #F4FFE6;
-  // background-color: #F0FFDE;
-  // background-color: #F0FFDE;
-  // background-color: #A4B88D;
 }
 
 #treatments .title-block {
@@ -26,30 +17,22 @@
   font-size: 36px;
   font-weight: 600px;
   
-  // border: 1px solid salmon;
-  
 }
 
 #column-content {
   @include content-block;
-  // width: auto;
-  // margin: 0;
 }
 
 .image-block {
-  // border: 1px solid salmon;
 }
 
 .column-paragraph {
-  // border: 1px solid green;
 }
 
 #treatments .flex-column {
   @include flex-row;
   margin: auto;
   width: 1200px;
-  // width: 1090px;
-  // border: border1;
 }
 
 .flex-column .btn {
@@ -61,24 +44,14 @@
   text-align: left;
   max-height: 120vh;
   margin-top: 25px;
-  margin-bottom: 50px;
   height: 552px;
-  // min-width: 400px;
   min-height: 40vh;
   border-radius: 5px;
   background-color: #D0DEAD;
   color: #333
-  // background-color: #EBD5F7;
-  // border-top: 3px solid green;
-  // margin-left: 25px;
-  // color: #648879;
-  // background-color: 
-  // border-right: 1px solid grey;
-  // text-align: center;
 }
 
 #treatments .card-style.sc {
-  // color: red;
 }
 
 
