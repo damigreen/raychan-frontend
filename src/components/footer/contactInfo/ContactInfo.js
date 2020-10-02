@@ -48,9 +48,9 @@ function ContactInfo() {
         </Col>
       </Row>
       <div className="flex-column social-icons">
-        <img src={facebookIcon} />
-        <img src={twitterIcon} />
-        <img src={instagramIcon} />
+        <img alt="Facebook Icon" src={facebookIcon} />
+        <img alt="Twitter Icon" src={twitterIcon} />
+        <img alt="Instagram Icon" src={instagramIcon} />
       </div>
     </div>
   )
