@@ -6,10 +6,6 @@ import {
 } from 'antd'
 import Contact from '../../footer/contact/'
 import '../Diseases.scss'
-import sickleCell from '../../../images/sicklecell.png'
-import image from '../../../images/Image.png'
-// import './Treatment.scss'
-
 
 const { Title, Paragraph } = Typography
 
@@ -20,7 +16,7 @@ class SickleCell extends Component {
       <div id="diseases">
 
         <div id="disease">
-          <Title className="disease-title main"level={2} className="disease-title main">Sickle Cell Anemia</Title>
+          <Title level={2} className="disease-title main">Sickle Cell Anemia</Title>
 
 
           <Row>
@@ -61,7 +57,7 @@ class SickleCell extends Component {
                   </Col>
 
                   <Col>
-                    <Title level={3} className="disease-title">Rayckan Herbal Cure</Title>
+                    <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
                       <Title className="disease-title bottom" level={5}>Nature Cures</Title>
                       <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
                       <p>
