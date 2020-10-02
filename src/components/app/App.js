@@ -9,17 +9,15 @@ import Copyright from '../footer/copyright/'
 import TabBar from '../tabs/TabBar'
 import DiseasesAndConditions from '../diseases and conditions/'
 import Testimonials from '../testimonials/'
+import Carts from '../carts/Carts';
+import Shop from '../shop/Shop';
+// import Carts from '../Carts/';
 import './App.scss';
 import {
   BrowserRouter as Router,
-  Link,
-  Switch,
   Route,
-  Redirect,
-
 } from "react-router-dom";
 import {
-  Menu,
   Layout,
   Row,
   Col,
@@ -27,7 +25,7 @@ import {
 } from 'antd'
 
 
-const { Header, Content, Footer } = Layout
+const { Content, Footer } = Layout
 const { Title } = Typography
 
 class App extends Component {
@@ -68,11 +66,17 @@ class App extends Component {
               <Route exact path='/' component={About} />
               <Route exact path='/' component={Treatments} />
               <DiseasesAndConditions />
+              <Route path="/shop" render={() => (
+                <Shop />
+              )} />
+              <Route exact path="/carts" render={() => (
+                <Carts />
+              )} />
               <Route exact path='/' component={Testimonials} />
             </Content>
 
             <Footer id="footer">
-              <Row className="flex-column">
+              <Row className="flex-column footer-row">
                 <Col className="footer-col" span={10} id="contact">
                   <Title className="footer-title contact" level={4}>CONTACT US</Title>
                   <Contact />

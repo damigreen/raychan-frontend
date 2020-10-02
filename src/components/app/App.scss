@@ -117,6 +117,12 @@ p, ul, li, h1, h2, h3, h4 {
   align-items: flex-start;
 }
 
+#footer .flex-column.footer-row {
+  margin: 0 auto;
+  height:auto;
+  width: 1366px;
+}
+
 #footer .footer-col {
   // border: $border1;
   padding: 5px;
