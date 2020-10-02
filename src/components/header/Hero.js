@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import './Hero.scss'
-import { Layout } from 'antd';
-
-const { Header } = Layout;
-
 
 class Hero extends Component {
   render() {
