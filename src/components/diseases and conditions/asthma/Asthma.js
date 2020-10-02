@@ -5,7 +5,6 @@ import {
   Col,
   Typography
 } from 'antd'
-import image from '../../../images/Image.png'
 import '../Diseases.scss'
 
 const { Title, Paragraph } = Typography
@@ -67,7 +66,7 @@ class Asthma extends Component {
                   </Col>
 
                   <Col>
-                    <Title level={3} className="disease-title">Rayckan Herbal Cure</Title>
+                    <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
                       <Title className="disease-title bottom" level={5}>Nature Cures</Title>
                       <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
                       <p>

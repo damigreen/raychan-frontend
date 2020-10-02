@@ -8,8 +8,6 @@ import './Diseases.scss';
 
 import {
   Route,
-  Switch,
-  Redirect
 } from 'react-router-dom'
 
 function DiseasesAndConditions() {

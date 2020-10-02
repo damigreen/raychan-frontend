@@ -5,16 +5,12 @@ import {
   Col,
   Typography
 } from 'antd'
-import image from '../../../images/Image.png'
 import '../Diseases.scss'
-// import './Treatment.scss'
 
 const { Title, Paragraph } = Typography
 
 class LowSpermCount extends Component {
   render() {
-
-    
     return (
       <div id="diseases">
         <div id="disease">
@@ -28,7 +24,6 @@ class LowSpermCount extends Component {
                     <img className="image-product" src={image} alt="Sickle cell image" />
                   </Col>
                   */}
-
                   <Col id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
                     <Paragraph className="disease-text">
@@ -57,16 +52,26 @@ class LowSpermCount extends Component {
                     </ul>
                     </Paragraph>
                   </Col>
+
                   
+                  <Col id="disease-cure" className="bottom-content">
+                    <Title level={3} className="disease-title cure">Rayckan Herbal Healthcare</Title>
+                    <Title className="disease-title bottom-a" level={5}>Nature Cures</Title>
+                    <Title className="disease-title bottom-b" level={5}>Never underestimate the power of Herbs</Title>
+                    <p>
+                      Good news for all asthmatic patients, Rayckan Herbal Medicine has prepared a combination of the power of herbs and organic materials for  the treatment of the diseases of the bronchial tubes, <em>without side effect..</em>
+                    </p>
+                  </Col>
                 </Row>
             </Col>
 
-            <Col span={10} id="contact-form" className>
-              <Contact />
+            <Col span={10} id="contact-form" className="sidebar">
+              <div className='form-wrap'>
+              <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
+                <Contact />
+              </div>
             </Col>
           </Row>
-          
-
         </div>
 
       </div>
