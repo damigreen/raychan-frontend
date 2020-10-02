@@ -21,14 +21,12 @@ const TabBar = (props) => {
   *
   */
  
-  const { tabs, onClick, ...otherProps } = props
-
   return(
     <div className="nav-wrap">
     <Row id="menu" className="flex-row">
       <div>
         <Col span={6} className="nav-icon">
-            <Link to="/"><img  src={navLogo} /></Link>
+            <Link to="/"><img alt="Navigation Logo" src={navLogo} /></Link>
             <h2>Rayckan Herbal Healthcare</h2>
         </Col>
 
@@ -62,7 +60,11 @@ const TabBar = (props) => {
                 </Menu.Item>
                 
                 <Menu.Item className="nav-item" key="testimonials">
-                  <Link className="menu-link" to="/testimonials">TESTIMONIALS</Link>
+                  <Link className="menu-link" to="/#testimonials">TESTIMONIALS</Link>
+                </Menu.Item>
+                
+                <Menu.Item className="nav-item" key="shop">
+                  <Link className="menu-link" to="/shop">SHOP</Link>
                 </Menu.Item>
                 
                 <Menu.Item className="nav-item" key="contact">
