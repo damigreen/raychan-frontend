@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import SickleCell from '../diseases and conditions/sickle-cell/SickleCell'
+import React from 'react';
 import {
   Row,
   Col,
   Typography,
-  Button,
   Card,
-  Space,
 } from 'antd'
-import { Link, Switch, Route, useLocation} from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import './Treatment.scss'
 import sickleCell from '../../images/treatments/sickleCell/sickleCell1.jpg'
 import asthma from '../../images/treatments/asthma/asthma.jpg'
@@ -17,7 +14,7 @@ import parkinsons from '../../images/treatments/parkinsonsDisease/parkinsons.jpg
 import lowSpermCount from '../../images/treatments/lowSpermCount/lowSpermCount.jpg'
 import diabetics from '../../images/treatments/diabetics/diabetics.jpg'
 
-const { Title, Paragraph } = Typography
+const { Title } = Typography
 
 function Treatments() {
   /* 
