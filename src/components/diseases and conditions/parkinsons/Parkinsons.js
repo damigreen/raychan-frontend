@@ -5,9 +5,7 @@ import {
   Col,
   Typography
 } from 'antd'
-import image from '../../../images/Image.png'
 import '../Diseases.scss'
-// import './Treatment.scss'
 
 const { Title, Paragraph } = Typography
 
@@ -55,6 +53,18 @@ class Parkinsons extends Component {
                     </ul>
                     </Paragraph>
                   </Col>
+
+                <Col>
+                  <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
+                  <Title className="disease-title bottom" level={5}>Nature Cures</Title>
+                  <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
+                  <p>
+                    Goodd news for all asthmatic patients, Rayckan Herbal Medicine has
+                    prepared a combination of the power of herbs and organic materials for  the treatment of the  diseases of the
+                          bronchial tubes, <em>without side effect..</em>
+                  </p>
+                </Col>
+
                 </Row>
             </Col>
 
