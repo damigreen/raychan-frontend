@@ -1,0 +1,51 @@
+{
+  "name": "rayckan hearbal treatments shop",
+  "description": "database for products in the herbal shop",
+  "treatments": [
+    {
+      "name": "Sickle-cell herbal mixture",
+      "price": "48000",
+      "image": "image1.png"
+    },
+    {
+      "name": "Parkinsons Disease herbal mixture",
+      "price": "52000",
+      "image": "image2.png"
+    },
+    {
+      "name": "Atrial Septal Defecet herbal mixture",
+      "price": "32000",
+      "image": "image3.png"
+    },
+    {
+      "name": "Asthma herbal mixture",
+      "price": "49000",
+      "image": "image4.png"
+    },
+    {
+      "name": "Diabetics herbal mixture",
+      "price": "70000",
+      "image": "image5.png"
+    },
+    {
+      "name": "Low Sperm Count herbal mixture",
+      "price": "48000",
+      "image": "image1.png"
+    },
+    {
+      "name": "Cancer herbal mixture",
+      "price": "48000",
+      "image": "image1.png"
+    },
+    {
+      "name": "Rheumatism herbal mixture",
+      "price": "48000",
+      "image": "image1.png"
+    },
+    {
+      "name": "Kidney Problem herbal mixture",
+      "price": "48000",
+      "image": "image1.png"
+    }
+  ]
+}

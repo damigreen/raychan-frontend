@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import {
   Row,
   Col,
-  Button,
 } from 'antd'
 import './About.scss'
-import profileImage from '../../images/profile-image.png'
-import aboutImage from '../../images/about/AboutImage.png'
 
 
 
@@ -15,8 +12,6 @@ class About extends Component {
     /* 
     TODO
     * Create a collage of healthy people to go with the about 
-    
-
     */
     // console.log(document.getElementById('about').offsetWidth)
     // console.log(document.getElementById('about').offsetHeight)
