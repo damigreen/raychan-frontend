@@ -9,7 +9,7 @@ import Copyright from '../footer/copyright/'
 import TabBar from '../tabs/TabBar'
 import DiseasesAndConditions from '../diseases and conditions/'
 import Testimonials from '../testimonials/'
-import Carts from '../carts/Carts';
+import Cart from '../cart/'
 import Shop from '../shop/Shop';
 // import Carts from '../Carts/';
 import './App.scss';
@@ -70,7 +70,7 @@ class App extends Component {
                 <Shop />
               )} />
               <Route exact path="/carts" render={() => (
-                <Carts />
+                <Cart />
               )} />
               <Route exact path='/' component={Testimonials} />
             </Content>

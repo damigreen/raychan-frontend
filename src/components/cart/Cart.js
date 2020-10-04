@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default class Carts extends Component {
+export default class Cart extends Component {
   constructor(props) {
     super(props)
 
@@ -16,11 +16,7 @@ export default class Carts extends Component {
   render() {
     return (
       <div id="carts">
-        <div>
-          <div>
-            
-          </div>
-        </div>
+        <h1>Carts</h1>
       </div>
     )
   }
