@@ -35,26 +35,114 @@
   padding: .2em;
 }
 
-#disease-cure {
-  background-color: #d6e8b0;
-  background-image: url('../../images/textures/xv-pattern.png');
+#cure-wrap {
+  // margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 0.5em;
-  text-align: center;
-  // background-color: #BBE16E;
+  text-align: left;
+  width: auto;
+  color: #391A45;
 }
 
-#disease-cure .disease-title.bottom-a {
+#cure-wrap .cure-image {
+  margin-top: 25px;
+  @include flex-column;
+  padding: 5em;
+  vertical-align: center;
+  width: 160px;
+  height: 200px;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // border: $border1;
+}
+
+.cure-info {
+  // border: $border1;
+  padding: .5em 1em;
+  margin-top: 25px;
+}
+
+.cure-wrap .cure-image:before {
+  content:"";
+  height: auto;
+  vertical-align: center;
+  width: 1px;
+}
+
+#cure-wrap .cure-image img{
+  width: 180px;
+  min-height: 150px;
+  height: 180px;
+  // background-color: #CEDDAC;
+  // border: $border1; //change border
+}
+
+p.cure-name {
+  // border: $border1;
+  width: 300px;
+  height: auto;
+  vertical-align: baseline;
+  font-size: 0.75rem;
+  color: #faac9e;
+}
+
+.cure-price {
+  vertical-align: baseline;
+  vertical-align: middle;
+  width: 100px;
+  align-self: center;
+  margin-right: 61px;
+  text-align: left;
+  margin-top: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cure-price .currency {
+  
+}
+
+.btn-wrap {
+  @include flex-row;
+}
+
+.cure-slogans {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 406px;
+  height: auto;
+}
+
+
+#cure-wrap .cure-slogans .disease-title.cure-a {
+  margin-top: 3em;
+  color: #6f2e85;
+  // color: #8b9f60;
+  // color: #3C4529;
+}
+
+#cure-wrap .cure-slogans .disease-title.cure-b {
+  color: #a1c454;
+  // margin-top: 3em;
+}
+
+#cure-wrap .disease-title.cure-a {
   color: #80548F;
 }
 
-#disease-cure .disease-title.bottom-b {
+#cure-wrap .disease-title.cure-b {
   color: #D0ADDB;
 }
 
-#disease-cure p {
-  padding: 2em;
+.cure-text {
+  padding: .5em;
   padding-bottom: .2em;
-  text-align: justify;
+  text-align: left;
   color: #35392d;
 }
 
