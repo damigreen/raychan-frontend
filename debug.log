@@ -30,3 +30,16 @@
 [0913/230443.234:ERROR:exception_snapshot_win.cc(99)] thread ID 1664 not found in process
 [0913/230443.307:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0913/230443.307:ERROR:exception_snapshot_win.cc(99)] thread ID 9980 not found in process
+[1005/080913.112:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1006/215054.625:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1006/215054.810:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1006/215054.810:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1006/215054.743:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1006/215054.811:ERROR:exception_snapshot_win.cc(99)] thread ID 15216 not found in process
+[1006/215054.650:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1006/215054.811:ERROR:exception_snapshot_win.cc(99)] thread ID 10036 not found in process
+[1006/215054.810:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1006/215054.911:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1006/215054.911:ERROR:exception_snapshot_win.cc(99)] thread ID 10740 not found in process
+[1006/215055.161:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1006/215055.161:ERROR:exception_snapshot_win.cc(99)] thread ID 7336 not found in process
