@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Contact from '../../footer/contact'
 import {
+  Button,
   Row,
   Col,
   Typography
@@ -66,14 +67,24 @@ class Asthma extends Component {
                   </Col>
 
                   <Col>
-                    <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
-                      <Title className="disease-title bottom" level={5}>Nature Cures</Title>
-                      <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
-                      <p>
-                        Goodd news for all asthmatic patients, Rayckan Herbal Medicine has
-                        prepared a combination of the power of herbs and organic materials for  the treatment of the  diseases of the
-                          bronchial tubes, <em>without side effect..</em>
-                      </p>
+                      <div className="cure-wrap">
+                        <div className="cure-image">
+
+                        </div>
+                        <div className="cure-slogans">
+                          <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
+                          <Title className="disease-title bottom" level={5}>Nature Cures</Title>
+                          <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
+                        </div>
+                        <div className="cure-text">
+                          <p>
+                            Good news for all asthmatic patients, Rayckan Herbal Medicine has
+                            prepared a combination of the power of herbs and organic materials for  the treatment and the total cure of the disease, <em style={{color: "red"}}>without side effect..</em>
+                          </p>
+
+                        </div>
+                      </div>
+                      <Button href="#contact-form">ORDER NOW</Button>
                   </Col>
                 </Row>
             </Col>
