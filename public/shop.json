@@ -4,48 +4,58 @@
   "treatments": [
     {
       "name": "Sickle-cell herbal mixture",
+      "discription": "kdkkdkdkdk",
       "price": "48000",
-      "image": "image1.png"
+      "image": "image1.png",
+      "quantity": 2
     },
     {
       "name": "Parkinsons Disease herbal mixture",
       "price": "52000",
-      "image": "image2.png"
+      "image": "image2.png",
+      "quantity": 4
     },
     {
       "name": "Atrial Septal Defecet herbal mixture",
       "price": "32000",
-      "image": "image3.png"
+      "image": "image3.png",
+      "quantity": 1
     },
     {
       "name": "Asthma herbal mixture",
       "price": "49000",
-      "image": "image4.png"
+      "image": "image4.png",
+      "quantity": 9
     },
     {
       "name": "Diabetics herbal mixture",
       "price": "70000",
-      "image": "image5.png"
+      "image": "image5.png",
+      "quantity": 12
     },
     {
       "name": "Low Sperm Count herbal mixture",
       "price": "48000",
-      "image": "image1.png"
+      "image": "image1.png",
+      "quantity": 14
     },
     {
       "name": "Cancer herbal mixture",
       "price": "48000",
-      "image": "image1.png"
+      "image": "image1.png",
+      "quantity": 14
     },
     {
       "name": "Rheumatism herbal mixture",
       "price": "48000",
-      "image": "image1.png"
+      "image": "image1.png",
+      "quantity": 4
     },
     {
       "name": "Kidney Problem herbal mixture",
       "price": "48000",
-      "image": "image1.png"
+      "image": "image1.png",
+      "quantity": 8
     }
   ]
 }
