@@ -23,10 +23,12 @@ import {
   Col,
   Typography
 } from 'antd'
+import axios from 'axios'
 
 
 const { Content, Footer } = Layout
 const { Title } = Typography
+
 
 class App extends Component {
   /* 
@@ -43,8 +45,30 @@ class App extends Component {
   * add checkout section in diseases sidebar
   */
 
+  constructor(props) {
+    super(props);
+
+    this.state = { treatments: {} }
+    this.getData = this.getData.bind(this)
+  }
+  
+  getData () {
+    axios.get('/shop.json')
+      .then(response => {
+        this.setState(response.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
 
   render() {
+    const { treatments = {} } = this.state;
+
     const tabs = [
       { name: 'hero', label: 'Hero', component: Hero },
       { name: 'about', label: 'About', component: About },
@@ -65,7 +89,7 @@ class App extends Component {
             <Content id="content">
               <Route exact path='/' component={About} />
               <Route exact path='/' component={Treatments} />
-              <DiseasesAndConditions />
+              <DiseasesAndConditions treatments={treatments} />
               <Route path="/shop" render={() => (
                 <Shop />
               )} />
