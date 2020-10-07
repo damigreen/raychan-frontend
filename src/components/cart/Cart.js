@@ -15,7 +15,7 @@ export default class Cart extends Component {
   
   render() {
     return (
-      <div id="carts">
+      <div id="cart">
         <h1>Carts</h1>
       </div>
     )
