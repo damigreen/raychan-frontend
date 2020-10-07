@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
   Row,
   Col,
-  Typography
+  Typography,
+  Button,
+
 } from 'antd'
 import Contact from '../../footer/contact/'
 import '../Diseases.scss'
@@ -61,10 +63,10 @@ class SickleCell extends Component {
                       <Title className="disease-title bottom" level={5}>Nature Cures</Title>
                       <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
                       <p>
-                        Goodd news for all asthmatic patients, Rayckan Herbal Medicine has
-                        prepared a combination of the power of herbs and organic materials for  the treatment of the  diseases of the
-                          bronchial tubes, <em>without side effect..</em>
+                        Goodd news for all sickle cell patients, Rayckan Herbal Medicine has
+                        prepared a combination of the power of herbs and organic materials for  the treatment of the disease, <em style={{color: "red"}}>without side effect..</em>
                       </p>
+                      <Button href="#contact-form">ORDER NOW</Button>
                   </Col>
                 </Row>
             </Col>
