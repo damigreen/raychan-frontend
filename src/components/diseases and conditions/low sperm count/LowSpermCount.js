@@ -3,14 +3,32 @@ import Contact from '../../footer/contact'
 import {
   Row,
   Col,
-  Typography
+  Typography,
+  Button,
+  Divider,
 } from 'antd'
 import '../Diseases.scss'
+import cureImage from '../../../images/treatments/CureImage.png'
 
 const { Title, Paragraph } = Typography
 
 class LowSpermCount extends Component {
+  /* 
+  * Name
+  * price 
+  * quantity
+  * image
+  */
+
+  constructor(props) {
+    super(props);
+
+    this.state = { products: {} }
+  }
   render() {
+    const {treatments = {}} = this.props;
+    console.log(treatments);
+    
     return (
       <div id="diseases">
         <div id="disease">
@@ -24,7 +42,7 @@ class LowSpermCount extends Component {
                     <img className="image-product" src={image} alt="Sickle cell image" />
                   </Col>
                   */}
-                  <Col id="disease-column">
+                  <Col span={24} id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
                     <Paragraph className="disease-text">
                     Low sperm count occurs when the fluid (semen) you ejaculate during an orgasm contains fewer sperm than normal. Medically, Your sperm count is considered lower than normal if you have fewer than 15 million sperm per milliliter of semen.
@@ -53,14 +71,36 @@ class LowSpermCount extends Component {
                     </Paragraph>
                   </Col>
 
+                  <Divider plain>NATURE CURES</Divider>
+
                   
-                  <Col id="disease-cure" className="bottom-content">
-                    <Title level={3} className="disease-title cure">Rayckan Herbal Healthcare</Title>
-                    <Title className="disease-title bottom-a" level={5}>Nature Cures</Title>
-                    <Title className="disease-title bottom-b" level={5}>Never underestimate the power of Herbs</Title>
-                    <p>
-                      Good news for all asthmatic patients, Rayckan Herbal Medicine has prepared a combination of the power of herbs and organic materials for  the treatment of the diseases of the bronchial tubes, <em>without side effect..</em>
-                    </p>
+                  <Col span={24}>
+                          <Row>
+                            <div id="cure-wrap">
+                              <Col span={12}>
+                                  <div className="cure-image">
+                                    <img src={cureImage} alt="Diseases cure image" />
+                                  </div>
+                                  
+                              </Col>
+                              <Col span={12}>
+                                <div className="cure-info">
+                                  <div>
+                                    <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                                  </div>
+                                  <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
+                                  <p className="cure-quantity">
+
+                                  </p>
+                                  <div className="btn-wrap">
+                                    <Button href="#contact-form">ORDER NOW</Button>
+                                  <Button style={{backgroundColor: '#9E8783', color: "#fff", marginRight: "3em"}} href="#cart">ADD TO CART</Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </div>
+                          </Row>
+
                   </Col>
                 </Row>
             </Col>
