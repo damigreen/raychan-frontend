@@ -9,39 +9,36 @@ import {
 } from 'antd'
 import '../Diseases.scss'
 import cureImage from '../../../images/treatments/CureImage.png'
+import ShopCart from '../../cart/ShopCart';
 
 const { Title, Paragraph } = Typography
 
 class LowSpermCount extends Component {
-  /* 
-  * Name
-  * price 
-  * quantity
-  * image
-  */
-
   constructor(props) {
     super(props);
 
     this.state = { products: {} }
   }
   render() {
-    const {treatments = {}} = this.props;
-    console.log(treatments);
-    
+    const {products = []} = this.props;
+
+    const lowSpermCountData = products.find(p => p.id === 6)
+    // console.log(lowSpermCountData);
+
+    if (!lowSpermCountData) {
+      return null;
+    }
+
+
     return (
       <div id="diseases">
         <div id="disease">
-          <Title className="disease-title main" level={2}>Low Sperm Count</Title>
+          <Title className="disease-title main" level={2}>{lowSpermCountData.name}</Title>
 
 
           <Row>
             <Col span={14}>
               <Row className="disease-row">
-                  {/* <Col span={8} className="image-block">
-                    <img className="image-product" src={image} alt="Sickle cell image" />
-                  </Col>
-                  */}
                   <Col span={24} id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
                     <Paragraph className="disease-text">
@@ -93,8 +90,8 @@ class LowSpermCount extends Component {
 
                                   </p>
                                   <div className="btn-wrap">
-                                    <Button href="#contact-form">ORDER NOW</Button>
-                                  <Button style={{backgroundColor: '#9E8783', color: "#fff", marginRight: "3em"}} href="#cart">ADD TO CART</Button>
+                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} href="#cart">ADD TO CART</Button>
                                   </div>
                                 </div>
                               </Col>
@@ -109,6 +106,10 @@ class LowSpermCount extends Component {
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
+              </div>
+
+              <div>
+               <ShopCart products={products} />
               </div>
             </Col>
           </Row>
