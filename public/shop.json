@@ -1,61 +1,87 @@
 {
   "name": "rayckan hearbal treatments shop",
   "description": "database for products in the herbal shop",
-  "treatments": [
+  "products": [
     {
-      "name": "Sickle-cell herbal mixture",
-      "discription": "kdkkdkdkdk",
+      "name": "Sickle-cell",
+      "description": "Sickle-cell herbal mixture",
+      "currency": "₦",
       "price": "48000",
       "image": "image1.png",
-      "quantity": 2
+      "quantity": 2,
+      "id": 1
     },
     {
-      "name": "Parkinsons Disease herbal mixture",
+      "name": "Parkinsons Disease",
+      "description": "Parkinsons Disease herbal mixture",
       "price": "52000",
       "image": "image2.png",
-      "quantity": 4
+      "currency": "₦",
+      "quantity": 4,
+      "id": 2
     },
     {
-      "name": "Atrial Septal Defecet herbal mixture",
+      "name": "Atrial Septal Defect",
+      "description": "Atrial Septal Defect herbal mixture",
       "price": "32000",
+      "currency": "₦",
       "image": "image3.png",
-      "quantity": 1
+      "quantity": 1,
+      "id": 3
     },
     {
-      "name": "Asthma herbal mixture",
+      "name": "Asthma",
+      "description": "Asthma herbal mixture",
       "price": "49000",
       "image": "image4.png",
-      "quantity": 9
+      "currency": "₦",
+      "quantity": 9,
+      "id": 4
     },
     {
-      "name": "Diabetics herbal mixture",
+      "name": "Diabetics",
+      "description": "Diabetics herbal mixture",
       "price": "70000",
       "image": "image5.png",
-      "quantity": 12
+      "currency": "₦",
+      "quantity": 12,
+      "id": 5
     },
     {
-      "name": "Low Sperm Count herbal mixture",
+      "name": "Low Sperm Count",
+      "description": "Low Sperm Count herbal mixture",
       "price": "48000",
       "image": "image1.png",
-      "quantity": 14
+      "currency": "₦",
+      "quantity": 14,
+      "id": 6
     },
     {
-      "name": "Cancer herbal mixture",
+      "name": "Cancer",
+      "description": "Cancer herbal mixture",
       "price": "48000",
       "image": "image1.png",
-      "quantity": 14
+      "currency": "₦",
+      "quantity": 14,
+      "id": 7
     },
     {
       "name": "Rheumatism herbal mixture",
+      "description": "Rheumatism herbal mixture",
       "price": "48000",
       "image": "image1.png",
-      "quantity": 4
+      "currency": "₦",
+      "quantity": 4,
+      "id": 8
     },
     {
-      "name": "Kidney Problem herbal mixture",
+      "name": "Kidney Problem",
+      "description": "Kidney Problem herbal mixture",
       "price": "48000",
       "image": "image1.png",
-      "quantity": 8
+      "currency": "₦",
+      "quantity": 8,
+      "id": 9
     }
   ]
 }

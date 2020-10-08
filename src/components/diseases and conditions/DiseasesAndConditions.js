@@ -10,7 +10,7 @@ import {
   Route,
 } from 'react-router-dom'
 
-function DiseasesAndConditions({treatments}) {
+function DiseasesAndConditions({products}) {
 
   const diseases = [
     { name: 'sickle cell', label: 'sickle-cell', component: SickleCell },
@@ -26,7 +26,7 @@ function DiseasesAndConditions({treatments}) {
     return(
       <div>
           <Route path={`/${label}`} render={() => (
-            <DiseasesComponent treatments={treatments} />
+            <DiseasesComponent products={products} />
           )}
           />
       </div>

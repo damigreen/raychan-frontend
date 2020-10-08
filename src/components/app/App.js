@@ -43,12 +43,13 @@ class App extends Component {
     * Add route to link on footer
   * Include a pattern on the about section
   * add checkout section in diseases sidebar
+  * Complete the remainng database from lowwSpermCount
   */
 
   constructor(props) {
     super(props);
 
-    this.state = { treatments: {} }
+    this.state = { products: [] }
     this.getData = this.getData.bind(this)
   }
   
@@ -67,7 +68,7 @@ class App extends Component {
   }
 
   render() {
-    const { treatments = {} } = this.state;
+    const { products = [] } = this.state;
 
     const tabs = [
       { name: 'hero', label: 'Hero', component: Hero },
@@ -89,7 +90,7 @@ class App extends Component {
             <Content id="content">
               <Route exact path='/' component={About} />
               <Route exact path='/' component={Treatments} />
-              <DiseasesAndConditions treatments={treatments} />
+              <DiseasesAndConditions products={products} />
               <Route path="/shop" render={() => (
                 <Shop />
               )} />
