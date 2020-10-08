@@ -88,12 +88,12 @@ p.cure-name {
   height: auto;
   vertical-align: baseline;
   font-size: 0.75rem;
-  color: #faac9e;
+  color: #000000;
+
 }
 
 .cure-price {
   vertical-align: baseline;
-  vertical-align: middle;
   width: 100px;
   align-self: center;
   margin-right: 61px;
@@ -104,11 +104,15 @@ p.cure-name {
 }
 
 .cure-price .currency {
-  
+
 }
 
 .btn-wrap {
   @include flex-row;
+  justify-content: space-around;
+  padding-left: 1.2em;
+  color: #ffffff;
+  // font-weight: bold;
 }
 
 .cure-slogans {
