@@ -17,24 +17,33 @@ class LowSpermCount extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { products: {} }
+    this.state = { lowSpermCountShop: {} }
+    this.addToCart = this.addToCart.bind(this);
   }
-  render() {
-    const {products = []} = this.props;
 
-    const lowSpermCountData = products.find(p => p.id === 6)
-    // console.log(lowSpermCountData);
-
-    if (!lowSpermCountData) {
+  addToCart () {
+    console.log(`Adding to cart =========================================================================`)
+    const data = this.props.products.find(item => item.id === 6);
+    
+      this.setState({
+        lowSpermCountShop: data
+      })
+    }
+    
+    render() {
+      const { products = [] } = this.props
+      const {lowSpermCountShop = []} = this.state;
+      
+      const lowSpermCountData = products.find(p => p.id === 6)
+      
+      if (!lowSpermCountData) {
       return null;
     }
-
 
     return (
       <div id="diseases">
         <div id="disease">
           <Title className="disease-title main" level={2}>{lowSpermCountData.name}</Title>
-
 
           <Row>
             <Col span={14}>
@@ -91,7 +100,7 @@ class LowSpermCount extends Component {
                                   </p>
                                   <div className="btn-wrap">
                                     <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
-                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} href="#cart">ADD TO CART</Button>
+                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.addToCart}>ADD TO CART</Button>
                                   </div>
                                 </div>
                               </Col>
@@ -109,7 +118,7 @@ class LowSpermCount extends Component {
               </div>
 
               <div>
-               <ShopCart products={products} />
+               <ShopCart lowSpermCountShop={lowSpermCountShop} />
               </div>
             </Col>
           </Row>
