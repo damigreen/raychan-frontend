@@ -7,6 +7,8 @@ import {
   Typography
 } from 'antd'
 import '../Diseases.scss'
+import cureImage from '../../../images/treatments/CureImage.png'
+
 
 const { Title, Paragraph } = Typography
 
@@ -66,25 +68,33 @@ class Asthma extends Component {
                     </ul>
                   </Col>
 
-                  <Col>
-                      <div className="cure-wrap">
-                        <div className="cure-image">
+                  <Col span={24}>
+                  <Row>
+                    <div id="cure-wrap">
+                      <Col span={12}>
+                          <div className="cure-image">
+                            <img src={cureImage} alt="Diseases cure image" />
+                          </div>
+                          
+                      </Col>
+                      <Col span={12}>
+                        <div className="cure-info">
+                          <div>
+                            <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                          </div>
+                          <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
+                          <p className="cure-quantity">
 
-                        </div>
-                        <div className="cure-slogans">
-                          <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
-                          <Title className="disease-title bottom" level={5}>Nature Cures</Title>
-                          <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
-                        </div>
-                        <div className="cure-text">
-                          <p>
-                            Good news for all asthmatic patients, Rayckan Herbal Medicine has
-                            prepared a combination of the power of herbs and organic materials for  the treatment and the total cure of the disease, <em style={{color: "red"}}>without side effect..</em>
                           </p>
-
+                          <div className="btn-wrap">
+                            <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                            <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} href="#cart">ADD TO CART</Button>
+                          </div>
                         </div>
-                      </div>
-                      <Button href="#contact-form">ORDER NOW</Button>
+                      </Col>
+                    </div>
+                  </Row>
+
                   </Col>
                 </Row>
             </Col>
