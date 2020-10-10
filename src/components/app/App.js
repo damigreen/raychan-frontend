@@ -44,6 +44,11 @@ class App extends Component {
   * Include a pattern on the about section
   * add checkout section in diseases sidebar
   * Complete the remainng database from lowwSpermCount
+  * 
+  * ShopCart
+    * select items from product using id and update it on the shop cart
+    * update the products on the shoping cart
+    * 
   */
 
   constructor(props) {
@@ -54,7 +59,7 @@ class App extends Component {
   }
   
   getData () {
-    axios.get('/shop.json')
+    axios.get('/products.json')
       .then(response => {
         this.setState(response.data)
       })
