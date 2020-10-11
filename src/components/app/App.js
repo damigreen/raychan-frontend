@@ -48,15 +48,42 @@ class App extends Component {
   * ShopCart
     * select items from product using id and update it on the shop cart
     * update the products on the shoping cart
+    * *
+    * Move the cart state to app
     * 
   */
 
   constructor(props) {
     super(props);
 
-    this.state = { products: [] }
     this.getData = this.getData.bind(this)
+    this.state = {
+      products: [],
+      shopItems: [
+        {
+          "name": "Sickle-cell",
+          "description": "Sickle-cell herbal mixture",
+          "currency": "₦",
+          "price": "48000",
+          "image": "image1.png",
+          "quantity": 2,
+          "id": 1
+        },
+        {
+          "name": "Parkinsons Disease",
+          "description": "Parkinsons Disease herbal mixture",
+          "price": "52000",
+          "image": "image2.png",
+          "currency": "₦",
+          "quantity": 4,
+          "id": 2
+        }
+      ]
+    }
   }
+
+  /* 
+   */
   
   getData () {
     axios.get('/products.json')
@@ -67,6 +94,8 @@ class App extends Component {
         console.log(error)
       })
   }
+
+
 
   componentDidMount() {
     this.getData();
