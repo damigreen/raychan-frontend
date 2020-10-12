@@ -56,7 +56,8 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.getData = this.getData.bind(this)
+    this.addToCart = this.addToCart.bind(this);
+    this.getData = this.getData.bind(this);
     this.state = {
       products: [],
       shopItems: [
@@ -82,9 +83,6 @@ class App extends Component {
     }
   }
 
-  /* 
-   */
-  
   getData () {
     axios.get('/products.json')
       .then(response => {
@@ -95,14 +93,31 @@ class App extends Component {
       })
   }
 
-
-
   componentDidMount() {
     this.getData();
   }
 
+  // Add items clicked to the shopItems state
+  // Get id from the diseases component
+  addToCart (id) {
+    console.log(`Adding to cart ==========================`)
+    const item = this.state.products.find(i => i.id === id);
+    let itemsInShop = this.state.shopItems; // []
+    // Check if item in cliked in product 
+    //  is in the items in the shop 
+    const itemAlreadyInShop = itemsInShop.find(item => item.id === id)
+    if (!itemAlreadyInShop) {
+      // Add clicked item to item in shop
+      itemsInShop.push(item);
+    }
+
+    this.setState({
+      ...this.state, itemsInShop
+    })
+  }
+  
   render() {
-    const { products = [] } = this.state;
+    const { products = [], shopItems = [] } = this.state;
 
     const tabs = [
       { name: 'hero', label: 'Hero', component: Hero },
@@ -124,7 +139,11 @@ class App extends Component {
             <Content id="content">
               <Route exact path='/' component={About} />
               <Route exact path='/' component={Treatments} />
-              <DiseasesAndConditions products={products} />
+              <DiseasesAndConditions
+                products={products}
+                addToCart={this.addToCart}
+                shopItems={shopItems}
+              />
               <Route path="/shop" render={() => (
                 <Shop />
               )} />
