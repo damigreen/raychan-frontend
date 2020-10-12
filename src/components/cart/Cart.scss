@@ -6,7 +6,7 @@
 }
 
 .shop-cart-table {
-  border-bottom: 1px solid #CCCCCC;
+  // border-bottom: 1px solid #CCCCCC;
   width: auto;
 }
 
@@ -21,6 +21,15 @@
 .shop-cart-row {
   border-bottom: 1px solid #CCCCCC;
   height: 75px;
+}
+
+.remove-from-cart {
+  // border: $border1;
+  display: inline-block;
+  color: red;
+  padding: 10px;
+  margin-right: 2em;
+  margin-left: 1em;
 }
 
 .item-image {
