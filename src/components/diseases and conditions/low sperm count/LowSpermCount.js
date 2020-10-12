@@ -17,21 +17,18 @@ class LowSpermCount extends Component {
   constructor(props) {
     super(props);
 
+    // this.props.addToCart = this.addToCart.bind(this)
+    this.handleAddToCart = this.handleAddToCart.bind(this);
     this.state = { lowSpermCountShop: {} }
-    this.addToCart = this.addToCart.bind(this);
   }
 
-  addToCart () {
-    console.log(`Adding to cart =========================================================================`)
-    const data = this.props.products.find(item => item.id === 6);
-    
-      this.setState({
-        lowSpermCountShop: data
-      })
-    }
+  handleAddToCart (e) {
+    const itemId = 6
+    this.props.addToCart(itemId)
+  }
     
     render() {
-      const { products = [] } = this.props
+      const { products = [], shopItems } = this.props
       const {lowSpermCountShop = []} = this.state;
       
       const lowSpermCountData = products.find(p => p.id === 6)
@@ -40,6 +37,7 @@ class LowSpermCount extends Component {
       return null;
     }
 
+    // console.log(this.props)
     return (
       <div id="diseases">
         <div id="disease">
@@ -100,7 +98,8 @@ class LowSpermCount extends Component {
                                   </p>
                                   <div className="btn-wrap">
                                     <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
-                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.addToCart}>ADD TO CART</Button>
+                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+                                    {/* <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={() => addToCart}>ADD TO CART</Button> */}
                                   </div>
                                 </div>
                               </Col>
@@ -118,7 +117,10 @@ class LowSpermCount extends Component {
               </div>
 
               <div>
-               <ShopCart lowSpermCountShop={lowSpermCountShop} />
+               <ShopCart 
+                lowSpermCountShop={lowSpermCountShop}
+                shopItems={shopItems}
+              />
               </div>
             </Col>
           </Row>
