@@ -1,6 +1,29 @@
 @import '../app/App.scss';
 
 #shop-cart {
-  background-color: aqua;
+  // background-color: aqua;
+  font-size: 15px;
+}
+
+.shop-cart-table {
+  border-bottom: 1px solid #CCCCCC;
+  width: auto;
+}
+
+.shop-cart-head {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.shop-cart-body {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.shop-cart-row {
+  border-bottom: 1px solid #CCCCCC;
+  height: 75px;
+}
+
+.item-image {
+
 }
 
