@@ -7,7 +7,7 @@
       "description": "Sickle-cell herbal mixture",
       "currency": "₦",
       "price": "48000",
-      "image": "image1.png",
+      "image": "sickle-cell.png",
       "quantity": 2,
       "id": 1
     },
@@ -15,7 +15,7 @@
       "name": "Parkinsons Disease",
       "description": "Parkinsons Disease herbal mixture",
       "price": "52000",
-      "image": "image2.png",
+      "image": "parkinsons.png",
       "currency": "₦",
       "quantity": 4,
       "id": 2
@@ -25,7 +25,7 @@
       "description": "Atrial Septal Defect herbal mixture",
       "price": "32000",
       "currency": "₦",
-      "image": "image3.png",
+      "image": "asd.png",
       "quantity": 1,
       "id": 3
     },
@@ -33,7 +33,7 @@
       "name": "Asthma",
       "description": "Asthma herbal mixture",
       "price": "49000",
-      "image": "image4.png",
+      "image": "asthma.png",
       "currency": "₦",
       "quantity": 9,
       "id": 4
@@ -42,7 +42,7 @@
       "name": "Diabetics",
       "description": "Diabetics herbal mixture",
       "price": "70000",
-      "image": "image5.png",
+      "image": "diabetics.png",
       "currency": "₦",
       "quantity": 12,
       "id": 5
@@ -51,7 +51,7 @@
       "name": "Low Sperm Count",
       "description": "Low Sperm Count herbal mixture",
       "price": "48000",
-      "image": "image1.png",
+      "image": "lowSpermCount.png",
       "currency": "₦",
       "quantity": 14,
       "id": 6
@@ -60,7 +60,7 @@
       "name": "Cancer",
       "description": "Cancer herbal mixture",
       "price": "48000",
-      "image": "image1.png",
+      "image": "cancer.png",
       "currency": "₦",
       "quantity": 14,
       "id": 7
@@ -69,7 +69,7 @@
       "name": "Rheumatism herbal mixture",
       "description": "Rheumatism herbal mixture",
       "price": "48000",
-      "image": "image1.png",
+      "image": "rheumatism.png",
       "currency": "₦",
       "quantity": 4,
       "id": 8
@@ -78,7 +78,7 @@
       "name": "Kidney Problem",
       "description": "Kidney Problem herbal mixture",
       "price": "48000",
-      "image": "image1.png",
+      "image": "kindney-problem.png",
       "currency": "₦",
       "quantity": 8,
       "id": 9
