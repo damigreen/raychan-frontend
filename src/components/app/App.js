@@ -26,6 +26,7 @@ import {
 import axios from 'axios'
 
 
+
 const { Content, Footer } = Layout
 const { Title } = Typography
 
@@ -66,7 +67,7 @@ class App extends Component {
           "description": "Sickle-cell herbal mixture",
           "currency": "₦",
           "price": "48000",
-          "image": "image1.png",
+          "image": "sickle-cell.png",
           "quantity": 2,
           "id": 1
         },
@@ -74,7 +75,7 @@ class App extends Component {
           "name": "Parkinsons Disease",
           "description": "Parkinsons Disease herbal mixture",
           "price": "52000",
-          "image": "image2.png",
+          "image": "parkinsons.png",
           "currency": "₦",
           "quantity": 4,
           "id": 2
