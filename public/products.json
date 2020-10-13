@@ -6,7 +6,7 @@
       "name": "Sickle-cell",
       "description": "Sickle-cell herbal mixture",
       "currency": "₦",
-      "price": "48000",
+      "price": 48000,
       "image": "sickle-cell.png",
       "quantity": 2,
       "id": 1
@@ -14,7 +14,7 @@
     {
       "name": "Parkinsons Disease",
       "description": "Parkinsons Disease herbal mixture",
-      "price": "52000",
+      "price": 52000,
       "image": "parkinsons.png",
       "currency": "₦",
       "quantity": 4,
@@ -23,7 +23,7 @@
     {
       "name": "Atrial Septal Defect",
       "description": "Atrial Septal Defect herbal mixture",
-      "price": "32000",
+      "price": 32000,
       "currency": "₦",
       "image": "asd.png",
       "quantity": 1,
@@ -32,7 +32,7 @@
     {
       "name": "Asthma",
       "description": "Asthma herbal mixture",
-      "price": "49000",
+      "price": 49000,
       "image": "asthma.png",
       "currency": "₦",
       "quantity": 9,
@@ -41,7 +41,7 @@
     {
       "name": "Diabetics",
       "description": "Diabetics herbal mixture",
-      "price": "70000",
+      "price": 70000,
       "image": "diabetics.png",
       "currency": "₦",
       "quantity": 12,
@@ -50,7 +50,7 @@
     {
       "name": "Low Sperm Count",
       "description": "Low Sperm Count herbal mixture",
-      "price": "48000",
+      "price": 48000,
       "image": "lowSpermCount.png",
       "currency": "₦",
       "quantity": 14,
@@ -59,7 +59,7 @@
     {
       "name": "Cancer",
       "description": "Cancer herbal mixture",
-      "price": "48000",
+      "price": 48000,
       "image": "cancer.png",
       "currency": "₦",
       "quantity": 14,
@@ -68,7 +68,7 @@
     {
       "name": "Rheumatism herbal mixture",
       "description": "Rheumatism herbal mixture",
-      "price": "48000",
+      "price": 48000,
       "image": "rheumatism.png",
       "currency": "₦",
       "quantity": 4,
@@ -77,7 +77,7 @@
     {
       "name": "Kidney Problem",
       "description": "Kidney Problem herbal mixture",
-      "price": "48000",
+      "price": 48000,
       "image": "kindney-problem.png",
       "currency": "₦",
       "quantity": 8,
