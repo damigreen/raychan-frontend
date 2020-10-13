@@ -59,6 +59,9 @@ class App extends Component {
 
     this.addToCart = this.addToCart.bind(this);
     this.getData = this.getData.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
+    this.getSubtotal = this.getSubtotal.bind(this);
+
     this.state = {
       products: [],
       shopItems: [
@@ -66,7 +69,7 @@ class App extends Component {
           "name": "Sickle-cell",
           "description": "Sickle-cell herbal mixture",
           "currency": "₦",
-          "price": "48000",
+          "price": 48000,
           "image": "sickle-cell.png",
           "quantity": 2,
           "id": 1
@@ -74,30 +77,31 @@ class App extends Component {
         {
           "name": "Parkinsons Disease",
           "description": "Parkinsons Disease herbal mixture",
-          "price": "52000",
+          "price": 52000,
           "image": "parkinsons.png",
           "currency": "₦",
           "quantity": 4,
           "id": 2
         }
-      ]
+      ],
+      subtotal: 0,
     }
   }
 
   getData () {
     axios.get('/products.json')
-      .then(response => {
+    .then(response => {
         this.setState(response.data)
       })
       .catch(error => {
         console.log(error)
       })
   }
-
+  
   componentDidMount() {
     this.getData();
   }
-
+  
   // Add items clicked to the shopItems state
   // Get id from the diseases component
   addToCart (id) {
@@ -111,14 +115,39 @@ class App extends Component {
       // Add clicked item to item in shop
       itemsInShop.push(item);
     }
+    
+    const shopSubtotal = this.state.shopItems.reduce((acc, cur) => {
+      return acc + (cur.quantity * cur.price)
+    }, 0)
+
+    console.log(shopSubtotal)
 
     this.setState({
-      ...this.state, itemsInShop
+      ...this.state, itemsInShop, subtotal: shopSubtotal
     })
   }
   
+  handleDelete (id) {
+    const updatedShopItems = this.state.shopItems.filter(item => item.id != id);
+
+    this.setState({
+      ...this.state, shopItems: updatedShopItems
+    })
+  }
+  
+  getSubtotal () {
+    const shopSubtotal = this.state.shopItems.reduce((acc, cur) => {
+      return acc + (cur.quantity * cur.price)
+    }, 0)
+
+    this.setState({
+      ...this.state, subtotal: shopSubtotal
+    })
+  }
+  
+  
   render() {
-    const { products = [], shopItems = [] } = this.state;
+    const { products = [], shopItems = [], subtotal } = this.state;
 
     const tabs = [
       { name: 'hero', label: 'Hero', component: Hero },
@@ -126,7 +155,10 @@ class App extends Component {
       { name: 'treatments', label: 'Treatments', component: Treatments },
       { name: 'contact', label: 'Contact', component: Contact },
     ]
+    
 
+    
+    console.log(this.state)
     return (
       <div id="App">
         <Router>
@@ -144,12 +176,13 @@ class App extends Component {
                 products={products}
                 addToCart={this.addToCart}
                 shopItems={shopItems}
+                handleDelete={this.handleDelete}
               />
-              <Route path="/shop" render={() => (
-                <Shop />
-              )} />
               <Route exact path="/carts" render={() => (
-                <Cart />
+                <Cart
+                  shopItems={shopItems}
+                  subtotal={subtotal}
+                />
               )} />
               <Route exact path='/' component={Testimonials} />
             </Content>

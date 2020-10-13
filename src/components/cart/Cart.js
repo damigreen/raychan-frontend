@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'antd'
 
 
 export default class Cart extends Component {
@@ -12,11 +13,29 @@ export default class Cart extends Component {
   handleClick () {
     console.log('Click ========>');
   }
+
+  componentDidMount() {
+    this.getSubtotal();
+  }
   
   render() {
+    const { subtotal, getSubtotal } = this.props;
+
+    console.log(subtotal)
+
     return (
       <div id="cart">
-        <h1>Carts</h1>
+        <Row>
+          <h1>Shopping Carts {}</h1>
+          <h1>{subtotal}}</h1>
+          <Col>
+
+          </Col>
+
+          <Col>
+
+          </Col>
+        </Row>
       </div>
     )
   }
