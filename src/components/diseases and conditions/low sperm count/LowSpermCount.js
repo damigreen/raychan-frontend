@@ -28,7 +28,7 @@ class LowSpermCount extends Component {
   }
     
     render() {
-      const { products = [], shopItems } = this.props
+      const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
       const {lowSpermCountShop = []} = this.state;
       
       const lowSpermCountData = products.find(p => p.id === 6)
@@ -37,7 +37,7 @@ class LowSpermCount extends Component {
       return null;
     }
 
-    // console.log(this.props)
+    console.log(this.props)
     return (
       <div id="diseases">
         <div id="disease">
@@ -120,6 +120,9 @@ class LowSpermCount extends Component {
                <ShopCart 
                 lowSpermCountShop={lowSpermCountShop}
                 shopItems={shopItems}
+                handleDelete={handleDelete}
+                subtotal={subtotal}
+                getSubtotal={getSubtotal}
               />
               </div>
             </Col>
