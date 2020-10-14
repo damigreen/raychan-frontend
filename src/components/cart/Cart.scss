@@ -1,5 +1,68 @@
 @import '../app/App.scss';
 
+/* Shopping cart */
+.container {
+  display: block;
+  margin: 0 auto;
+  border: $border1;
+  width:900px;
+  text-align: center;
+}
+
+.header {
+  @include flex-row;
+  justify-content: space-between;
+  margin: 2em;
+
+  .item {
+    border: $border-c
+  }
+}
+
+
+
+.shopping-items {
+  border: $border-a;
+  @include flex-row;
+  justify-content: space-between;
+  margin-right: 30px;
+  padding: 20px 30px;
+  height: 120px;
+
+  .item-image {
+    width: 11%;
+    border: $border-c;
+  }
+  
+  .item-description {
+    // width: 300px;
+    width: 30%;
+    max-width: 400px;
+    text-align: left;
+    border: $border-b;
+  }
+
+  .item-price {
+    width: 11%;
+  }
+  
+  .item-quantity {
+    width: 7%;
+    border: $border1;
+  }
+
+  .item-subtotal {
+    width: 11%;
+    border: $border1;
+  }
+
+  
+
+}
+
+
+
+/* Treatments Shop Cart */
 #shop-cart {
   // background-color: aqua;
   font-size: 15px;
@@ -8,7 +71,6 @@
 .shop-cart-table {
   // border-bottom: 1px solid #CCCCCC;
   // width: 0px;
-
 }
 
 .shop-cart-head {
