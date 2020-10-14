@@ -64,7 +64,7 @@ const TabBar = (props) => {
                 </Menu.Item>
                 
                 <Menu.Item className="nav-item" key="shop">
-                  <Link className="menu-link" to="/shop">SHOP</Link>
+                  <Link className="menu-link" to="/cart">CART</Link>
                 </Menu.Item>
                 
                 <Menu.Item className="nav-item" key="contact">
