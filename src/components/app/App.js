@@ -61,6 +61,7 @@ class App extends Component {
     this.getData = this.getData.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.getSubtotal = this.getSubtotal.bind(this);
+    this.updateQuantity = this.updateQuantity.bind(this);
 
     this.state = {
       products: [],
@@ -144,6 +145,17 @@ class App extends Component {
       ...this.state, subtotal: shopSubtotal
     })
   }
+
+  // Change the shop item qunatity value
+  // Use the find method with the id
+  updateQuantity (qty, id) {
+    console.log('updating quantity-----------------------------------------');
+    this.state.shopItems.map(item => item.id === id);
+
+    // this.setState({
+
+    // })
+  }
   
   
   render() {
@@ -177,8 +189,10 @@ class App extends Component {
                 addToCart={this.addToCart}
                 shopItems={shopItems}
                 handleDelete={this.handleDelete}
+                getSubtotal={this.getSubtotal}
+                subtotal={subtotal}
               />
-              <Route exact path="/carts" render={() => (
+              <Route exact path="/cart" render={() => (
                 <Cart
                   shopItems={shopItems}
                   subtotal={subtotal}
