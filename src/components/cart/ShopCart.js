@@ -19,37 +19,31 @@ export default class ShopCart extends Component {
   }
 
   componentDidMount() {
+    this.props.getSubtotal();
   }
   
   componentDidUpdate() {
-    
-    this.props.getSubtotal();
   }
 
   render() { 
-    const { lowSpermCountShop = {}, shopItems = [], handleDelete } = this.props;
+    const { lowSpermCountShop = {}, shopItems = [], handleDelete, subtotal, getSubtotal } = this.props;
     const cartItemLen = shopItems.length;
 
-    const subtotal = () =>
-      shopItems.reduce((acc, cur) => {
-      const value = acc + (cur.quantity * cur.price);
-      console.log(value)
-      // const valueString = value.toString();
 
-      var formatter = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-      
-        // These options are needed to round to whole numbers if that's what you want.
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-      });
+    var formatter = new Intl.NumberFormat('en-US', {
+      // style: 'currency',
+      // currency: 'NGN',
+    
+      // These options are needed to round to whole numbers if that's what you want.
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
 
-      return formatter.format(value);
-    }, 0);
+    const shopSubtotal = formatter.format(subtotal);
 
 
-    console.log(subtotal());
+    // console.log(subTotal());
+    console.log(subtotal);
     return (
       <div id="shop-cart">
 
@@ -103,10 +97,10 @@ export default class ShopCart extends Component {
           </Col>
 
           <Col span={4}>
-            ₦{subtotal()}
+              ₦{shopSubtotal}
           </Col>
         </Row>
-        <Button className="btn btn-checkout">CHECKOUT</Button>
+        <Button className="btn btn-buynow">BUY NOW</Button>
       </div>
     )
   }
