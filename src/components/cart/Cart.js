@@ -13,12 +13,23 @@ export default class Cart extends Component {
     this.state = { counter: 1 };
   }
 
+  /* 
+  * Issues 
+  Set the counter to the quantitu of the shop item you want to update
 
-  handleMinus() {
-   console.log('Minus----------------');
-   this.setState({
-     counter: this.state.counter - 1
-   })
+  */
+
+  handleMinus(id) {
+    console.log('Minus----------------');
+    this.setState({
+      counter: this.state.counter - 1
+    })
+    // const itemToUpdate = this.props.shopItems.find(item => item.id === id);
+    // console.log(this.state.counter)
+    // console.log(this.props.updateQuantity)
+    // console.log(id)
+
+    this.props.updateQuantity(this.state.counter, id);
   }
   
   handlePlus() {
@@ -26,8 +37,10 @@ export default class Cart extends Component {
     this.setState({
       counter: this.state.counter + 1
     })
-  }
 
+    this.props.updateQuantity(this.state.counter, id);
+  }
+  
   /*
   TODO
   * Product Name    Unit    price   Quantity    Subtotal
@@ -35,11 +48,10 @@ export default class Cart extends Component {
   * * Data 
   * update the cart quantity to reflect the state of the app
   * 
-
   */
   render() {
     // const { subtotal, getSubtotal } = this.props;
-    const { shopItems = [], counter } = this.props;
+    const { shopItems = [], counter, updateQuantity  } = this.props;
 
 
     console.log(this.state)
@@ -92,7 +104,8 @@ export default class Cart extends Component {
                 </div>
 
                 <div className="item-quantity">
-                  <span><MinusCircleOutlined  onClick={this.handleMinus} /></span>
+                  <span><MinusCircleOutlined  onClick={() => this.handleMinus(item.id)} /></span>
+                  {/* <span><MinusCircleOutlined  onClick={this.handleMinus} /></span> */}
                   <span>{item.quantity}</span>
                   <span><PlusCircleOutlined onClick={this.handlePlus} /></span>
                 </div>
