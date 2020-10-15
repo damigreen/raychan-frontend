@@ -147,14 +147,40 @@ class App extends Component {
   }
 
   // Change the shop item qunatity value
-  // Use the find method with the id
-  updateQuantity (qty, id) {
-    console.log('updating quantity-----------------------------------------');
-    this.state.shopItems.map(item => item.id === id);
+  // Use the find method with the id\
+  /* 
+  * state
+  * shopItems: [
+        {
+          "name": "Sickle-cell",
+          "description": "Sickle-cell herbal mixture",
+          "currency": "₦",
+          "price": 48000,
+          "image": "sickle-cell.png",
+          "quantity": 2,
+          "id": 1
+        },
+        {
+          "name": "Parkinsons Disease",
+          "description": "Parkinsons Disease herbal mixture",
+          "price": 52000,
+          "image": "parkinsons.png",
+          "currency": "₦",
+          "quantity": 4,
+          "id": 2
+        }
+      ]
+      */
 
-    // this.setState({
-
-    // })
+     updateQuantity (qty, id) {
+       console.log('updating quantity-----------------------------------------');
+       this.state.shopItems.map(item => item.id === id ? item.quantity = qty : item.quantity);
+       console.log(this.state)
+       
+       // this.setState({
+         //   ...this.state, shopItems: updatedShopItem
+         // })
+         // const updatedShopItem = this.state.shopItems.map(item => item.id === id);
   }
   
   
@@ -196,6 +222,7 @@ class App extends Component {
                 <Cart
                   shopItems={shopItems}
                   subtotal={subtotal}
+                  updateQuantity={this.updateQuantity}
                 />
               )} />
               <Route exact path='/' component={Testimonials} />
