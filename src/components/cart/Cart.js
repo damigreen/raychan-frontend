@@ -6,7 +6,6 @@ export default class Cart extends Component {
   constructor(props) {
     super(props)
 
-    // this.handleClick = this.handleClick.bind(this);
     this.handleMinus = this.handleMinus.bind(this)
     this.handlePlus = this.handlePlus.bind(this)
     
@@ -14,26 +13,20 @@ export default class Cart extends Component {
   }
 
   /* 
-  * Issues 
-  Set the counter to the quantitu of the shop item you want to update
-
+  TODO
+  * Style Cart
   */
 
   handleMinus(id) {
     console.log('Minus----------------');
     // Set the quantity of the shop items to the counter 
     const itemQuantity = this.props.shopItems.find(item => item.id === id).quantity;
-    // console.log(itemQuantity);
     const removeItem = itemQuantity - 1;
     
     this.setState({
       ...this.state, counter: removeItem
     })
     
-    // const itemToUpdate = this.props.shopItems.find(item => item.id === id);
-    console.log(this.state.counter)
-    // console.log(this.props.updateQuantity)
-    // console.log(id)
     
     this.props.updateQuantity(removeItem, id);
   }
@@ -52,20 +45,10 @@ export default class Cart extends Component {
   }
   
   
-  /*
-  TODO
-  * Product Name    Unit    price   Quantity    Subtotal
-  *
-  * * Data 
-  * update the cart quantity to reflect the state of the app
-  * 
-  */
   render() {
-    // const { subtotal, getSubtotal } = this.props;
     const { shopItems = [], counter, updateQuantity  } = this.props;
 
 
-    console.log(this.state)
     return (
       <div id="cart" className="container">
 
