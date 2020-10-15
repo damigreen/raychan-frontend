@@ -51,63 +51,65 @@ export default class Cart extends Component {
 
     return (
       <div id="cart" className="container">
-
         <div className="title">
           <h1>Shopping Carts {}</h1>
         </div>
 
-        {/* Header */}
-        <div className="header">
-          <div className="item">
-            Item
-          </div>
+        <div className="cart-content">
 
-          <div>
-            Unit Price
-          </div>
 
-          <div>
-            Quantity
-          </div>
+            {/* Header */}
+            <div className="header">
+              <div className="item">
+                Item
+              </div>
 
-          <div>
-            subtotal
-          </div>
+              <div className="price">
+                Unit Price
+              </div>
 
+              <div className="quantity">
+                Quantity
+              </div>
+
+              <div className="subtotal">
+                subtotal
+              </div>  
+
+            </div>
+              {
+                shopItems.map(item => (
+                  <form className="shopping-items">
+                    <div className="item-image">
+                      {/* Link to buy now*/}
+                      <a href>
+                        <img src={require('../../images/treatments/thumbnail/' + item.image)} />
+                      </a>
+                    </div>
+
+                    <div className="item-description">
+                        <span>{item.name}</span>
+                    </div>
+
+                    <div className="item-price">
+                      {item.currency}{item.price}
+                    </div>
+
+                    <div className="item-quantity">
+                      <span><MinusCircleOutlined  onClick={() => this.handleMinus(item.id)} /></span>
+                      <span>{item.quantity}</span>
+                      <span><PlusCircleOutlined onClick={() => this.handlePlus(item.id)} /></span>
+                    </div>
+
+                    <div className="item-subtotal">
+                      {item.currency} {item.quantity * item.price}
+                    </div>
+                  </form>
+                ))
+              }
+
+          </div>
         </div>
-
-          {
-            shopItems.map(item => (
-              <form className="shopping-items">
-                <div className="item-image">
-                  {/* Link to buy now*/}
-                  <a href>
-                    <img src={require('../../images/treatments/thumbnail/' + item.image)} />
-                  </a>
-                </div>
-
-                <div className="item-description">
-                    <span>{item.name}</span>
-                </div>
-
-                <div className="item-price">
-                  {item.currency}{item.price}
-                </div>
-
-                <div className="item-quantity">
-                  <span><MinusCircleOutlined  onClick={() => this.handleMinus(item.id)} /></span>
-                  <span>{item.quantity}</span>
-                  <span><PlusCircleOutlined onClick={() => this.handlePlus(item.id)} /></span>
-                </div>
-
-                <div className="item-subtotal">
-                  {item.currency} {item.quantity * item.price}
-                </div>
-              </form>
-            ))
-          }
-
-      </div>
     )
   }
 }
