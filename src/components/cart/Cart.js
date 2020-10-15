@@ -21,25 +21,36 @@ export default class Cart extends Component {
 
   handleMinus(id) {
     console.log('Minus----------------');
+    // Set the quantity of the shop items to the counter 
+    const itemQuantity = this.props.shopItems.find(item => item.id === id).quantity;
+    // console.log(itemQuantity);
+    const removeItem = itemQuantity - 1;
+    
     this.setState({
-      counter: this.state.counter - 1
+      ...this.state, counter: removeItem
     })
+    
     // const itemToUpdate = this.props.shopItems.find(item => item.id === id);
-    // console.log(this.state.counter)
+    console.log(this.state.counter)
     // console.log(this.props.updateQuantity)
     // console.log(id)
-
-    this.props.updateQuantity(this.state.counter, id);
+    
+    this.props.updateQuantity(removeItem, id);
   }
   
-  handlePlus() {
+  handlePlus(id) {
     console.log('Plus----------------') ;
+    const itemQuantity = this.props.shopItems.find(item => item.id === id).quantity;
+    const addItem = itemQuantity + 1;
+
+
     this.setState({
-      counter: this.state.counter + 1
+      counter: addItem
     })
 
-    this.props.updateQuantity(this.state.counter, id);
+    this.props.updateQuantity(addItem, id);
   }
+  
   
   /*
   TODO
@@ -55,14 +66,11 @@ export default class Cart extends Component {
 
 
     console.log(this.state)
-    console.log(counter)
     return (
       <div id="cart" className="container">
 
-        {/* Title */}
         <div className="title">
           <h1>Shopping Carts {}</h1>
-          {/* <h1>{subtotal}}</h1> */}
         </div>
 
         {/* Header */}
@@ -105,9 +113,8 @@ export default class Cart extends Component {
 
                 <div className="item-quantity">
                   <span><MinusCircleOutlined  onClick={() => this.handleMinus(item.id)} /></span>
-                  {/* <span><MinusCircleOutlined  onClick={this.handleMinus} /></span> */}
                   <span>{item.quantity}</span>
-                  <span><PlusCircleOutlined onClick={this.handlePlus} /></span>
+                  <span><PlusCircleOutlined onClick={() => this.handlePlus(item.id)} /></span>
                 </div>
 
                 <div className="item-subtotal">
