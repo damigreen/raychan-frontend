@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MinusCircleOutlined, PlusCircleOutlined } from '@ant-design/icons'
+import { MinusCircleOutlined, PlusCircleOutlined } from '@ant-design/icons';
 
 
 export default class Cart extends Component {
@@ -27,7 +27,6 @@ export default class Cart extends Component {
       ...this.state, counter: removeItem
     })
     
-    
     this.props.updateQuantity(removeItem, id);
   }
   
@@ -43,16 +42,23 @@ export default class Cart extends Component {
 
     this.props.updateQuantity(addItem, id);
   }
+
+  
+  componentDidMount() {
+    this.props.getSubtotal();
+  }
   
   
   render() {
-    const { shopItems = [], counter, updateQuantity  } = this.props;
+    const { shopItems = [], subtotal  } = this.props;
+    const itemLen = shopItems.length;
 
 
     return (
       <div id="cart" className="container">
         <div className="title">
-          <h1>Shopping Carts {}</h1>
+          {/* <h1>Shopping Carts {(itemLen)}</h1> */}
+          <h1>Shopping Carts ({itemLen})</h1>
         </div>
 
         <div className="cart-content">
@@ -61,19 +67,19 @@ export default class Cart extends Component {
             {/* Header */}
             <div className="header">
               <div className="item">
-                Item
+                ITEM
               </div>
 
               <div className="price">
-                Unit Price
+                UNIT PRICE
               </div>
 
               <div className="quantity">
-                Quantity
+                QUANTITY
               </div>
 
               <div className="subtotal">
-                subtotal
+                SUBTOTAL
               </div>  
 
             </div>
@@ -88,7 +94,7 @@ export default class Cart extends Component {
                     </div>
 
                     <div className="item-description">
-                        <span>{item.name}</span>
+                        <span>{item.description}</span>
                     </div>
 
                     <div className="item-price">
@@ -96,9 +102,9 @@ export default class Cart extends Component {
                     </div>
 
                     <div className="item-quantity">
-                      <span><MinusCircleOutlined  onClick={() => this.handleMinus(item.id)} /></span>
+                      <span><MinusCircleOutlined style={{marginRight: "2px", backgroundColor: "#f4f4f4"}} onClick={() => this.handleMinus(item.id)} /></span>
                       <span>{item.quantity}</span>
-                      <span><PlusCircleOutlined onClick={() => this.handlePlus(item.id)} /></span>
+                      <span><PlusCircleOutlined style={{marginLeft: "2px", backgroundColor: "#f4f4f4"}} onClick={() => this.handlePlus(item.id)} /></span>
                     </div>
 
                     <div className="item-subtotal">
@@ -107,8 +113,13 @@ export default class Cart extends Component {
                   </form>
                 ))
               }
-
           </div>
+
+          <div className="total-wrap">
+            <div className="total-text">TOTAL</div>
+            <div className="total-value">₦{subtotal}</div>
+          </div>
+          <div className="order-now">ORDER NOW</div>
         </div>
     )
   }
