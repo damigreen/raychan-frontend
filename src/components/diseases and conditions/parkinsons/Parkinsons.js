@@ -9,13 +9,29 @@ import {
 } from 'antd'
 import '../Diseases.scss'
 import cureImage from '../../../images/treatments/CureImage.png'
+import ShopCart from '../../cart/ShopCart';
 
 
 const { Title, Paragraph } = Typography
 
 class Parkinsons extends Component {
-  render() {
+  constructor(props) {
+    super(props);
 
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+    this.state = { parkinsonsShop: {} };
+
+  }
+
+  handleAddToCart (e) {
+    const itemId = 2;
+    this.props.addToCart(itemId)
+  }
+
+
+  render() {
+    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props;
+    const { parkinsonsShop = {} } = this.state;
     
     return (
       <div id="diseases">
@@ -97,10 +113,18 @@ class Parkinsons extends Component {
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
               </div>
+
+              <div>
+               <ShopCart 
+                parkinsonsShop={parkinsonsShop}
+                shopItems={shopItems}
+                handleDelete={handleDelete}
+                subtotal={subtotal}
+                getSubtotal={getSubtotal}
+              />
+              </div>
             </Col>
           </Row>
-          
-
         </div>
       </div>
 
