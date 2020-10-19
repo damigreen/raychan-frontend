@@ -7,9 +7,7 @@ import 'antd/dist/antd.css';
 import 'typeface-open-sans';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 
