@@ -66,7 +66,7 @@ class LowSpermCount extends Component {
                     </Paragraph>
                     <Title className="disease-title" level={3}>Symptoms</Title>
                     <Paragraph className="disease-text">
-                    The main sign of low sperm count is the inability to conceive a child. There might be no other obvious signs or symptoms. Other symptoms may include
+                      The main sign of low sperm count is the inability to conceive a child. There might be no other obvious signs or symptoms. Other symptoms may include
                     <ul>
                       <li>Problems with sexual function — for example, low sex drive or difficulty maintaining an erection (erectile dysfunction)</li>
                       <li>Pain, swelling or a lump in the testicle area</li>
@@ -99,7 +99,6 @@ class LowSpermCount extends Component {
                                   <div className="btn-wrap">
                                     <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
                                     <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
-                                    {/* <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={() => addToCart}>ADD TO CART</Button> */}
                                   </div>
                                 </div>
                               </Col>

@@ -82,6 +82,7 @@ const TabBar = (props) => {
       </Row>
     </div>
   )
+  
 }
 
 export default TabBar
