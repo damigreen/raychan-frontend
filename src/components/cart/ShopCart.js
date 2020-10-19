@@ -39,7 +39,8 @@ export default class ShopCart extends Component {
       maximumFractionDigits: 2,
     });
 
-    const shopSubtotal = formatter.format(subtotal);
+    // const shopSubtotal = formatter.format(subtotal);
+    formatter.format(subtotal);
 
 
     // console.log(subTotal());
@@ -97,7 +98,8 @@ export default class ShopCart extends Component {
           </Col>
 
           <Col span={4}>
-              ₦{shopSubtotal}
+              ₦{subtotal}
+              {/* ₦{shopSubtotal} */}
           </Col>
         </Row>
         <Button className="btn btn-buynow">BUY NOW</Button>
