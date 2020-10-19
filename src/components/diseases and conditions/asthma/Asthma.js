@@ -8,6 +8,7 @@ import {
 } from 'antd'
 import '../Diseases.scss'
 import cureImage from '../../../images/treatments/CureImage.png'
+import ShopCart from '../../cart/ShopCart';
 
 
 const { Title, Paragraph } = Typography
@@ -18,9 +19,23 @@ class Asthma extends Component {
   * Move the margin of the contact column down
   * Use a pattern for the background of the (Raychan Herbal cure)
   */
+ constructor(props) {
+  super(props);
 
+  // this.props.addToCart = this.addToCart.bind(this)
+  this.handleAddToCart = this.handleAddToCart.bind(this);
+  this.state = { asthmaShop: {} }
+}
 
+handleAddToCart (e) {
+  const itemId = 4;
+  this.props.addToCart(itemId);
+}
+  
   render() {
+    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
+    const { asthmaShop= [] } = this.state;
+    console.log(asthmaShop);
 
     return (
       <div id="diseases">
@@ -103,6 +118,16 @@ class Asthma extends Component {
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
+              </div>
+
+              <div>
+               <ShopCart 
+                asthmaShop={asthmaShop}
+                shopItems={shopItems}
+                handleDelete={handleDelete}
+                subtotal={subtotal}
+                getSubtotal={getSubtotal}
+              />
               </div>
             </Col>
           </Row>
