@@ -69,31 +69,31 @@ class Asthma extends Component {
                   </Col>
 
                   <Col span={24}>
-                  <Row>
-                    <div id="cure-wrap">
-                      <Col span={12}>
-                          <div className="cure-image">
-                            <img src={cureImage} alt="Diseases cure image" />
-                          </div>
-                          
-                      </Col>
-                      <Col span={12}>
-                        <div className="cure-info">
-                          <div>
-                            <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
-                          </div>
-                          <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
-                          <p className="cure-quantity">
+                          <Row>
+                            <div id="cure-wrap">
+                              <Col span={12}>
+                                  <div className="cure-image">
+                                    <img src={cureImage} alt="Diseases cure image" />
+                                  </div>
+                                  
+                              </Col>
+                              <Col span={12}>
+                                <div className="cure-info">
+                                  <div>
+                                    <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                                  </div>
+                                  <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
+                                  <p className="cure-quantity">
 
-                          </p>
-                          <div className="btn-wrap">
-                            <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
-                            <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} href="#cart">ADD TO CART</Button>
-                          </div>
-                        </div>
-                      </Col>
-                    </div>
-                  </Row>
+                                  </p>
+                                  <div className="btn-wrap">
+                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </div>
+                          </Row>
 
                   </Col>
                 </Row>
