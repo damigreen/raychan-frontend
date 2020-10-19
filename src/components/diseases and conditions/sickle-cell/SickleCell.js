@@ -10,12 +10,29 @@ import Contact from '../../footer/contact/'
 import '../Diseases.scss'
 import cureImage from '../../../images/treatments/CureImage.png'
 import { Divider } from 'antd';
+import ShopCart from '../../cart/ShopCart';
 
 
 const { Title, Paragraph } = Typography
 
 class SickleCell extends Component {
+  constructor(props) {
+    super(props);
+
+    // this.props.addToCart = this.addToCart.bind(this)
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+    this.state = { lowSpermCountShop: {} }
+  }
+
+  handleAddToCart (e) {
+    const itemId = 1;
+    this.props.addToCart(itemId)
+  }
+
+
   render() {
+    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
+    const {sickleCellShop = {} } = this.state;
 
     return (
       <div id="diseases">
@@ -97,10 +114,21 @@ class SickleCell extends Component {
 
             <Col span={10} id="contact-form" className="sidebar">
               <div className='form-wrap'>
-                <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
-                  <Contact />
-                </div>
+              <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
+                <Contact />
+              </div>
+
+              <div>
+               <ShopCart 
+                sickleCellShop={sickleCellShop}
+                shopItems={shopItems}
+                handleDelete={handleDelete}
+                subtotal={subtotal}
+                getSubtotal={getSubtotal}
+              />
+              </div>
             </Col>
+
           </Row>
         </div>
       </div>
