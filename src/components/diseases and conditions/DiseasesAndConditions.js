@@ -24,7 +24,7 @@ function DiseasesAndConditions({products, addToCart, shopItems, handleDelete, su
     const { label, component: DiseasesComponent } = diseasesInfo
 
     return(
-      <div>
+      <div key={label}>
           <Route path={`/${label}`} render={() => (
             <DiseasesComponent
               products={products}
