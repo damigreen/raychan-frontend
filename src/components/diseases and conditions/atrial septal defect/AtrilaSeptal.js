@@ -8,11 +8,29 @@ import {
 import '../Diseases.scss'
 import cureImage from '../../../images/treatments/CureImage.png'
 import { Divider } from 'antd';
+import ShopCart from '../../cart/ShopCart';
+
 
 const { Title, Paragraph } = Typography
 
 class AtrialSeptalDefect extends Component {
+  constructor(props) {
+    super(props);
+
+    // this.props.addToCart = this.addToCart.bind(this)
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+    this.state = { atrialSeptalShop: {} }
+  }
+
+  handleAddToCart (e) {
+    const itemId = 3;
+    this.props.addToCart(itemId);
+  }
+    
+
   render() {
+    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
+    const {atrialSeptalShop = {} } = this.state;
 
 
     return (
@@ -89,13 +107,21 @@ class AtrialSeptalDefect extends Component {
 
             <Col span={10} id="contact-form" className="sidebar">
               <div className='form-wrap'>
-                <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
+              <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
+              </div>
+
+              <div>
+               <ShopCart 
+                atrialSeptalShop={atrialSeptalShop}
+                shopItems={shopItems}
+                handleDelete={handleDelete}
+                subtotal={subtotal}
+                getSubtotal={getSubtotal}
+              />
               </div>
             </Col>
           </Row>
-
-
         </div>
       </div>
     );
