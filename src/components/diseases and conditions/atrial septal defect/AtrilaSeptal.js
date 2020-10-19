@@ -6,6 +6,8 @@ import {
   Typography, Button
 } from 'antd'
 import '../Diseases.scss'
+import cureImage from '../../../images/treatments/CureImage.png'
+import { Divider } from 'antd';
 
 const { Title, Paragraph } = Typography
 
@@ -52,16 +54,36 @@ class AtrialSeptalDefect extends Component {
                   </Paragraph>
                 </Col>
 
-                <Col>
-                  <Title level={3} className="disease-title">Rayckan Herbal Healthcare</Title>
-                  <Title className="disease-title bottom" level={5}>Nature Cures</Title>
-                  <Title className="disease-title bottom" level={5}>Never underestimate the power of Herbs</Title>
-                  <p>
-                    Good news for all ASD patients, Rayckan Herbal Medicine has
-                    prepared a combination of the power of herbs and organic materials for  the treatment of this disease, <em>without side effect..</em>
-                  </p>
-                  <Button href="#contact-form">ORDER NOW</Button>
-                </Col>
+                <Divider plain>NATURE CURES</Divider>
+
+                <Col span={24}>
+                          <Row>
+                            <div id="cure-wrap">
+                              <Col span={12}>
+                                  <div className="cure-image">
+                                    <img src={cureImage} alt="Diseases cure image" />
+                                  </div>
+                                  
+                              </Col>
+                              <Col span={12}>
+                                <div className="cure-info">
+                                  <div>
+                                    <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                                  </div>
+                                  <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
+                                  <p className="cure-quantity">
+
+                                  </p>
+                                  <div className="btn-wrap">
+                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </div>
+                          </Row>
+
+                  </Col>
               </Row>
             </Col>
 
