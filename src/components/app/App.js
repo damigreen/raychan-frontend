@@ -73,7 +73,7 @@ class App extends Component {
           "price": 48000,
           "image": "sickle-cell.png",
           "quantity": 2,
-          "id": 1
+          // "id": 1
         },
         {
           "name": "Parkinsons Disease",
@@ -82,7 +82,7 @@ class App extends Component {
           "image": "parkinsons.png",
           "currency": "₦",
           "quantity": 4,
-          "id": 2
+          // "id": 2
         }
       ],
       subtotal: 0,

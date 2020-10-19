@@ -26,7 +26,7 @@ export default class ShopCart extends Component {
   }
 
   render() { 
-    const { lowSpermCountShop = {}, shopItems = [], handleDelete, subtotal, getSubtotal } = this.props;
+    const { lowSpermCountShop = {}, asthmaShop, shopItems = [], handleDelete, subtotal, getSubtotal } = this.props;
     const cartItemLen = shopItems.length;
 
 
