@@ -146,10 +146,10 @@ class App extends Component {
     })
   }
 
-     updateQuantity (qty, id) {
-       console.log('updating quantity-----------------------------------------');
-       console.log(qty);
-       this.state.shopItems.map(item => item.id === id ? item.quantity = qty : item.quantity);
+  updateQuantity (qty, id) {
+    console.log('updating quantity-----------------------------------------');
+    console.log(qty);
+    this.state.shopItems.map(item => item.id === id ? item.quantity = qty : item.quantity);
   }
 
   
@@ -192,6 +192,7 @@ class App extends Component {
                   shopItems={shopItems}
                   subtotal={subtotal}
                   updateQuantity={this.updateQuantity}
+                  getSubtotal={this.getSubtotal}
                 />
               )} />
               <Route exact path='/' component={Testimonials} />
