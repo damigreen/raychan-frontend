@@ -15,6 +15,11 @@ export default class Cart extends Component {
   /* 
   TODO
   * Style Cart
+  classNames
+    cart-content
+    container .title
+    total-wrap
+    order-now
   */
 
   handleMinus(id) {
