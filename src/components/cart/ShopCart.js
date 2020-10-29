@@ -51,13 +51,13 @@ export default class ShopCart extends Component {
     
         <Row className="shop-cart-head">
             <Col span={12}>
-              <div >
+              <div className="shop-cart-item">
                 {cartItemLen} ITEMS
               </div>
             </Col>
 
             <Col span={12}>
-              <div>
+              <div className="shop-cart-view">
                 VIEW CART
               </div>
             </Col>
@@ -85,15 +85,12 @@ export default class ShopCart extends Component {
                     </Button>
                   </Col>
               </Row>
-
-
             </div>
-
           ))
         }
 
-        <Row>
-          <Col span={20}>
+        <Row className="shop-cart-subtotal-wrap">
+          <Col className="shop-cart-subtotal" span={20}>
             SUBTOTAL:
           </Col>
 
@@ -102,7 +99,7 @@ export default class ShopCart extends Component {
               {/* ₦{shopSubtotal} */}
           </Col>
         </Row>
-        <Button className="btn btn-buynow">BUY NOW</Button>
+        <Button href="#contact" className="btn btn-buynow">BUY NOW</Button>
       </div>
     )
   }
