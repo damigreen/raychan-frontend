@@ -1,0 +1,59 @@
+// @import './App.scss';
+
+@media only screen and (max-width: 600px) {
+
+  /*  Navigation / Tab */
+  .nav-wraps  { // delete
+    // width: 300px;
+    // width: auto;
+    // height: inherit;
+    // background-color: red;
+    // max-width: 1024px;
+    // position: relative;
+    // overflow: hidden;
+    max-width: 480px;
+    margin: auto;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+
+  .nav-wrap .nav-col.menu-bar:not(:first-child) {display: none;}
+  .nav-wrap a.icon {
+    float: right;
+    display: block;
+  }
+  /* Treatments */
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  #treatments {
+    padding: 70px, 20px;
+    line-height: 20px;
+    padding-top: 55px;
+    font-size: 19px;
+    background-color: #E2EBCE;
+    // width: auto;
+    // width: 300px;
+  }
+
+  #treatments .card-style {
+    font-size: 18px;
+    text-align: left;
+    max-height: 120vh;
+    margin-top: 25px;
+    margin-bottom: 4em;
+    height: 552px;
+    min-height: 40vh;
+    border-radius: 5px;
+    background-color: #D0DEAD;
+    color: #333;
+    width: 80%;
+  }
+  
+  #treatments .flex-column {
+    margin: auto;
+    width: 1200px;
+  } 
+}
