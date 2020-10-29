@@ -13,6 +13,10 @@ import ShopCart from '../../cart/ShopCart';
 
 const { Title, Paragraph } = Typography
 
+/* 
+ #diseases .diseases-mobile
+ disease-column
+*/
 class LowSpermCount extends Component {
   constructor(props) {
     super(props);
@@ -37,14 +41,13 @@ class LowSpermCount extends Component {
       return null;
     }
 
-    console.log(this.props)
     return (
       <div id="diseases">
         <div id="disease">
           <Title className="disease-title main" level={2}>{lowSpermCountData.name}</Title>
 
-          <Row>
-            <Col span={14}>
+          <Row className="diseases-mobile">
+            <Col span={14} sm={24}>
               <Row className="disease-row">
                   <Col span={24} id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
@@ -79,37 +82,38 @@ class LowSpermCount extends Component {
 
                   
                   <Col span={24}>
-                          <Row>
-                            <div id="cure-wrap">
-                              <Col span={12}>
-                                  <div className="cure-image">
-                                    <img src={cureImage} alt="Diseases cure image" />
-                                  </div>
-                                  
-                              </Col>
-                              <Col span={12}>
-                                <div className="cure-info">
-                                  <div>
-                                    <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
-                                  </div>
-                                  <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
-                                  <p className="cure-quantity">
-
-                                  </p>
-                                  <div className="btn-wrap">
-                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
-                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
-                                  </div>
-                                </div>
-                              </Col>
+                    <Row>
+                      <div id="cure-wrap">
+                {/* xs={20} sm={18} md={14} lg={11} xl={8} */}
+                        <Col span={12} sm={16} lg={24} md={20} >
+                            <div className="cure-image">
+                              <img src={cureImage} alt="Diseases cure image" />
                             </div>
-                          </Row>
+                            
+                        </Col>
+                        <Col span={12}>
+                          <div className="cure-info">
+                            <div>
+                              <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                            </div>
+                            <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
+                            <p className="cure-quantity">
+
+                            </p>
+                            <div className="btn-wrap">
+                              <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                              <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+                            </div>
+                          </div>
+                        </Col>
+                      </div>
+                    </Row>
 
                   </Col>
                 </Row>
             </Col>
 
-            <Col span={10} id="contact-form" className="sidebar">
+            <Col span={10} sm={24} id="contact-form" className="sidebar">
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
