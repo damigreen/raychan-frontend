@@ -12,6 +12,16 @@ import ShopCart from '../../cart/ShopCart';
 
 
 const { Title, Paragraph } = Typography
+  
+  /* 
+  {
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+} */
 
 class Asthma extends Component {
   /* 
@@ -33,19 +43,17 @@ handleAddToCart (e) {
 }
   
   render() {
-    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
+    const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props;
     const { asthmaShop= [] } = this.state;
     console.log(asthmaShop);
 
     return (
       <div id="diseases">
-
         <div id="disease">
           <Title className="disease-title main" level={2}>Asthma</Title>
 
-
           <Row>
-            <Col span={14}>
+            <Col span={14} xs={24} lg={14} xl={16}>
               <Row className="disease-row">
                   <Col id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
@@ -86,13 +94,13 @@ handleAddToCart (e) {
                   <Col span={24}>
                           <Row>
                             <div id="cure-wrap">
-                              <Col span={12}>
+                              <Col span={12} xs={8} xl={8}>
                                   <div className="cure-image">
                                     <img src={cureImage} alt="Diseases cure image" />
                                   </div>
                                   
                               </Col>
-                              <Col span={12}>
+                              <Col span={12} xs={8} xl={16}>
                                 <div className="cure-info">
                                   <div>
                                     <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
@@ -101,7 +109,7 @@ handleAddToCart (e) {
                                   <p className="cure-quantity">
 
                                   </p>
-                                  <div className="btn-wrap">
+                                  <div className="btn-wrap cure-btn">
                                     <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
                                     <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
                                   </div>
@@ -109,12 +117,11 @@ handleAddToCart (e) {
                               </Col>
                             </div>
                           </Row>
-
                   </Col>
                 </Row>
             </Col>
 
-            <Col span={10} id="contact-form" className="sidebar">
+            <Col span={10} xs={24} lg={10} xl={16} id="contact-form" className="sidebar">
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
@@ -133,7 +140,6 @@ handleAddToCart (e) {
           </Row>
         </div>
       </div>
-
     );
   }
 }
