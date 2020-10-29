@@ -111,7 +111,6 @@ p, ul, li, h1, h2, h3, h4 {
 }
 
 #footer .flex-column {
-  width: auto;
   margin: 0;
   justify-content: space-between;
   align-items: flex-start;
@@ -120,7 +119,7 @@ p, ul, li, h1, h2, h3, h4 {
 #footer .flex-column.footer-row {
   margin: 0 auto;
   height:auto;
-  width: 1366px;
+  // width: 1366px;
 }
 
 #footer .footer-col {

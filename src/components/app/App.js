@@ -23,8 +23,10 @@ import {
   Col,
   Typography
 } from 'antd'
-import axios from 'axios'
+import axios from 'axios';
 
+
+import './media-queries.scss';
 
 
 const { Content, Footer } = Layout
@@ -35,28 +37,16 @@ class App extends Component {
   /* 
   TODO:
   * create a router for each disaeses and conditions
-  * 
-  * Restyle the Contact form
-  * Change Address from ContactInfo
-  * Change the app fonts
-  * set background color for elements
-  * Make link closer to contact info
-    * Add route to link on footer
-  * Include a pattern on the about section
-  * add checkout section in diseases sidebar
-  * Complete the remainng database from lowwSpermCount
-  * 
-  * ShopCart
-    * select items from product using id and update it on the shop cart
-    * update the products on the shoping cart
-    * *
-    * Move the cart state to app
-    * 
+  * * Responsive
+  * Fix Navigation
+  * Fix the footer 
+  * fix the layout body width
+  * Adjust the size of the hero image
+  * ... 
   */
 
   constructor(props) {
     super(props);
-
     this.addToCart = this.addToCart.bind(this);
     this.getData = this.getData.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
@@ -213,7 +203,6 @@ class App extends Component {
                   <ContactInfo />
                 </Col>
               </Row>
-
             </Footer>
 
             <Row id="copyright-wrap">
