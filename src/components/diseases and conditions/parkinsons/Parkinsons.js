@@ -95,7 +95,7 @@ class Parkinsons extends Component {
 
                                   </p>
                                   <div className="btn-wrap">
-                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
+                                    <Button style={{backgroundColor: '#74ABB4', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
                                     <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
                                   </div>
                                 </div>
