@@ -1,0 +1,107 @@
+@import './App.scss';
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #diseases .disease-row {
+    display: block;
+  }
+  
+  #cure-wrap {
+    display: block;
+    max-width: 480px;
+  }
+  
+  .cure-image {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  
+  .cure-info {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+  .btn-wrap.cure-btn {
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  /* Treatments */
+   #treatment {
+  }
+  
+  #treatments .flex-column {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    // margin: 0 auto;
+  }
+
+  #treatments .flex-column .card-style {
+    background-color: red;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 200px;
+    height: 552px;
+  }
+    
+  #treatments .treatment-images {
+    
+  }   
+}
+  
+@media only screen and (max-width: 360px) {
+  #treatments .flex-column .card-style {
+    margin: 4px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  #treatments .flex-column {
+    width: 100%;
+    max-width: 767px;
+    display: block;
+  }
+  
+  #treatments .flex-column .card-style {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 200px;
+    height: 552px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #treatments .flex-column {
+    max-width: 992px;
+    display: block;
+  }
+  
+  #treatments .flex-column .card-style {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  #diseases .disease-row {
+  }
+  
+  #cure-wrap {
+    // display: block;
+  }
+  
+  .cure-image {
+  }
+  
+  .cure-info {
+  }
+  
+  .btn-wrap.cure-btn {
+  }
+  
+  // #cure-wrap .cure-name {
+  //   background-color: red;
+  //   border: $border1;
+  // }
+}
