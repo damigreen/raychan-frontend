@@ -27,15 +27,29 @@ const TabBar = (props) => {
       <div>
         <Col span={6} className="nav-icon">
             <Link to="/"><img alt="Navigation Logo" src={navLogo} /></Link>
-            <h2>Rayckan Herbal Healthcare</h2>
+            {/* <h2 className="nav-name">
+              <span>Rayckan</span>
+              <span>Herbal</span>
+              <span>Healthcare</span>
+            </h2> */}
+
+            {/* <p className="nav-slogan">Nature Cures</p> */}
         </Col>
 
         <Col span={12} className="nav-col">
           <Row className="nav-row" span={24}> 
             <Menu className="menu-bar" mode="horizontal">
-                <Menu.Item className="nav-item" key="about">
-                  <Link className="menu-link" to="/#about">ABOUT</Link>
-                </Menu.Item>
+                <SubMenu id="submenu" icon title="ABOUT">
+                    <Menu.Item key="rayckan">
+                      <Link to='/#about'>Rayckan Herbal Healthcare</Link>
+                    </Menu.Item>
+                    <Menu.Item key="treatments">
+                      <Link to='/#treatments'>Treatments</Link>
+                    </Menu.Item>
+                    <Menu.Item key="testimonials">
+                      <Link to='/#testimonials'>Testimonials</Link>
+                    </Menu.Item>
+                </SubMenu>
 
                 <SubMenu id="submenu" icon title="DISEASES &amp; CONDITIONS">
                     <Menu.Item key="sickle-cell">
@@ -55,14 +69,15 @@ const TabBar = (props) => {
                     </Menu.Item>
                 </SubMenu>
 
+
                 <Menu.Item className="nav-item" key="treatments">
                   <Link className="menu-link" to="/#treatments">TREATMENTS</Link>
                 </Menu.Item>
                 
-                <Menu.Item className="nav-item" key="testimonials">
+                {/* <Menu.Item className="nav-item" key="testimonials">
                   <Link className="menu-link" to="/#testimonials">TESTIMONIALS</Link>
                 </Menu.Item>
-                
+                 */}
                 <Menu.Item className="nav-item" key="shop">
                   <Link className="menu-link" to="/cart">CART</Link>
                 </Menu.Item>
@@ -73,9 +88,6 @@ const TabBar = (props) => {
             </Menu>    
 
           </Row>
-
-
-
         </Col>
       </div>
 
