@@ -4,13 +4,12 @@ import { Link as Li } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 import './Tabs.scss'
 import navLogo from '../../images/navigation/nav-logo.png'
-// import logo from '../../images/Mask Group.png'
 import {
   Row,
   Col,
 } from 'antd'
 
-const { SubMenu } = Menu
+const { SubMenu } = Menu;
 
 const TabBar = (props) => {
   /* 
@@ -18,7 +17,6 @@ const TabBar = (props) => {
   * Put the logo image in front of the nav-bar
   * Fix the height of the navigation items on hover/* 
   * Reset the color of .nav-icon
-  *
   */
  
   return(
@@ -27,17 +25,8 @@ const TabBar = (props) => {
       <div>
         <Col span={6} className="nav-icon">
             <Link to="/"><img alt="Navigation Logo" src={navLogo} /></Link>
-            {/* <h2 className="nav-name">
-              <span>Rayckan</span>
-              <span>Herbal</span>
-              <span>Healthcare</span>
-            </h2> */}
-
-            {/* <p className="nav-slogan">Nature Cures</p> */}
         </Col>
-
-        <Col span={12} className="nav-col">
-          <Row className="nav-row" span={24}> 
+        <Col span={12} md={14} className="nav-col">
             <Menu className="menu-bar" mode="horizontal">
                 <SubMenu id="submenu" icon title="ABOUT">
                     <Menu.Item key="rayckan">
@@ -69,7 +58,6 @@ const TabBar = (props) => {
                     </Menu.Item>
                 </SubMenu>
 
-
                 <Menu.Item className="nav-item" key="treatments">
                   <Link className="menu-link" to="/#treatments">TREATMENTS</Link>
                 </Menu.Item>
@@ -86,8 +74,6 @@ const TabBar = (props) => {
                   <Link className="menu-link" to="/Contact">CONTACT</Link>
                 </Menu.Item>
             </Menu>    
-
-          </Row>
         </Col>
       </div>
 

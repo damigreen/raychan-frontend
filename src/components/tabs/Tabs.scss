@@ -8,7 +8,7 @@
   padding:0;
   margin:0;
   min-width: 700px;
-  width: 100%;
+  // width: 100%;
   // max-width: 1024px;
 }
 
@@ -26,10 +26,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  // background: url('../../images/navigation/xv-pattern.png');
   background-color: #BCD97E;
-  // background-color: #101504;
-  // background-color: #162C11;
   color: #FFFFFF;
   height: 105px;
 }
@@ -71,13 +68,11 @@
   align-self: center;
   justify-self: self-end;
 }
-// #memu .nav-icon h2.nav-slogan {
-//   color: red;
-// }
 
 #menu .nav-col {
-  background-color: inherit;
   margin:0;
+  background-color: inherit;
+  background-color: red;
 }
 
 #menu .nav-col .menu-bar {
@@ -85,8 +80,6 @@
   padding: 5px 10px 5px 10px;
   margin-right: 90px;
   border-bottom: none;
-  // border: $border1;
-  // color: $nav-color;
 }
 
 #menu .nav-item {
