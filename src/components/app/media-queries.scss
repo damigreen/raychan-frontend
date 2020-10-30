@@ -1,6 +1,8 @@
 @import './App.scss';
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+
+  /* Diseases */
   #diseases .disease-row {
     display: block;
   }
@@ -23,11 +25,9 @@
   .btn-wrap.cure-btn {
     margin-left: 25px;
   }
-}
 
-@media only screen and (min-width: 320px) and (max-width: 479px){
   /* Treatments */
-   #treatment {
+  #treatment {
   }
   
   #treatments .flex-column {
@@ -38,7 +38,6 @@
   }
 
   #treatments .flex-column .card-style {
-    background-color: red;
     margin-left: 50%;
     margin-right: 50%;
     width: 200px;
@@ -46,17 +45,40 @@
   }
     
   #treatments .treatment-images {
-    
   }   
+  
+  /* Footer */
+  #footer  .footer-row {
+    display: block;
+    // text-align: center;
+    
+    .footer-col .footer-title {
+      text-align: center;
+    }
+  }
+
+  /* Site Link */
+  #site-link {
+    margin-left: 20px;
+    // background-color: red;      
+  }
+  
+  #contact-info {
+    margin-left: 12px;
+  }
 }
+
   
 @media only screen and (max-width: 360px) {
+
+  /* Treatments */
   #treatments .flex-column .card-style {
     margin: 4px;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+  /* Treatments */
   #treatments .flex-column {
     width: 100%;
     max-width: 767px;
@@ -69,9 +91,35 @@
     width: 200px;
     height: 552px;
   }
+
+   /* Footer */
+   #footer  .footer-row {
+    display: block;
+    
+    .footer-col .footer-title {
+      text-align: center;
+    }
+  }
+
+   /* Site Link */
+   #site-link {
+    margin-left: 38px;
+  }
+  
+  #contact-info {
+    margin-left: 22px;
+  }
+
+  /* TabBar */
+  #menu.flex-row {
+    width: auto;
+    max-width: 767px;
+    background-color: red; 
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+  /* Treatments */
   #treatments .flex-column {
     max-width: 992px;
     display: block;
@@ -81,9 +129,48 @@
     margin-left: 50%;
     margin-right: 50%;
   }
+
+  #treatments .card-style.sc {
+    margin-left: 250px;
+  }
+  
+  #treatments .card-style.asthma {
+    margin-left: 250px;
+  }
+
+  #treatments .card-style.asd {
+    margin-left: 250px;
+  }
+
+  #treatments .card-style.lsc {
+    margin-left: 250px;
+  }
+
+  #treatments .card-style.parkinsons {
+    margin-left: 250px;
+  }
+  #treatments .card-style.lsc {
+    margin-left: 250px;
+  }
+
+  #treatments .card-style.diabetics {
+    margin-left: 250px;
+  }
+ 
+  /* TabBar */
+  #menu.flex-row {
+    width: auto;
+    max-width: 992px;
+  }
+  
+  #menu .nav-col {
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (min-width : 800px) and (max-width : 1024px) {
+  /* Diseases */
   #diseases .disease-row {
   }
   
@@ -92,6 +179,7 @@
   }
   
   .cure-image {
+
   }
   
   .cure-info {
@@ -100,8 +188,50 @@
   .btn-wrap.cure-btn {
   }
   
-  // #cure-wrap .cure-name {
-  //   background-color: red;
-  //   border: $border1;
-  // }
+
+  /*  Treatments */
+  #treatments .flex-column {
+    display: block;
+  }
+
+  #treatments .flex-column .card-style {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+    #treatments .card-style.sc {
+      margin-left: 330px;
+    }
+    
+    #treatments .card-style.asthma {
+      margin-left: 330px;
+    }
+
+    #treatments .card-style.asd {
+      margin-left: 330px;
+    }
+
+    #treatments .card-style.lsc {
+      margin-left: 330px;
+    }
+
+    #treatments .card-style.parkinsons {
+      margin-left: 330px;
+    }
+    #treatments .card-style.lsc {
+      margin-left: 330px;
+    }
+
+    #treatments .card-style.diabetics {
+      margin-left: 330px;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+  /*  Treatments */
+  #treatments .flex-column {
+  }
+
+  #treatments .flex-column .card-style {
+  }
 }

@@ -11,7 +11,6 @@ import DiseasesAndConditions from '../diseases and conditions/'
 import Testimonials from '../testimonials/'
 import Cart from '../cart/'
 import Shop from '../shop/Shop';
-// import Carts from '../Carts/';
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -190,15 +189,16 @@ class App extends Component {
 
             <Footer id="footer">
               <Row className="flex-column footer-row">
-                <Col className="footer-col" span={10} id="contact">
+                {/* xl={10} xxl={10} lg={8} */}
+                <Col className="footer-col" span={10} xs={20} sm={20} md={10} lg={10} xl={10} xxl={10} id="contact">
                   <Title className="footer-title contact" level={4}>CONTACT US</Title>
                   <Contact />
                 </Col>
-                <Col className="footer-col" span={6} id="site-links">
+                <Col className="footer-col" span={6} xs={20} sm={20} md={6} lg={6} xl={6} xxl={6} id="site-links">
                   <Title className="footer-title link" level={4}>LINKS</Title>
                   <SiteLinks />
                 </Col>
-                <Col className="footer-col" span={8} id="contact-info">
+                <Col className="footer-col" span={8} xs={20} sm={20} md={8} lg={8} xl={8} xxl={8} id="contact-info">
                   <Title className="footer-title contact-info" level={4}>CONTACT INFO</Title>
                   <ContactInfo />
                 </Col>
