@@ -14,22 +14,18 @@ import parkinsons from '../../images/treatments/parkinsonsDisease/parkinsons.jpg
 import lowSpermCount from '../../images/treatments/lowSpermCount/lowSpermCount.jpg'
 import diabetics from '../../images/treatments/diabetics/diabetics.jpg'
 
-const { Title } = Typography
+const { Title } = Typography;
 
 function Treatments() {
-  /* 
-  TODO
-  * Resize treatments images
-  */
   
-  const { pathname, hash } = useLocation()
-  console.log(pathname, hash)
+  const { pathname, hash } = useLocation();
+  console.log(pathname, hash);
 
   return (
     <div id="treatments">
         <Title className="title-block">Our Treatments</Title>
         <Row justify="center" className="flex-column">
-          <Col justify="center" span={8} xs={8} sm={10} lg={12} xl={8}>
+          <Col justify="center" span={8} xs={8} sm={10} lg={8} xl={8}>
             <Card
               className="card-style sc"
               hoverable
@@ -40,9 +36,9 @@ function Treatments() {
               Sickle Cell Anemia has been perceived as one of the most threatening disorder to man-kind...              
             </Card>
           </Col>
-          <Col span={8} xs={8} sm={10} md={6} lg={12} xl={8} >
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
             <Card
-              className="card-style"
+              className="card-style asthma"
               hoverable
               style={{ width: 350 }}
               cover={<img alt="asthma disease image" src={asthma} className="treatment-images" />}
@@ -51,10 +47,10 @@ function Treatments() {
               Asthma is a disease affecting the airways that carry air to and from your lungs...
             </Card>
           </Col>
-          <Col span={8} xs={8} sm={10} md={6} lg={12} xl={8}>
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8}>
 
             <Card
-              className="card-style"
+              className="card-style asd"
               hoverable
               style={{ width: 350 }}
               cover={<img alt="atrial septal defect image" src={atrialSeptal} className="treatment-images" />}
@@ -66,10 +62,10 @@ function Treatments() {
         </Row>
 
         <Row className="flex-column">
-          <Col span={8} xs={8} sm={10} md={6} lg={12} xl={8}>
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8}>
 
             <Card
-              className="card-style"
+              className="card-style parkinsons"
               hoverable
               style={{ width: 350 }}
               cover={<img alt="parkinsons disease image" src={parkinsons} className="treatment-images" />}
@@ -78,10 +74,10 @@ function Treatments() {
               Parkinson’s disease is a progressive disorder of the nervous system that affects your movement. It develops gradually...
             </Card>
           </Col>
-          <Col span={8} xs={8} sm={10} md={6} lg={12} xl={8} >
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
 
             <Card
-              className="card-style"
+              className="card-style lsc"
               hoverable
               style={{ width: 350 }}
               cover={<img alt="low sperm count disease image" src={lowSpermCount} className="treatment-images" />}
@@ -90,9 +86,9 @@ function Treatments() {
               Low sperm count means that the fluid (semen) you ejaculate during an orgasm contains fewer sperm than normal...
             </Card>
           </Col>
-          <Col span={8} xs={8} sm={10} md={6} lg={12} xl={8} >
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
             <Card
-              className="card-style"
+              className="card-style diabetics"
               hoverable
               style={{ width: 350 }}
               cover={<img alt="diabetics disease image" src={diabetics} className="treatment-images" />}
