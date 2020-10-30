@@ -6,27 +6,15 @@
   margin: auto;
   padding: 0;
   width:100%;
-  height: 500px;
-
-  @media only screen and (min-width: 300px) {
-    width: 90%;
-  }
 }
 
-
 #hero {
-  background-image: url('../../images/hero/Hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: auto;
-  height: 100%;
-  // height: 50%;
   position: relative;
-  @media only screen and (min-width: 300px) {
-    height: 500px;
-    width: 300px;
-    background-image: url('../../images/hero/Hero-mobile.png');
-    
-  }
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
