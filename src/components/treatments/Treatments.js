@@ -18,13 +18,22 @@ const { Title } = Typography;
 
 function Treatments() {
   
+  /* 
+   {
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+  } */
   const { pathname, hash } = useLocation();
   console.log(pathname, hash);
 
   return (
     <div id="treatments">
         <Title className="title-block">Our Treatments</Title>
-        <Row justify="center" className="flex-column">
+        <Row style={{width: "auto"}} justify="center" className="flex-column">
           <Col justify="center" span={8} xs={8} sm={10} lg={8} xl={8}>
             <Card
               className="card-style sc"
@@ -61,7 +70,7 @@ function Treatments() {
           </Col>
         </Row>
 
-        <Row className="flex-column">
+        <Row style={{width: "auto"}} className="flex-column">
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8}>
 
             <Card
