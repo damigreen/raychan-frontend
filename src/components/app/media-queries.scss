@@ -34,7 +34,6 @@
     width: 100%;
     max-width: 480px;
     display: block;
-    // margin: 0 auto;
   }
 
   #treatments .flex-column .card-style {
@@ -112,15 +111,46 @@
 
   /* TabBar */
   #menu.flex-row {
+    // margin: 0 auto;
     width: auto;
     max-width: 767px;
-    background-color: red; 
+    // background-color: red; 
+    font-size: 11px;
   }
+  
+  #menu .nav-icon {
+    background-color: red;
+    max-width: 97px;
+    max-height: 104px;
+  }
+
+  #menu .nav-icon-img {
+  }
+
+  #menu .nav-col {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+  
+  #menu .nav-col .menu-bar {
+    font-size: 11px;
+    background-color: inherit;
+    background-color: green; 
+    padding: 5px 10px 5px 10px;
+    border-bottom: none;
+    width: auto;
+    max-width: 300px;
+    // min-width: 300px;
+    // margin-right: 30px;
+  }
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
   /* Treatments */
   #treatments .flex-column {
+    width: 991px;
     max-width: 992px;
     display: block;
   }
@@ -149,6 +179,7 @@
   #treatments .card-style.parkinsons {
     margin-left: 250px;
   }
+
   #treatments .card-style.lsc {
     margin-left: 250px;
   }
@@ -235,3 +266,32 @@
   #treatments .flex-column .card-style {
   }
 }
+
+// @media only screen and (max-width : 767px) {
+//   #menu.flex-row {
+//     margin: 0 auto;
+//     width: auto;
+//     max-width: 767px;
+//     // background-color: red; 
+//     font-size: 11px;
+//     min-width: 480px;
+//   }
+  
+//   #menu .nav-col {
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     margin-right: 30px;
+//   }
+  
+//   #menu .nav-col .menu-bar {
+//     font-size: 11px;
+//     background-color: inherit;
+//     background-color: green; 
+//     padding: 5px 10px 5px 10px;
+//     border-bottom: none;
+//     width: auto;
+//     max-width: 500px;
+//     margin-right: 30px;
+//   }
+// }
+
