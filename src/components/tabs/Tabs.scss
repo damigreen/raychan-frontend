@@ -41,7 +41,6 @@
   // margin: auto;
   margin-left: 40px;
   width:100%;
-  color: red;
 }
 
 #menu .nav-icon h2 {
@@ -64,15 +63,20 @@
 }
 
 #memu .nav-icon p {
-  color: red;
+  // color: red;
   align-self: center;
   justify-self: self-end;
+}
+
+#menu .nav-icon-img {
+  width: 100%;
+  height: auto
 }
 
 #menu .nav-col {
   margin:0;
   background-color: inherit;
-  background-color: red;
+  // background-color: red;
 }
 
 #menu .nav-col .menu-bar {

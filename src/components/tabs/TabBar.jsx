@@ -17,16 +17,27 @@ const TabBar = (props) => {
   * Put the logo image in front of the nav-bar
   * Fix the height of the navigation items on hover/* 
   * Reset the color of .nav-icon
+  * 
+  * 
+  * 
+  {
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+  }
   */
  
   return(
-    <div className="nav-wrap">
     <Row id="menu" className="flex-row">
       <div>
-        <Col span={6} className="nav-icon">
-            <Link to="/"><img alt="Navigation Logo" src={navLogo} /></Link>
+        <Col span={6} md={2} className="nav-icon">
+            <Link to="/"><img className="nav-icon-img" alt="Navigation Logo" src={navLogo} /></Link>
         </Col>
-        <Col span={12} md={14} className="nav-col">
+
+        <Col span={12} md={20} className="nav-col">
             <Menu className="menu-bar" mode="horizontal">
                 <SubMenu id="submenu" icon title="ABOUT">
                     <Menu.Item key="rayckan">
@@ -78,7 +89,6 @@ const TabBar = (props) => {
       </div>
 
       </Row>
-    </div>
   )
   
 }
