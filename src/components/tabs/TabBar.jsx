@@ -29,15 +29,16 @@ const TabBar = (props) => {
   xxl: '1600px',
   }
   */
+
  
   return(
     <Row id="menu" className="flex-row">
       <div>
-        <Col span={6} md={2} className="nav-icon">
+        <Col span={6} xs={4} md={2} lg={4} xl={4} xxl={4} className="nav-icon">
             <Link to="/"><img className="nav-icon-img" alt="Navigation Logo" src={navLogo} /></Link>
         </Col>
 
-        <Col span={12} md={20} className="nav-col">
+        <Col span={12} xs={18} md={20} lg={12} xl={12} xxl={12} className="nav-col">
             <Menu className="menu-bar" mode="horizontal">
                 <SubMenu id="submenu" icon title="ABOUT">
                     <Menu.Item key="rayckan">
