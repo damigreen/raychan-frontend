@@ -85,13 +85,15 @@ handleAddToCart (e) {
                   <Col span={24}>
                           <Row>
                             <div id="cure-wrap">
-                              <Col span={12} xs={8} sm={4} xl={8} xxl={10}>
+                              <Col span={10} xs={8} sm={10} xl={12} lg={4} xxl={10}>
                                   <div className="cure-image">
                                     <img src={cureImage} alt="Diseases cure image" />
                                   </div>
                                   
                               </Col>
-                              <Col span={12} xs={8} sm={12} md={24} xl={16} xxl={14}>
+
+                              {/* <Col span={12} xs={8} sm={12} md={24} xl={14} xxl={14}> */}
+                              <Col span={12} sm={14} md={24} lg={12} xl={12}>
                                 <div className="cure-info">
                                   <div>
                                     <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
@@ -100,8 +102,11 @@ handleAddToCart (e) {
                                   <p className="cure-quantity">
 
                                   </p>
-                                  <Button className="cure-btns" style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600", marginLeft: "none"}} href="#contact-form">ORDER NOW</Button>
-                                  <Button classname="cure-btns" style={{backgroundColor: '#F55B40', color: "#fff", fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+                                  {/* <div className="btn-wrap"> */}
+                                    <Button className="cure-btns" style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600", marginLeft: "none"}} href="#contact-form">ORDER NOW</Button>
+                                    <Button classname="cure-btns" style={{backgroundColor: '#F55B40', color: "#fff", fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
+
+                                  {/* </div> */}
                                 </div>
                               </Col>
                             </div>
