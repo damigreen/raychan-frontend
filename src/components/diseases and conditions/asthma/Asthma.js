@@ -92,7 +92,6 @@ handleAddToCart (e) {
                                   
                               </Col>
 
-                              {/* <Col span={12} xs={8} sm={12} md={24} xl={14} xxl={14}> */}
                               <Col span={12} sm={14} md={24} lg={12} xl={12}>
                                 <div className="cure-info">
                                   <div>
@@ -102,11 +101,8 @@ handleAddToCart (e) {
                                   <p className="cure-quantity">
 
                                   </p>
-                                  {/* <div className="btn-wrap"> */}
                                     <Button className="cure-btns" style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600", marginLeft: "none"}} href="#contact-form">ORDER NOW</Button>
                                     <Button classname="cure-btns" style={{backgroundColor: '#F55B40', color: "#fff", fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
-
-                                  {/* </div> */}
                                 </div>
                               </Col>
                             </div>

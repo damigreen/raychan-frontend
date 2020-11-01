@@ -28,11 +28,11 @@ function Treatments() {
         <Title className="title-block">Our Treatments</Title>
         <Row style={{width: "auto"}} justify="center" className="flex-column">
           <Col justify="center" span={8} xs={8} sm={10} lg={8} xl={8}>
-            <a href="sickle-cell">
+            <a href="sickle-cell#sickle-cell">
               <Card
                 className="card-style sc"
                 hoverable
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="sickle cell red blood cell image" src={sickleCell} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Sickle Cell Anemia</h2>
@@ -46,7 +46,7 @@ function Treatments() {
                 className="card-style asthma"
                 hoverable
                 href="#asthma"
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="asthma disease image" src={asthma} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Asthma</h2>
@@ -59,7 +59,7 @@ function Treatments() {
               <Card
                 className="card-style asd"
                 hoverable
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="atrial septal defect image" src={atrialSeptal} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Atrial Septal Defect</h2>
@@ -75,7 +75,7 @@ function Treatments() {
               <Card
                 className="card-style parkinsons"
                 hoverable
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="parkinsons disease image" src={parkinsons} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Parkinson Diseases</h2>
@@ -88,7 +88,7 @@ function Treatments() {
               <Card
                 className="card-style lsc"
                 hoverable
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="low sperm count disease image" src={lowSpermCount} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Low Sperm Count</h2>
@@ -101,7 +101,7 @@ function Treatments() {
               <Card
                 className="card-style diabetics"
                 hoverable
-                style={{ width: 350 }}
+                style={{ width: 300 }}
                 cover={<img alt="diabetics disease image" src={diabetics} className="treatment-images" />}
               >
                 <h2 className="disease-heading">Diabetics</h2>
