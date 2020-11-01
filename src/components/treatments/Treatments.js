@@ -28,7 +28,7 @@ function Treatments() {
         <Title className="title-block">Our Treatments</Title>
         <Row style={{width: "auto"}} justify="center" className="flex-column">
           <Col justify="center" span={8} xs={8} sm={10} lg={8} xl={8}>
-            <a href="sickle-cell#sickle-cell">
+            {/* <a href="sickle-cell#sickle-cell"> */}
               <Card
                 className="card-style sc"
                 hoverable
@@ -38,10 +38,10 @@ function Treatments() {
                 <h2 className="disease-heading">Sickle Cell Anemia</h2>
                 Sickle Cell Anemia has been perceived as one of the most threatening disorder to man-kind...              
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
-            <a href="asthma">
+            {/* <a href="asthma"> */}
               <Card
                 className="card-style asthma"
                 hoverable
@@ -52,10 +52,10 @@ function Treatments() {
                 <h2 className="disease-heading">Asthma</h2>
                 Asthma is a disease affecting the airways that carry air to and from your lungs...
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8}>
-            <a href="atrial-septal-defect">
+            {/* <a href="atrial-septal-defect"> */}
               <Card
                 className="card-style asd"
                 hoverable
@@ -65,13 +65,13 @@ function Treatments() {
                 <h2 className="disease-heading">Atrial Septal Defect</h2>
                 An atrial septal defect is a hole in the wall (septum) between the left and right atria. If there is a large hole, oxygen-rich...
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
         </Row>
 
         <Row style={{width: "auto"}} className="flex-column">
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8}>
-            <a href="parkinsons-disease">
+            {/* <a href="parkinsons-disease"> */}
               <Card
                 className="card-style parkinsons"
                 hoverable
@@ -81,10 +81,10 @@ function Treatments() {
                 <h2 className="disease-heading">Parkinson Diseases</h2>
                 Parkinson’s disease is a progressive disorder of the nervous system that affects your movement. It develops gradually...
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
-            <a href="low-sperm-count">
+            {/* <a href="low-sperm-count"> */}
               <Card
                 className="card-style lsc"
                 hoverable
@@ -94,10 +94,10 @@ function Treatments() {
                 <h2 className="disease-heading">Low Sperm Count</h2>
                 Low sperm count means that the fluid (semen) you ejaculate during an orgasm contains fewer sperm than normal...
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
           <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
-            <a href="diabetics">
+            {/* <a href="diabetics"> */}
               <Card
                 className="card-style diabetics"
                 hoverable
@@ -107,7 +107,7 @@ function Treatments() {
                 <h2 className="disease-heading">Diabetics</h2>
                 Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high...
               </Card>
-            </a>
+            {/* </a> */}
           </Col>
         </Row>
     </div>
