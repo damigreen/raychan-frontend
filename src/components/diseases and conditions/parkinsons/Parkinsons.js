@@ -34,7 +34,7 @@ class Parkinsons extends Component {
     const { parkinsonsShop = {} } = this.state;
     
     return (
-      <div id="diseases">
+      <div id="parkinsons" className="diseases">
         <div id="disease">
           <Title className="disease-title main"level={2}>Parkinsons Disease</Title>
           <Row>
