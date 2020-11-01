@@ -1,12 +1,13 @@
 @import  "../app/App.scss";
 
-#diseases {
+.diseases {
   margin: 0 auto;
   width: 90%;
   height: auto;
   background: #E2EBCE;
   padding: 1em;
   line-height: 26px;
+  text-align: justify;
 }
 
 #disease {
@@ -60,12 +61,6 @@
   text-align: left;
   width: auto;
   color: #391A45;
-
-  @media only screen and (min-width : 320px) and (max-width : 1200px) {
-    // justify-content: space-between;
-    // align-items: center;
-    // background-color: red;
-  }
 }
 
 #cure-wrap .cure-image {
@@ -73,7 +68,7 @@
   @include flex-column;
   padding: 5em;
   vertical-align: center;
-  width: 160px;
+  width: 300px;
   height: 200px;
   line-height: 14px;
   white-space: nowrap;
@@ -83,28 +78,24 @@
 }
 
 .cure-info {
-  // border: $border1;
   padding: .5em 1em;
   margin-top: 25px;
 }
 
-.cure-wrap .cure-image:before {
-  content:"";
-  height: auto;
-  vertical-align: center;
-  width: 1px;
-}
+// .cure-wrap .cure-image:before {
+//   content:"";
+//   height: auto;
+//   vertical-align: center;
+//   width: 1px;
+// }
 
 #cure-wrap .cure-image img{
   width: 180px;
   min-height: 150px;
   height: 180px;
-  // background-color: #CEDDAC;
-  // border: $border1; //change border
 }
 
 p.cure-name {
-  // border: $border1;
   width: 300px;
   height: auto;
   vertical-align: baseline;
@@ -128,12 +119,18 @@ p.cure-name {
 
 }
 
+.cure-btns {
+  display: inline-block;
+  width: 130px;
+  margin-bottom: 1em;
+}
+
 .btn-wrap {
   @include flex-row;
-  justify-content: space-around;
+  justify-content: initial;
   padding-left: 1.2em;
   color: #ffffff;
-  // font-weight: bold;
+  background-color: red;
 }
 
 .cure-slogans {
