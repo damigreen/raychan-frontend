@@ -42,7 +42,7 @@ class LowSpermCount extends Component {
     }
 
     return (
-      <div id="diseases">
+      <div id="lsd" className="diseases">
         <div id="disease">
           <Title className="disease-title main" level={2}>{lowSpermCountData.name}</Title>
 
