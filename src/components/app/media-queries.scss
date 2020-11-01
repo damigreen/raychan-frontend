@@ -44,13 +44,19 @@
   }
   
   .cure-image {
-    margin-left: 50%;
-    margin-right: 50%;
+    // margin-left: 50%;
+    // margin-right: 50%;
   }
   
   .cure-info {
-    margin-left: 50%;
-    margin-right: 50%;
+    // margin-left: 50%;
+    // margin-right: 50%;
+    // width: auto;
+    // width: 310px;
+    width: 350px
+    // align-self: center;
+    // background-color: red;
+
   }
 
   .btn-wrap.cure-btn {
@@ -160,7 +166,7 @@
   }
   
   /* Treatments */
-  #treatments .flex-column {
+  #treatments .Fflex-column {
     width: 100%;
     max-width: 767px;
     display: block;
@@ -185,13 +191,18 @@
     }
     
     .cure-image {
-      margin-left: 50%;
-      margin-right: 50%;
+      // margin-left: 50%;
+      // margin-right: 50%;
     }
     
     .cure-info {
-      margin-left: 50%;
-      margin-right: 50%;
+      // margin-left: 50%;
+      // margin-right: 50%;
+      // width: auto;
+      width: 400px;
+
+      // max-width: 300px;
+      background-color: red;
     }
   
     .btn-wrap.cure-btn {
