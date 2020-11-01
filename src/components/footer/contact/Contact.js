@@ -46,7 +46,7 @@ function Contact() {
             },
           ]}
         >
-          <Input placeholder="Name" />
+          <Input className="input-field" placeholder="Name" />
         </Form.Item>
 
         <Form.Item
@@ -59,14 +59,14 @@ function Contact() {
             },
           ]}
         >
-          <Input placeholder="Email" />
+          <Input placeholder="Email" className="input-field" />
         </Form.Item>
 
         <Form.Item className="form-input" name='subject'>
-          <Input placeholder="Subject" />
+          <Input placeholder="Subject" className="input-field" />
         </Form.Item>
         <Form.Item className="form-input" name='message'>
-          <Input.TextArea placeholder="Message" />
+          <Input.TextArea placeholder="Message" className="input-field" />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol  }}>
           <div id="btn">
