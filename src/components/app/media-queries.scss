@@ -1,6 +1,36 @@
 @import './App.scss';
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+    /* TabBar */
+    #menu.flex-row {
+      width: auto;
+      max-width: 480px;
+      font-size: 11px;
+    }
+    
+    #menu .nav-icon {
+      // max-width: 97px;
+      // max-height: 104px;
+    }
+    
+    #menu .nav-icon-img {
+    }
+    
+    #menu .nav-col {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      // margin-right: 30px;
+
+    }
+    
+    #menu .nav-col .menu-bar {
+      font-size: 11px;
+      background-color: inherit;
+      padding: 5px 10px 5px 10px;
+      border-bottom: none;
+      width: auto;
+      max-width: 300px;
+    }
 
   /* Diseases */
   #diseases .disease-row {
@@ -39,8 +69,8 @@
   #treatments .flex-column .card-style {
     margin-left: 50%;
     margin-right: 50%;
-    width: 200px;
-    height: 552px;
+    // width: 200px;
+    // height: 552px;
   }
     
   #treatments .treatment-images {
@@ -119,7 +149,6 @@
   }
   
   #menu .nav-icon {
-    background-color: red;
     max-width: 97px;
     max-height: 104px;
   }
@@ -136,7 +165,6 @@
   #menu .nav-col .menu-bar {
     font-size: 11px;
     background-color: inherit;
-    background-color: green; 
     padding: 5px 10px 5px 10px;
     border-bottom: none;
     width: auto;
@@ -196,7 +224,12 @@
   
   #menu .nav-col {
     flex-wrap: wrap;
-    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  #menu .menu-bar {
+    background-color: red;
+    margin-left: 120px;
   }
 }
 

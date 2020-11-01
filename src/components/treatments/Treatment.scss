@@ -30,8 +30,8 @@
 #treatments .flex-column {
   @include flex-row;
   margin: auto;
-  width: 1200px;
-  // width: 100%;
+  // width: 1200px;
+  width: 100%;
 }
 
 .flex-column .btn {
@@ -42,14 +42,15 @@
   font-size: 18px;
   text-align: left;
   max-height: 120vh;
-  margin-top: 25px;
-  margin-bottom: 4em;
   height: 552px;
   min-height: 40vh;
   border-radius: 5px;
   background-color: #D0DEAD;
   color: #333;
   max-width: 350px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 4em;
 }
 
 #treatments .card-style.sc {
