@@ -93,9 +93,11 @@
   width: 180px;
   min-height: 150px;
   height: 180px;
+  margin-bottom: none;
 }
 
 p.cure-name {
+  margin-top: none;
   width: 300px;
   height: auto;
   vertical-align: baseline;
@@ -123,6 +125,7 @@ p.cure-name {
   display: inline-block;
   width: 130px;
   margin-bottom: 1em;
+  margin-right: .5em;
 }
 
 .btn-wrap {
@@ -130,7 +133,7 @@ p.cure-name {
   justify-content: initial;
   padding-left: 1.2em;
   color: #ffffff;
-  background-color: red;
+  // background-color: red;
 }
 
 .cure-slogans {
