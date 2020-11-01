@@ -74,7 +74,8 @@ export default class ShopCart extends Component {
                       </a>
                   </Col>
 
-                  <Col span={13}>
+                  <Col style={{marginLeft: "0.5em"}} span={12}>
+                  {/* <Col span={12}> */}
                     {item.description}<br />
                     {item.quantity} x {item.currency}{item.price}
                   </Col>
