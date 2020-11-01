@@ -38,7 +38,7 @@ class Parkinsons extends Component {
         <div id="disease">
           <Title className="disease-title main"level={2}>Parkinsons Disease</Title>
           <Row>
-            <Col span={14}>
+          <Col span={14} xs={24} md lg={14} xl={16} xxl>
               <Row className="disease-row">
                   {/* <Col span={8} className="image-block">
                     <img className="image-product" src={image} alt="Sickle cell image" />
@@ -79,13 +79,13 @@ class Parkinsons extends Component {
                   <Col span={24}>
                           <Row>
                             <div id="cure-wrap">
-                              <Col span={12}>
+                            <Col span={10} xs={8} sm={10} xl={12} lg={4} xxl={10}>
                                   <div className="cure-image">
                                     <img src={cureImage} alt="Diseases cure image" />
                                   </div>
                                   
                               </Col>
-                              <Col span={12}>
+                              <Col span={12} sm={14} md={24} lg={12} xl={12}>
                                 <div className="cure-info">
                                   <div>
                                     <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
@@ -94,10 +94,10 @@ class Parkinsons extends Component {
                                   <p className="cure-quantity">
 
                                   </p>
-                                  <div className="btn-wrap">
+                                  {/* <div className="btn-wrap"> */}
                                     <Button style={{backgroundColor: '#74ABB4', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
                                     <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
-                                  </div>
+                                  {/* </div> */}
                                 </div>
                               </Col>
                             </div>
@@ -108,7 +108,7 @@ class Parkinsons extends Component {
                 </Row>
             </Col>
 
-            <Col span={10} id="contact-form" className="sidebar">
+            <Col span={10} xs={24} sm={24} lg={10} xl={8} id="contact-form" className="sidebar">
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
