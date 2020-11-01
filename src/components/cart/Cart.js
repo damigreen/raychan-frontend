@@ -80,7 +80,7 @@ export default class Cart extends Component {
               </div>
 
               <div className="quantity">
-                QUANTITY
+                QTY
               </div>
 
               <div className="subtotal">

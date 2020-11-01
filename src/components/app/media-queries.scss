@@ -1,36 +1,36 @@
 @import './App.scss';
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-     /* TabBar */
-    #menu.flex-row {
-      width: auto;
-      max-width: 480px;
-      font-size: 11px;
-    }
-    
-    #menu .nav-icon {
-      // max-width: 97px;
-      // max-height: 104px;
-    }
-    
-    #menu .nav-icon-img {
-    }
-    
-    #menu .nav-col {
-      justify-content: space-between;
-      flex-wrap: wrap;
-      // margin-right: 30px;
+    /* TabBar */
+  #menu.flex-row {
+    width: auto;
+    max-width: 480px;
+    font-size: 11px;
+  }
+  
+  #menu .nav-icon {
+    // max-width: 97px;
+    // max-height: 104px;
+  }
+  
+  #menu .nav-icon-img {
+  }
+  
+  #menu .nav-col {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // margin-right: 30px;
 
-    }
-    
-    #menu .nav-col .menu-bar {
-      font-size: 11px;
-      background-color: inherit;
-      padding: 5px 10px 5px 10px;
-      border-bottom: none;
-      width: auto;
-      max-width: 300px;
-    }
+  }
+  
+  #menu .nav-col .menu-bar {
+    font-size: 11px;
+    background-color: inherit;
+    padding: 5px 10px 5px 10px;
+    border-bottom: none;
+    width: auto;
+    max-width: 300px;
+  }
 
   /* Diseases */
   #diseases .disease-row {
@@ -96,12 +96,88 @@
   }
 
   #treatments .flex-column .card-style {
+    // margin:auto;
+    vertical-align: middle;
     margin-left: 50%;
     margin-right: 50%;
+    margin-bottom: 3em;
+    width: 50%;
+    // margin-left: 2em;
   }
     
   #treatments .treatment-images {
-  }   
+  }
+
+  /* Cart */
+
+  #cart {
+    margin: auto;
+    width: 100%;
+    
+    .cart-content {
+      // background-color: green;
+      max-width: 100%;
+      
+      .header {
+        display: none;
+        // background-color: red;
+        width: 100%;
+        font-size: 11px;
+
+      }
+
+      .shopping-items {
+        display: block;
+        height: auto;
+        width: auto;
+        max-width: 400px;
+        
+        .item-image {
+          margin: auto;
+          // vertical-align: middle;
+        }
+        
+        .item-description {
+          text-align: center;
+          margin: auto;
+          margin-bottom: 1.5em;
+          width: 200px;
+        }
+
+        .item-price {
+          margin: auto;
+          text-align: center;
+          width: 100px;
+        }
+        
+        .item-quantity {
+          margin: auto;
+          width: 100px;
+          text-align: center;
+          margin-bottom: 1.5em;
+        }
+        
+        .item-subtotal {
+          width: 100px;
+          margin: auto;
+          text-align: center;
+        }
+
+      }
+
+    }
+    .total-wrap {
+      // width: 300px;
+      max-width: 400px;
+      
+      .total-text {
+      }
+
+      .total-value {
+        width: 80px;
+      }
+    }
+  }
   
   /* Footer */
   #footer  .footer-row {
@@ -166,7 +242,7 @@
   }
   
   /* Treatments */
-  #treatments .Fflex-column {
+  #treatments .flex-column {
     width: 100%;
     max-width: 767px;
     display: block;
@@ -175,7 +251,6 @@
   #treatments .flex-column .card-style {
     margin-left: 50%;
     margin-right: 50%;
-    width: 200px;
     height: 552px;
   }
 
