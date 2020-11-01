@@ -35,7 +35,7 @@ class SickleCell extends Component {
     const {sickleCellShop = {} } = this.state;
 
     return (
-      <div id="diseases">
+      <div id="sickle-cell" className="diseases">
 
         <div id="disease">
           <Title level={2} className="disease-title main">Sickle Cell Anemia</Title>
