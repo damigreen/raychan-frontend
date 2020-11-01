@@ -1,7 +1,7 @@
 @import './App.scss';
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-    /* TabBar */
+     /* TabBar */
     #menu.flex-row {
       width: auto;
       max-width: 480px;
@@ -38,6 +38,7 @@
   }
   
   #cure-wrap {
+    margin: auto;
     display: block;
     max-width: 480px;
   }
@@ -56,6 +57,28 @@
     margin-left: 25px;
   }
 
+  #contact-form.sidebar {
+    border-left: none;
+    
+    .form-title {
+      text-align: center;
+    }
+
+    /* Contact */
+    #contact-form {
+      
+      .form-input {
+      }
+          
+      .input-field {
+        max-width: 300px;
+      }
+    }
+
+  }
+  
+  
+
   /* Treatments */
   #treatment {
   }
@@ -69,8 +92,6 @@
   #treatments .flex-column .card-style {
     margin-left: 50%;
     margin-right: 50%;
-    // width: 200px;
-    // height: 552px;
   }
     
   #treatments .treatment-images {
@@ -107,44 +128,10 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
-  /* Treatments */
-  #treatments .flex-column {
-    width: 100%;
-    max-width: 767px;
-    display: block;
-  }
-  
-  #treatments .flex-column .card-style {
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 200px;
-    height: 552px;
-  }
-
-   /* Footer */
-   #footer  .footer-row {
-    display: block;
-    
-    .footer-col .footer-title {
-      text-align: center;
-    }
-  }
-
-   /* Site Link */
-   #site-link {
-    margin-left: 38px;
-  }
-  
-  #contact-info {
-    margin-left: 22px;
-  }
-
   /* TabBar */
   #menu.flex-row {
-    // margin: 0 auto;
     width: auto;
     max-width: 767px;
-    // background-color: red; 
     font-size: 11px;
   }
   
@@ -167,15 +154,106 @@
     background-color: inherit;
     padding: 5px 10px 5px 10px;
     border-bottom: none;
-    width: auto;
-    max-width: 300px;
-    // min-width: 300px;
-    // margin-right: 30px;
+    width: 80%;
+    max-width: 767px;
+    margin-left: 9em;
   }
   
+  /* Treatments */
+  #treatments .flex-column {
+    width: 100%;
+    max-width: 767px;
+    display: block;
+  }
+  
+  #treatments .flex-column .card-style {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 200px;
+    height: 552px;
+  }
+
+    /* Diseases */
+    #diseases .disease-row {
+      display: block;
+    }
+    
+    #cure-wrap {
+      margin: auto;
+      display: block;
+      max-width: 767px;
+    }
+    
+    .cure-image {
+      margin-left: 50%;
+      margin-right: 50%;
+    }
+    
+    .cure-info {
+      margin-left: 50%;
+      margin-right: 50%;
+    }
+  
+    .btn-wrap.cure-btn {
+      margin-left: 25px;
+    }
+
+    #contact-form.sidebar {
+      border-left: none;
+    }
+    
+    .form-title {
+      text-align: center;
+    }
+    
+  
+
+   /* Footer */
+   #footer  .footer-row {
+    display: block;
+    
+    .footer-col .footer-title {
+      text-align: center;
+    }
+  }
+
+  /* Contact */
+  #contact-form {
+      
+    .form-input {
+    }
+        
+    .input-field {
+      width: 92%;
+    }
+  }
+
+   /* Site Link */
+   #site-link {
+    margin-left: 38px;
+  }
+  
+  #contact-info {
+    margin-left: 22px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+  /* TabBar */
+  #menu.flex-row {
+    width: auto;
+    max-width: 992px;
+  }
+  
+  #menu .nav-col {
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
+  
+  #menu .menu-bar {
+    margin-left: 120px;
+  }
+  
   /* Treatments */
   #treatments .flex-column {
     width: 991px;
@@ -215,22 +293,16 @@
   #treatments .card-style.diabetics {
     margin-left: 250px;
   }
+
+  #contact-form.sidebar {
+    border-left: none;
+  }
+  
+  .form-title {
+    text-align: center;
+  }
+  
  
-  /* TabBar */
-  #menu.flex-row {
-    width: auto;
-    max-width: 992px;
-  }
-  
-  #menu .nav-col {
-    flex-wrap: wrap;
-    margin-left: 30px;
-  }
-  
-  #menu .menu-bar {
-    background-color: red;
-    margin-left: 120px;
-  }
 }
 
 @media only screen and (min-width : 800px) and (max-width : 1024px) {
@@ -299,32 +371,3 @@
   #treatments .flex-column .card-style {
   }
 }
-
-// @media only screen and (max-width : 767px) {
-//   #menu.flex-row {
-//     margin: 0 auto;
-//     width: auto;
-//     max-width: 767px;
-//     // background-color: red; 
-//     font-size: 11px;
-//     min-width: 480px;
-//   }
-  
-//   #menu .nav-col {
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     margin-right: 30px;
-//   }
-  
-//   #menu .nav-col .menu-bar {
-//     font-size: 11px;
-//     background-color: inherit;
-//     background-color: green; 
-//     padding: 5px 10px 5px 10px;
-//     border-bottom: none;
-//     width: auto;
-//     max-width: 500px;
-//     margin-right: 30px;
-//   }
-// }
-
