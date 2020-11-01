@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Contact from '../../footer/contact'
+import Contact from '../../footer/contact';
 import {
   Button,
   Row,
   Col,
   Typography
-} from 'antd'
-import '../Diseases.scss'
-import cureImage from '../../../images/treatments/CureImage.png'
+} from 'antd';
+import '../Diseases.scss';
+import cureImage from '../../../images/treatments/CureImage.png';
 import ShopCart from '../../cart/ShopCart';
 
 
-const { Title, Paragraph } = Typography
+const { Title, Paragraph } = Typography;
   
 class Asthma extends Component {
   /* 
@@ -37,13 +37,14 @@ handleAddToCart (e) {
     const { asthmaShop= [] } = this.state;
     console.log(asthmaShop);
 
+
     return (
-      <div id="diseases">
+      <div id="asthma" className="diseases">
         <div id="disease">
           <Title className="disease-title main" level={2}>Asthma</Title>
 
           <Row>
-            <Col span={14} xs={24} lg={14} xl={16}>
+            <Col span={14} xs={24} md lg={14} xl={16} xxl>
               <Row className="disease-row">
                   <Col id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
@@ -84,13 +85,13 @@ handleAddToCart (e) {
                   <Col span={24}>
                           <Row>
                             <div id="cure-wrap">
-                              <Col span={12} xs={8} xl={8}>
+                              <Col span={12} xs={8} sm={4} xl={8} xxl={10}>
                                   <div className="cure-image">
                                     <img src={cureImage} alt="Diseases cure image" />
                                   </div>
                                   
                               </Col>
-                              <Col span={12} xs={8} xl={16}>
+                              <Col span={12} xs={8} sm={12} md={24} xl={16} xxl={14}>
                                 <div className="cure-info">
                                   <div>
                                     <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
@@ -99,10 +100,8 @@ handleAddToCart (e) {
                                   <p className="cure-quantity">
 
                                   </p>
-                                  <div className="btn-wrap cure-btn">
-                                    <Button style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600"}} href="#contact-form">ORDER NOW</Button>
-                                    <Button style={{backgroundColor: '#F55B40', color: "#fff", marginLeft: '.5em', fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
-                                  </div>
+                                  <Button className="cure-btns" style={{backgroundColor: '#B0D4C5', color: "#391A45", fontWeight: "600", marginLeft: "none"}} href="#contact-form">ORDER NOW</Button>
+                                  <Button classname="cure-btns" style={{backgroundColor: '#F55B40', color: "#fff", fontWeight: "600"}} onClick={this.handleAddToCart}>ADD TO CART</Button>
                                 </div>
                               </Col>
                             </div>
@@ -111,7 +110,7 @@ handleAddToCart (e) {
                 </Row>
             </Col>
 
-            <Col span={10} xs={24} lg={10} xl={16} id="contact-form" className="sidebar">
+            <Col span={10} xs={24} sm={24} lg={10} xl={8} id="contact-form" className="sidebar">
               <div className='form-wrap'>
               <Title className="form-title" level={3}>REQUEST FOR YOUR CURE</Title>
                 <Contact />
