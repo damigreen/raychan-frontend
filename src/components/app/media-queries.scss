@@ -1,5 +1,14 @@
 @import './App.scss';
 
+@media only screen and (max-width: 420px) {
+  #treatments .flex-column {
+    display: block;
+    max-width: 420px;
+    // margin-left: 0.2em;
+    margin-right: 4em;
+  }
+}
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
     /* TabBar */
   #menu.flex-row {
@@ -93,8 +102,9 @@
     width: 100%;
     max-width: 480px;
     display: block;
-  }
 
+  }
+  
   #treatments .flex-column .card-style {
     // margin:auto;
     vertical-align: middle;
@@ -104,12 +114,13 @@
     width: 50%;
     // margin-left: 2em;
   }
-    
+
+  
   #treatments .treatment-images {
   }
 
   /* Cart */
-
+  
   #cart {
     margin: auto;
     width: 100%;
@@ -123,7 +134,7 @@
         // background-color: red;
         width: 100%;
         font-size: 11px;
-
+        
       }
 
       .shopping-items {
@@ -143,7 +154,7 @@
           margin-bottom: 1.5em;
           width: 200px;
         }
-
+        
         .item-price {
           margin: auto;
           text-align: center;
@@ -162,9 +173,9 @@
           margin: auto;
           text-align: center;
         }
-
+        
       }
-
+      
     }
     .total-wrap {
       // width: 300px;
@@ -188,7 +199,7 @@
       text-align: center;
     }
   }
-
+  
   /* Site Link */
   #site-link {
     margin-left: 20px;
@@ -200,12 +211,14 @@
   }
 }
 
-  
+
 @media only screen and (max-width: 360px) {
 
   /* Treatments */
   #treatments .flex-column .card-style {
-    margin: 4px;
+    // margin-right: 10em;
+    margin:0;
+    margin-left: 1em;
   }
 }
 
