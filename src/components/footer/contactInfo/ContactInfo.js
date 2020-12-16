@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Row, Col } from 'antd'
-import { EnvironmentOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons'
-import facebookIcon from '../../../images/icons/facebook.svg'
-import instagramIcon from '../../../images/icons/instagram.svg'
-import twitterIcon from '../../../images/icons/twitter-squared.svg'
-import '../footer.scss'
+import { EnvironmentOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons';
+import facebookIcon from '../../../images/icons/facebook.svg';
+import instagramIcon from '../../../images/icons/instagram.svg';
+import twitterIcon from '../../../images/icons/twitter-squared.svg';
+import '../footer.scss';
 
 
 function ContactInfo() {
@@ -15,7 +15,7 @@ function ContactInfo() {
   * * include icons
   *  Columns
     * Address
-    * Phone  
+    * Phone
     * email
     * 
 
@@ -23,12 +23,12 @@ function ContactInfo() {
   return(
     <div id="contact-info">
       <Row className="contact-row">
-        <Col span={2} className="icon-col">
+        {/* <Col span={2} className="icon-col">
           <EnvironmentOutlined />
-        </Col>
-        <Col span={22}>
+        </Col> */}
+        {/* <Col span={22}>
           <p>123, Loren Ipsum street, Lagos Nigeria</p>
-        </Col>
+        </Col> */}
       </Row>
       <Row className="contact-row">
         <Col span={2} className="icon-col">
