@@ -88,7 +88,7 @@ class Parkinsons extends Component {
                               <Col span={12} sm={14} md={24} lg={12} xl={12}>
                                 <div className="cure-info">
                                   <div>
-                                    <p className="cure-name overflow">LOW SPERM COUNT HERBAL MIXTURE</p>
+                                    <p className="cure-name overflow">PARKINSONS HERBAL MIXTURE</p>
                                   </div>
                                   <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
                                   <p className="cure-quantity">

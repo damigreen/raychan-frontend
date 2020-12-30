@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Row,
   Col,
@@ -12,33 +12,33 @@ import cureImage from '../../../images/treatments/CureImage.png'
 import { Divider } from 'antd';
 import ShopCart from '../../cart/ShopCart';
 
-
 const { Title, Paragraph } = Typography
 
-class SickleCell extends Component {
+
+class Ulcer extends Component {
   constructor(props) {
     super(props);
 
     // this.props.addToCart = this.addToCart.bind(this)
     this.handleAddToCart = this.handleAddToCart.bind(this);
-    this.state = { lowSpermCountShop: {} }
+    this.state = { ulcerShop: {} }
   }
 
   handleAddToCart (e) {
     const itemId = 1;
-    this.props.addToCart(itemId)
+    this.props.addToCart(itemId);
   }
 
 
   render() {
     const { products = [], shopItems, handleDelete, subtotal, getSubtotal } = this.props
-    const {sickleCellShop = {} } = this.state;
+    const {ulcerShop = {} } = this.state;
 
     return (
-      <div id="sickle-cell" className="diseases">
+      <div id="ulcer" className="diseases">
 
         <div id="disease">
-          <Title level={2} className="disease-title main">Sickle Cell Anemia</Title>
+          <Title level={2} className="disease-title main">Ulcer</Title>
 
 
           <Row>
@@ -47,18 +47,18 @@ class SickleCell extends Component {
                   <Col id="disease-column">
                     <Title className="disease-title" level={3}>Introduction</Title>
                     <Paragraph className="disease-text">
-                      Sickle Cell Anemia over the years has been perceived as one of the most threatening disorder to man-kind,
-                      some homes has been broken and couples separated, early death and delayed marriage due to this disorder.
-                      Millions of people around the world are actually living with this disorder
+                      Have you ever rolled on the floor, holding your belly in pains in the middle of the night and feeling uncomfortable? Do you wish you could figure out how to do away with ulcer for good?
+
+                      Has your ulcer resulted in any of the following conditions: Gnawing or burning pain in the abdomen, loss of appetite, nausea, vomiting, bloating and weight loss?
                     </Paragraph>
                     <Title className="disease-title" level={3}>Causes</Title>
                     <Paragraph className="disease-text">
-                      Sickle cell anemia disease is a genetic condition that is present at birth. It is inherited when a child receives two sickle cell genes—one from each parent.
+                      Ulcer are painful sores in the stomach lining. Stomach ulcers are a type of peptic ulcer disease. Peptic ulcers are any ulcers that affect both the stomach and small intestines.
                     </Paragraph>
                     <Title className="disease-title" level={3}>Symptoms</Title>
                     <Paragraph className="disease-text">
-                      The symptoms Sickle Cell Anemia ranges from pain, which can start suddenly, be mild to severe, and can last for any length of time.
-                      <ul>
+                    The most common symptom is a burning sensation or pain in the middle of your abdomen between your chest and belly button. Typically, the pain will be more intense when your stomach is empty, and it can last for a few minutes to several hours.
+                      {/* <ul>
                         <li>Acute Chest Syndrome</li>
                         <li>pain, mild to severe</li>
                         <li>Vision Loss</li>
@@ -67,15 +67,15 @@ class SickleCell extends Component {
                         <li>Irritability</li>
                         <li>A fast heart rate</li>
                         <li>Difficulty breathing</li>
-                      </ul>
+                      </ul> */}
                     </Paragraph>
-                    <Title className="disease-title" level={3}>Key Facts</Title>
+                    {/* <Title className="disease-title" level={3}>Key Facts</Title>
                     <ul>
                       <li>Sickle cell disease affects nearly 250 million people worldwide</li>
                       <li>A child gets sickle cell dissease when he or she recieves two sickle cell gene. One from each parent</li>
                       <li>The world known cure for Sickle Cell Anemia is Bone Marrow Transplant (BMT).</li>
                       <li>The average price of a bone marrow transplant for a child is $55,400 and even more expensive for adults</li>
-                    </ul>
+                    </ul> */}
                   </Col>
 
                   <Divider plain>NATURE CURES</Divider>
@@ -92,7 +92,7 @@ class SickleCell extends Component {
                               <Col span={12} sm={14} md={24} lg={12} xl={12}>
                                 <div className="cure-info">
                                   <div>
-                                    <p className="cure-name overflow">SICKLE-CELL HERBAL MIXTURE</p>
+                                    <p className="cure-name overflow">ULCER HERBAL MIXTURE</p>
                                   </div>
                                   <h1 className="cure-price"><span className="currency">₦</span>65 000</h1>
                                   <p className="cure-quantity">
@@ -119,8 +119,8 @@ class SickleCell extends Component {
               </div>
 
               <div>
-               <ShopCart 
-                sickleCellShop={sickleCellShop}
+              <ShopCart 
+                ulcerShop={ulcerShop}
                 shopItems={shopItems}
                 handleDelete={handleDelete}
                 subtotal={subtotal}
@@ -136,4 +136,4 @@ class SickleCell extends Component {
   }
 }
 
-export default SickleCell;
+export default Ulcer;

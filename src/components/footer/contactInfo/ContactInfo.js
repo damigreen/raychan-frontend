@@ -46,11 +46,24 @@ function ContactInfo() {
         <Col span={22}>
           <p>Rayckanherbalhealthcare@gmail.com</p>
         </Col>
+        <Col span={22}>
+        </Col>
+        <Col span={22}>
+        </Col>
+        <Col span={22}>
+          <p>Connect with us on Whatsapp with 07033902012</p>
+        </Col>
       </Row>
+      <img alt="Facebook Icon" src={facebookIcon} />
       <div className="flex-column social-icons">
-        <img alt="Facebook Icon" src={facebookIcon} />
-        <img alt="Twitter Icon" src={twitterIcon} />
-        <img alt="Instagram Icon" src={instagramIcon} />
+        <div>
+          <img alt="Twitter Icon" src={twitterIcon} />
+          <p>Follow us on Twitter @RayckanC</p>
+        </div>
+        <div>
+          <img alt="Instagram Icon" src={instagramIcon} />
+          <p>Follow us on Instagram @Rayckanherbalhealthcare</p>
+        </div>
       </div>
     </div>
   )

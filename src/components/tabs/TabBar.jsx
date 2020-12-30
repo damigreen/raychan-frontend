@@ -68,6 +68,9 @@ const TabBar = (props) => {
                     <Menu.Item key="Parkinsons">
                       <Li to='/parkinsons-disease'>Parkinsons Disease</Li>
                     </Menu.Item>
+                    <Menu.Item key="Ulcer">
+                      <Li to='/ulcer'>Ulcer</Li>
+                    </Menu.Item>
                 </SubMenu>
 
                 <Menu.Item className="nav-item" key="treatments">
