@@ -108,6 +108,19 @@ function Treatments() {
               </Card>
             </Link>
           </Col>
+          <Col span={8} xs={8} sm={10} md={6} lg={8} xl={8} >
+            <Link to="/ulcer">
+              <Card
+                className="card-style ulcer"
+                hoverable
+                style={{ width: 300 }}
+                cover={<img alt="ulcer disease image" src={ulcer} className="treatment-images" />}
+              >
+                <h2 className="disease-heading">Ulcer</h2>
+                ulcers are open sores that develop on the inside lining of your stomach and the upper portion of your small intestine...
+              </Card>
+            </Link>
+          </Col>
         </Row>
     </div>
   );
