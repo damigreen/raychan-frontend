@@ -14,6 +14,7 @@ import atrialSeptal from '../../images/treatments/artrialSeptalDefect/asd.jpg'
 import parkinsons from '../../images/treatments/parkinsonsDisease/parkinsons.jpg'
 import lowSpermCount from '../../images/treatments/lowSpermCount/lowSpermCount.jpg'
 import diabetics from '../../images/treatments/diabetics/diabetics.jpg';
+import ulcer from '../../images/treatments/ulcer/ulcer.jpeg';
 
 const { Title } = Typography;
 
