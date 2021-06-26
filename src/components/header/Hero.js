@@ -16,7 +16,7 @@ class Hero extends Component {
           </h1>
         </div> */}
         <div className="hero">
-          <img src={heroImage} />
+          <img className='hero-image' src={heroImage} />
         </div>
       </div>
     );

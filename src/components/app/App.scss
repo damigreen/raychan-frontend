@@ -167,3 +167,12 @@ p, ul, li, h1, h2, h3, h4 {
 #copyright-wrap .copyright-column {
   @include flex-column;
 }
+
+.row-md {
+  margin: 0 auto;
+  width: 70%;
+
+  @media only screen and (max-width: 1420px) {
+    width: 100%;
+  }
+}

@@ -25,6 +25,7 @@ function Treatments() {
 
   return (
     <div id="treatments">
+      <div className='row-md'>
         <Title className="title-block">Our Treatments</Title>
         <Row style={{width: "auto"}} justify="center" className="flex-column">
           <Col justify="center" span={8} xs={8} sm={10} lg={8} xl={8}>
@@ -123,6 +124,7 @@ function Treatments() {
             </Link>
           </Col>
         </Row>
+      </div>
     </div>
   );
 }
