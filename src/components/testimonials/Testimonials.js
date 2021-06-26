@@ -12,11 +12,10 @@ function Testimonials() {
     * fix ant design carousel
   */
 
-  let carousel = React.createRef()
+  let carousel = React.createRef();
 
-
-  const next = () => carousel.next()
-  const prev = () => carousel.prev()
+  const next = () => carousel.next();
+  const prev = () => carousel.prev();
 
   return(
     <div id="testimonials">
